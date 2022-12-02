@@ -1,0 +1,516 @@
+
+/* Basic Blocks Custom App */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre');
+@import url('/font-awesome-4.6.3/css/font-awesome.min.css');
+
+/*-----------------------------------------
+:root selector for variables
+-------------------------------------------*/
+:root {
+    --Header_background-color: whitesmoke; 
+    --Header_hover-color:blue;
+    --HeaderLogo-image: url( 'assets/images/formR-icon.jpg' );
+    --HeaderLogo_margin: 0px 0px 0px 50px;
+    --HeaderList-font-size: 1.1rem;
+  
+    --Section1_background-color: cornflowerblue;
+    --Section1_background-image: url( 'assets/images/monaco-blue-soft-1.jpg' );
+    --Section1Paragraph-font-color: whitesmoke;  
+  
+    --Section2-font-color: darkblue;  
+    --Section2_background-color: whitesmoke;
+    --Section2Paragraph-font-color: darkblue;  
+    --Section2Paragraph_hover-color: blue;
+
+    --Footer_background-color:whitesmoke; 
+    --Footer_hover-color: blue;
+    --FooterListFontSize: .9rem;  
+    
+    /*--GlobalFontFamily: "Roboto Slab";*/
+    --GlobalFontFamily: "Frank Ruhl Libre";
+    
+    --CalloutIconCheck: "\f14a  \A"; /*checkbox*/
+    --CalloutIconCheck: "\f0da  \A"; /*Right Arrow*/
+    --CalloutIconCheck: "\f0a4  \A"; /*Right Hand Pointer*/
+    --CalloutIconCheck: "\f105  \A"; /*Right Arrow*/
+    --CalloutIconCheck: "\f328  \A"; /*Clip Board*/
+    --CalloutIconCheck: "\f0ca  \A"; /*Bullets {<li>}*/
+    --CalloutIconCheck: "\f064  \A"; /*Forward Arrow*/
+    --CalloutIconCheck: "\f0ae  \A"; /*ToDo List*/
+    --CalloutIconCheck: "\f35a  \A"; /*Right Arrow in Circles*/
+    --CalloutIconFontFamily: "Font Awesome 5 Free";    
+
+} 
+/*------------------------------------------*/
+* {                   /* reset all style */
+    box-sizing          :  border-box;
+    padding             :  0;
+    margin              :  0;
+    font-family         :  var(--GlobalFontFamily);
+    font-size           :  1rem;
+    }
+
+.container {            /* custom element style */
+    padding             :  0;
+    margin              :  0;
+    width               :  100%;
+    height              :  100vh;
+    } 
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*-----------------------------------------
+The .Header properites
+------------------------------------------*/
+.Header {
+    background: var(--Header_background-color);
+    border-bottom: 1px #000 solid;
+    width: 100%;
+    height: 10%;
+    position: fixed;  /*was relative*/
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*------------------------------------------*/
+  
+.xxxHeaderNavBars {
+    display: none;
+    height: 24px;
+    width: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+/*------------------------------------------*/
+.xxxHeaderNavBars:focus {
+      outline: none;
+  }
+ 
+  /*------------------------------------------*/
+.xxxHeaderLogo {
+    width: 224px;
+    height: 64px;
+    margin-bottom: 0px;
+    background-image: var(--HeaderLogo-image);
+    background-size: 224px 64px;
+    background-repeat: no-repeat;
+    margin: var(--HeaderLogo_margin);
+    font-size: 25px;
+    font-weight: 600;
+  }
+/*------------------------------------------*/
+.HeaderSpacer {
+      flex: 1;
+  }
+/* Header END^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+  
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*-----------------------------------------
+The .HeaderNavList (horizontal menu) properites
+------------------------------------------*/
+.HeaderNavList {
+    list-style: none;
+    margin-right: 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--HeaderList-font-size);
+}
+/*------------------------------------------*/
+.HeaderNavListItem a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 8px 0;
+    padding: 25px;
+}
+/*------------------------------------------*/
+.HeaderNavListItem a:hover,
+.HeaderNavListItem a:active {
+    color: var(--Header_hover-color);
+}
+/*------------------------------------------*/
+.HeaderNavListItemCTA a {
+    color: white;
+    background: blue ;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+/*------------------------------------------*/
+.HeaderNavListItemCTA {
+    animation     : wiggle 400ms 2s 8 ease-out none;
+    }
+  
+/*-----------------------------------------
+The @keyframes wiggle properties
+------------------------------------------*/
+  @keyframes wiggle {
+      0% { transform: rotateZ(  0deg ); }
+     50% { transform: rotateZ(-10deg ); }
+    100% { transform: rotateZ( 10deg ); }
+  }
+/*------------------------------------------*/
+.HeaderNavListItemCTA a:hover,
+.HeaderNavListItemCTA a:active {
+    color: var(--Header_hover-color);
+    color: #C0C0C0;
+}
+
+/* Header Nav END ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+  
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.Logo {
+  padding: 0px 0px 10px 0px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*-----------------------------------------
+The .Section1 properites
+------------------------------------------*/
+.Section1 {
+    background: var(--Section1_background-image);
+    background-color: var(--Section1_background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px black solid;
+    width: 100%;
+    height: 30%;
+    position: relative;
+    top: 10%;
+    overflow: auto;
+}
+/*------------------------------------------*/
+.Section1Title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: lightgray;
+    text-shadow: 1px 1px 3px #000000;
+    text-align: left; 
+    padding-left: 1.3rem; 
+  }
+/*------------------------------------------*/
+.Section1Title::first-letter {
+    font-size: 130%;
+}
+/*------------------------------------------*/
+.Section1Paragraph {
+  margin: 10px 20px 0px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* Section-1 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*-----------------------------------------
+The .Section2 properites
+------------------------------------------*/
+.Section2 {
+    background: var(--Section2_background-color);
+    width: 100%;
+    height: 60%;
+    position: relative;
+    color: var(--Section2-font-color);
+    top:10%; /*<---ADD to adjust the top position*/
+    overflow: auto;
+  }
+/*------------------------------------------*/
+.Section2Title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: blue;
+  text-shadow: 1px 1px 2px #000000;
+  text-align: left; 
+  padding-left: 1.6rem; 
+}
+/*------------------------------------------*/
+.Section2Title::first-letter {
+  font-size: 130%;
+}
+/*------------------------------------------*/
+.Section2Paragraph {
+    margin: 0px 20px 0px 65px;
+    font-size: .9rem;
+    font-weight: 600;
+  }
+/*------------------------------------------*/
+.Section2Paragraph ul {
+    list-style-type: none;
+    margin: 5px 0px 5px 10px;
+    font-size: .9rem;
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    text-decoration: none;
+    border-bottom: 1px #333 dotted;
+/*    column-rule: dotted 1px #333;*/
+
+  }
+/*------------------------------------------*/
+.Section2Paragraph ul li:before { 
+    font-family: var(--CalloutIconFontFamily);
+    font-weight: 600;
+    content: var(--CalloutIconCheck); /*checkbox*/ 
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding: 0px 0px 0px 10px; 
+  } 
+/*------------------------------------------*/  
+  .Section2Paragraph a {
+    color: black;
+    font-size: .85rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 8px 0;
+    padding: 2px;
+}
+/*------------------------------------------*/
+.Section2Paragraph ul a:hover,
+.Section2Paragraph ul a:active {
+    color: var(--Section2Paragraph_hover-color);
+    font-size: 95%;
+  }  
+/* Section2 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*-----------------------------------------
+The .Footer properites
+------------------------------------------*/
+.Footer {
+    background: var(--Footer_background-color);
+    width: 100%; 
+    /*top: 10%;  /*Removed in place of the bottom property*/
+    border-top: 1px solid darkgray;
+    bottom: 0;
+    position: fixed;
+    z-index: 99;
+  } 
+/*------------------------------------------*/
+.FooterNavList {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*------------------------------------------*/
+.FooterNavListItem a {
+    color: black;
+    font-weight: bold;
+    font-size: var(--FooterListFontSize);
+    text-decoration: none;
+    margin: 8px 0;
+    padding: 12px;
+}
+/*------------------------------------------*/
+.FooterNavListItem a:hover,
+.FooterNavListItem a:active {
+  color: var(--Footer_hover-color);
+}
+/* Footer END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/* Responsive Code */  
+/*The @media MIN-width query properties
+***** About 75% of my Mac book 15" screen on chrome
+=========================================*/
+@media only screen and (min-width: 1200px) {
+
+  /*@media (max-width: 1000px) {*/
+    /*
+    .Section1 {
+      background-color: lightskyblue;
+    }
+    */
+    .Section1Paragraph {
+      font-size: 125%;
+    } 
+  }  
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*-----------------------------------------
+The @media MAX-width query properties
+***** IPAD
+=========================================*/
+@media only screen and (max-width: 860px) {
+
+/*@media (max-width: 760px) {*/
+
+  .Header {
+    height: 80px;
+  } 
+  .HeaderNavList {
+    display: none;
+  }
+  .MenuWrap {
+    display: flex;
+  }
+  .MenuWrap .Menu > div {
+    /*move menu around*/
+      justify-content: left; /*was center*/
+      padding-left: 140px; /*was deleted*/
+      margin-top: -310px; /*was deleted*/
+    /*end of move around*/
+    }
+  .Logo {
+    padding-left: 2.8rem;
+  }
+  .Section1 {
+    /*background-color: purple;*/
+    border: 1px solid blue;
+    height: 30%;    
+    top: 80px;
+  }  
+   .Section1Title {
+    font-size: 1.5rem;
+    padding: 5px 10px 0px 20px;
+    text-align: center;
+  }
+  .Section1Paragraph {
+    font-size: 95%;
+  }
+  .Section2 {
+    height: 70%; 
+  }  
+  .Section2Title {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #000000;
+    padding: 5px 10px 0px 22px;
+    text-align: center;
+  }
+  .Section2Paragraph ol {
+    font-size: 125%;
+  }
+  .Section2Paragraph ul {
+    font-size: 100%;
+    margin: 5px 0px 10px 10px;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;  
+  }
+  .Section2Paragraph li {
+    font-size: 80%;
+  }
+  .Section2Paragraph a {
+    font-size: 100%;
+    font-weight: 600;
+    margin: 8px 0;
+    padding: 2px;
+  }
+  .Section2Paragraph ul a:hover,
+  .Section2Paragraph ul a:active {
+    font-size: 110%;
+  } 
+  .Footer {
+    display: none;
+  }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*-----------------------------------------
+The @media MIN-width query properties
+IPHONE *****
+=========================================*/
+@media only screen and (max-width: 370px) {
+/*@media (min-width: 400px) {*/
+.Header {
+   height: 75px;
+}
+.HeaderNavList {
+    display: none;
+}
+.MenuWrap {
+    display: flex;
+}
+.MenuWrap .Menu > div {
+/*move menu around*/
+  justify-content: left; /*was center*/
+  padding-left: 90px; /*was deleted*/
+  margin-top: -80px; /*was deleted*/
+/*end of move around*/
+}
+.Logo {
+  padding-left: 2.8rem;
+}
+.Section1 {
+  /*background-color: pink;*/
+  border: 1px solid blue;
+  height: 35%;
+}
+.Section1Title {
+  font-size: 120%;
+  text-align: center;
+}
+.Section1Paragraph {
+  font-size: 75%;
+}
+.Section2 {
+  height: 65%; 
+}
+.Section2Title {
+  font-size: 120%;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000000;
+}
+.Section2Paragraph {
+  font-size: 75%;
+  padding-left: 15px;
+}
+.Section2Paragraph ul {
+  margin: 0px 0px 5px -10px;
+  font-size: 90%;
+  columns: 1;
+  -webkit-columns: 1;
+  -moz-columns: 1;
+  column-rule: none;
+  border-bottom: none;
+}
+.Section2Paragraph li {
+  font-size: 90%;
+  margin: 0 0 0 -45px;
+}
+.Section2Paragraph a {
+  font-size: 90%;
+  font-weight: 600;
+  margin: px 0;
+  padding: 2px;      
+}
+.Section2Paragraph ul a:hover,
+.Section2Paragraph ul a:active {
+  font-size: 110%;
+}
+.Footer {
+   display: none;
+} 
+}
+
+/* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/* END CSS */

@@ -1,0 +1,4 @@
+node_modules
+*_v[0-9]*
+package-lock.json
+build

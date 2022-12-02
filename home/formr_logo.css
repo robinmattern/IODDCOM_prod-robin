@@ -1,0 +1,85 @@
+/* formR Logo  */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+/*-----------------------------------------
+:root selector for variables
+-------------------------------------------*/
+:root { 
+    --LogoFontFamily: "Roboto Slab";
+    /*--GlobalFontFamily: "Frank Ruhl Libre";*/
+    --FormRFontColor1: cornflowerblue;
+    --FormRFontColor2: blue;
+    --FormRFontWeight: 900;
+    --FormRLetterSpacing: -1px;
+    --FormRFontSize-Full: 5rem;
+    --FormRFontSize-420: 3.4rem;
+    --FormRFontSize-760: 4.5rem;
+
+} 
+/*=========================================*/
+/*=========================================*/
+.FormRText1 { /*Roboto Slab*/
+    font-family: var(--LogoFontFamily);
+    font-size: var(--FormRFontSize-Full);
+    font-weight: var(--FormRFontWeight);
+    color: var(--FormRFontColor1);
+    letter-spacing: var(--FormRLetterSpacing);
+    text-shadow: 3px 3px 3px black;
+    margin: 0px 0px 0px 20px;
+}
+
+.FormRText2 { /*Roboto Slab*/
+    font-family: var(--LogoFontFamily);
+    font-size: var(--FormRFontSize-Full);
+    font-weight: var(--FormRFontWeight);
+    color: var(--FormRFontColor2);
+    letter-spacing: var(--FormRLetterSpacing);
+    text-shadow: 3px 3px 3px black;
+}
+
+
+
+/*-----------------------------------------
+The @media MAX-width (760px) query properties
+=========================================*/
+@media (max-width: 760px) {
+    .FormRImage {
+        /*width: 30%;*/
+        background-size: 180px 51px;
+    }
+
+    .FormRText1 { /*Frank Ruhl Libre*/
+        font-size: var(--FormRFontSize-760);
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .FormRText2 { /*Frank Ruhl Libre*/
+        font-size: var(--FormRFontSize-760);
+        text-shadow: 2px 2px 2px black;
+    }
+  }
+
+
+/*-----------------------------------------
+The @media MAX-width (420px) query properties
+=========================================*/
+@media (max-width: 420px) {
+    .FormRImage {
+        /*width: 45%;*/
+        background-size: 144px 41px;
+    }
+
+    .FormRText1 { /*Frank Ruhl Libre*/
+        font-size: var(--FormRFontSize-420);
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .FormRText2 { /*Frank Ruhl Libre*/
+        font-size: var(--FormRFontSize-420);
+        text-shadow: 2px 2px 2px black;
+    }  
+}
+  /*=====================================*/
+
+/* END CSS */

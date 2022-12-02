@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+     width="27px" height="22px" viewBox="-0.5 -0.5 27 22"
+     >
+  <defs>
+    <ref id="aFill" param="fill" default="red"/>
+  </defs>
+  <g>
+    <rect x="0" y="0"  width="25" height="4" fill="url(#aFill)" stroke="none" pointer-events="all"/>
+    <rect x="0" y="8"  width="25" height="4" fill="url(#aFill)" stroke="none" pointer-events="all"/>
+    <rect x="0" y="16" width="25" height="4" fill="url(#aFill)" stroke="none" pointer-events="all"/>
+  </g>
+  <script type="text/ecmascript" xlink:href="https://dev.w3.org/SVG/modules/ref/master/ref2.js"></script>
+</svg>
