@@ -6,8 +6,8 @@
 :root selector for variables
 -------------------------------------------*/
 :root { 
-    --LogoFontFamily: "Roboto Slab";
-    /*--GlobalFontFamily: "Frank Ruhl Libre";*/
+/*    
+    --LogoFontFamily: "Arial, Helvetica, sans-serif";
     --FormRFontColor1: cornflowerblue;
     --FormRFontColor2: blue;
     --FormRFontWeight: 900;
@@ -15,16 +15,16 @@
     --FormRFontSize-Full: 5rem;
     --FormRFontSize-420: 3.4rem;
     --FormRFontSize-760: 4.5rem;
-
+*/
 } 
 /*=========================================*/
 /*=========================================*/
-.FormRText1 { /*Roboto Slab*/
-    font-family: var(--LogoFontFamily);
-    font-size: var(--FormRFontSize-Full);
-    font-weight: var(--FormRFontWeight);
-    color: var(--FormRFontColor1);
-    letter-spacing: var(--FormRLetterSpacing);
+.LogoText1 { /*Roboto Slab*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
     text-shadow: 3px 3px 3px black;
     margin: 0px 0px 0px 20px;
 }
@@ -37,7 +37,12 @@
     letter-spacing: var(--FormRLetterSpacing);
     text-shadow: 3px 3px 3px black;
 }
-
+.LogoTextFull {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
 
 
 /*-----------------------------------------

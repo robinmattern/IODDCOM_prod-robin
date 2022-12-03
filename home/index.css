@@ -14,7 +14,7 @@
     --HeaderList-font-size: 1.1rem;
   
     --Section1_background-color: cornflowerblue;
-    --Section1_background-image: url( 'assets/images/monaco-blue-soft-1.jpg' );
+    --Section1_background-image: url( 'assets/images/Clouds.jpg' );
     --Section1Paragraph-font-color: whitesmoke;  
   
     --Section2-font-color: darkblue;  
@@ -26,8 +26,7 @@
     --Footer_hover-color: blue;
     --FooterListFontSize: .9rem;  
     
-    /*--GlobalFontFamily: "Roboto Slab";*/
-    --GlobalFontFamily: "Frank Ruhl Libre";
+    --GlobalFontFamily: "Arial, Helvetica, sans-serif";
     
     --CalloutIconCheck: "\f14a  \A"; /*checkbox*/
     --CalloutIconCheck: "\f0da  \A"; /*Right Arrow*/
@@ -64,7 +63,7 @@
 The .Header properites
 ------------------------------------------*/
 .Header {
-    background: var(--Header_background-color);
+    background: rgb(175 170 150);
     border-bottom: 1px #000 solid;
     width: 100%;
     height: 10%;
@@ -74,37 +73,7 @@ The .Header properites
     justify-content: space-between;
     align-items: center;
 }
-/*------------------------------------------*/
-  
-.xxxHeaderNavBars {
-    display: none;
-    height: 24px;
-    width: 24px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0px;
-    box-sizing: border-box;
-    margin-left: 20px;
-    margin-top: 0px;
-  }
-/*------------------------------------------*/
-.xxxHeaderNavBars:focus {
-      outline: none;
-  }
- 
-  /*------------------------------------------*/
-.xxxHeaderLogo {
-    width: 224px;
-    height: 64px;
-    margin-bottom: 0px;
-    background-image: var(--HeaderLogo-image);
-    background-size: 224px 64px;
-    background-repeat: no-repeat;
-    margin: var(--HeaderLogo_margin);
-    font-size: 25px;
-    font-weight: 600;
-  }
+
 /*------------------------------------------*/
 .HeaderSpacer {
       flex: 1;
@@ -125,11 +94,13 @@ The .HeaderNavList (horizontal menu) properites
     flex-direction: row;
     align-items: center;
     font-size: var(--HeaderList-font-size);
+    font-family: var(--GlobalFontFamily);
 }
 /*------------------------------------------*/
 .HeaderNavListItem a {
-    color: black;
+    color: white;
     font-weight: bold;
+    font-family: var(--GlobalFontFamily);
     text-decoration: none;
     margin: 8px 0;
     padding: 25px;
@@ -146,6 +117,7 @@ The .HeaderNavList (horizontal menu) properites
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 8px;
+    font-family: var(--GlobalFontFamily);
 }
 /*------------------------------------------*/
 .HeaderNavListItemCTA {
@@ -173,7 +145,7 @@ The @keyframes wiggle properties
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 .Logo {
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 10px 10px;
 }
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -184,13 +156,13 @@ The .Section1 properites
 ------------------------------------------*/
 .Section1 {
     background: var(--Section1_background-image);
-    background-color: var(--Section1_background-color);
+    /*background-color: whitesmoke;*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-bottom: 1px black solid;
     width: 100%;
-    height: 30%;
+    height: 50%;
     position: relative;
     top: 10%;
     overflow: auto;
@@ -199,18 +171,22 @@ The .Section1 properites
 .Section1Title {
     font-size: 2.5rem;
     font-weight: bolder;
-    color: lightgray;
+    color: white;
     text-shadow: 1px 1px 3px #000000;
     text-align: left; 
     padding-left: 1.3rem; 
   }
 /*------------------------------------------*/
 .Section1Title::first-letter {
-    font-size: 130%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
 }
 /*------------------------------------------*/
 .Section1Paragraph {
-  margin: 10px 20px 0px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 300;
+  margin: 80px 20px 0px 40px;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -224,25 +200,28 @@ The .Section2 properites
 ------------------------------------------*/
 .Section2 {
     background: var(--Section2_background-color);
+    background-image: ;
     width: 100%;
-    height: 60%;
+    height: 40%;
     position: relative;
-    color: var(--Section2-font-color);
+    color: black;
     top:10%; /*<---ADD to adjust the top position*/
     overflow: auto;
   }
 /*------------------------------------------*/
 .Section2Title {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
-  font-weight: 600;
-  color: blue;
+  font-weight: bolder;
+  color: darkgray;
   text-shadow: 1px 1px 2px #000000;
   text-align: left; 
-  padding-left: 1.6rem; 
+  padding-left: 1.3rem; 
 }
 /*------------------------------------------*/
 .Section2Title::first-letter {
-  font-size: 130%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
 }
 /*------------------------------------------*/
 .Section2Paragraph {
@@ -254,12 +233,13 @@ The .Section2 properites
 .Section2Paragraph ul {
     list-style-type: none;
     margin: 5px 0px 5px 10px;
-    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5px;
     columns: 3;
     -webkit-columns: 3;
     -moz-columns: 3;
     text-decoration: none;
-    border-bottom: 1px #333 dotted;
+    border-bottom: 0px #333 dotted;
 /*    column-rule: dotted 1px #333;*/
 
   }
@@ -275,11 +255,12 @@ The .Section2 properites
 /*------------------------------------------*/  
   .Section2Paragraph a {
     color: black;
-    font-size: .85rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     margin: 8px 0;
-    padding: 2px;
+    padding: 6px;
 }
 /*------------------------------------------*/
 .Section2Paragraph ul a:hover,
@@ -377,7 +358,7 @@ The @media MAX-width query properties
     /*end of move around*/
     }
   .Logo {
-    padding-left: 2.8rem;
+    padding-left: 60px;
   }
   .Section1 {
     /*background-color: purple;*/
