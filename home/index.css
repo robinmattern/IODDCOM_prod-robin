@@ -14,7 +14,7 @@
     --HeaderList-font-size: 1.1rem;
   
     --Section1_background-color: cornflowerblue;
-    --Section1_background-image: url( 'assets/images/Clouds.jpg' );
+    --Section1_background-image: url( 'assets/images/Cloud2.jpg' );
     --Section1Paragraph-font-color: whitesmoke;  
   
     --Section2-font-color: darkblue;  
@@ -63,8 +63,8 @@
 The .Header properites
 ------------------------------------------*/
 .Header {
-    background: rgb(175 170 150);
-    border-bottom: 1px #000 solid;
+    background: rgb(198 210 222);
+    border-bottom: 0px #000 solid;
     width: 100%;
     height: 10%;
     position: fixed;  /*was relative*/
@@ -98,7 +98,7 @@ The .HeaderNavList (horizontal menu) properites
 }
 /*------------------------------------------*/
 .HeaderNavListItem a {
-    color: white;
+    color: black;
     font-weight: bold;
     font-family: var(--GlobalFontFamily);
     text-decoration: none;
@@ -160,35 +160,37 @@ The .Section1 properites
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-bottom: 1px black solid;
+    border-bottom: 0px black solid;
     width: 100%;
-    height: 50%;
+    height: 40%;
     position: relative;
     top: 10%;
     overflow: auto;
 }
 /*------------------------------------------*/
 .Section1Title {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: bolder;
     color: white;
     text-shadow: 1px 1px 3px #000000;
     text-align: left; 
-    padding-left: 1.3rem; 
+    padding-left: 25px; 
   }
 /*------------------------------------------*/
 .Section1Title::first-letter {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 200%;
+  font-size: 120%;
 }
 /*------------------------------------------*/
 .Section1Paragraph {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-weight: 300;
-  margin: 80px 20px 0px 40px;
-  font-size: 1rem;
+  margin: 10px 20px 0px 40px;
+  font-size: 25px;
   font-weight: 600;
+  text-shadow: 1px 1px 3px #000000;
+
 }
 /* Section-1 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
@@ -199,10 +201,10 @@ The .Section1 properites
 The .Section2 properites
 ------------------------------------------*/
 .Section2 {
-    background: var(--Section2_background-color);
+    background: aliceblue;
     background-image: ;
     width: 100%;
-    height: 40%;
+    height: 50%;
     position: relative;
     color: black;
     top:10%; /*<---ADD to adjust the top position*/
@@ -211,37 +213,38 @@ The .Section2 properites
 /*------------------------------------------*/
 .Section2Title {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: bolder;
-  color: darkgray;
-  text-shadow: 1px 1px 2px #000000;
+  color: blue;
+  text-shadow: 2px 2px 3px gray;
   text-align: left; 
-  padding-left: 1.3rem; 
+  padding-left: 22px; 
 }
 /*------------------------------------------*/
 .Section2Title::first-letter {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 200%;
+  font-size: 120%;
 }
 /*------------------------------------------*/
 .Section2Paragraph {
-    margin: 0px 20px 0px 65px;
+    margin: 0px 20px 0px 25px;
     font-size: .9rem;
     font-weight: 600;
   }
 /*------------------------------------------*/
 .Section2Paragraph ul {
     list-style-type: none;
-    margin: 5px 0px 5px 10px;
+    margin: 20px 0px 5px 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 5px;
     columns: 3;
     -webkit-columns: 3;
     -moz-columns: 3;
     text-decoration: none;
-    border-bottom: 0px #333 dotted;
-/*    column-rule: dotted 1px #333;*/
-
+    display:flexbox;
+    column-rule: dotted 1px #333;
+    column-width: auto; 
+    border-bottom: dotted 1px black;
   }
 /*------------------------------------------*/
 .Section2Paragraph ul li:before { 
@@ -256,8 +259,9 @@ The .Section2 properites
   .Section2Paragraph a {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
+    text-shadow: 0px 0px 0px gray;
     text-decoration: none;
     margin: 8px 0;
     padding: 6px;
@@ -266,8 +270,15 @@ The .Section2 properites
 .Section2Paragraph ul a:hover,
 .Section2Paragraph ul a:active {
     color: var(--Section2Paragraph_hover-color);
-    font-size: 95%;
   }  
+.MainOrderedList {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin: 15px 0px 0px 30px;
+  text-decoration: underline;
+}
 /* Section2 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -277,13 +288,15 @@ The .Section2 properites
 The .Footer properites
 ------------------------------------------*/
 .Footer {
-    background: var(--Footer_background-color);
-    width: 100%; 
-    /*top: 10%;  /*Removed in place of the bottom property*/
-    border-top: 1px solid darkgray;
-    bottom: 0;
-    position: fixed;
-    z-index: 99;
+  background: rgb(175 170 150);
+  background: rgb(198 210 222);
+  width: 100%;
+  height: 60px; 
+  /*top: 10%;  /*Removed in place of the bottom property*/
+  border-top: 0px solid darkgray;
+  bottom: 0;
+  position: fixed;
+  z-index: 99;
   } 
 /*------------------------------------------*/
 .FooterNavList {
