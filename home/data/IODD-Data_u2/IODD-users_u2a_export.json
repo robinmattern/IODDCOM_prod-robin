@@ -1,0 +1,24 @@
+{ "results":
+  {"columns":
+    [ {"name":"id","type":""}
+    , {"name":"username","type":""}
+    , {"name":"email","type":""}
+    , {"name":"password","type":""}
+    , {"name":"active","type":""}
+    , {"name":"group","type":""}
+    , {"name":"role","type":""}
+    , {"name":"passworddate","type":""}
+    , {"name":"createdAt","type":""}
+    , {"name":"updatedAt","type":""}
+    ]
+  ,"items":
+    [ {"id":1,"username":"editor","email":"editor_io@formr.com","password":"$2a$08$DNPWgsLyg5DC8ipxwrv0hu7qSXwHKO.3wGgiDXTjn4YntV\/p69lAy","active":"Yes","group":"\/GRP1\/","role":"Editor","passworddate":"2020-12-03","createdat":"2021-04-14 16:32:37.0","updatedat":"2021-04-14 16:32:37.0"}
+    , {"id":7,"username":"admin","email":"admin@formr.com","password":"$2a$08$DNPWgsLyg5DC8ipxwrv0hu7qSXwHKO.3wGgiDXTjn4YntV\/p69lAy","active":"Yes","group":"\/","role":"Admin","passworddate":"2020-12-01","createdat":"2021-04-14 14:22:17.0","updatedat":"2021-04-14 14:22:17.0"}
+    , {"id":137,"username":"Viewer","email":"viewer@formr.com","password":"$2a$08$m78o14WXtgIJSVgCSuCn2ubKxabOrzxtX85RD4t3bIGAapB.rBxne","active":"yes","group":"\/GRP1\/","role":"Viewer","passworddate":"2021-07-12","createdat":"2021-04-14 14:22:17.0","updatedat":"2021-04-14 14:22:17.0"}
+    , {"id":138,"username":"robin1","email":"robin.mattern@gmail.com","password":"$2a$08$JuLznKOSAhRb1Mo7r7hrcO6Zw2t8daVY8.\/OJVlv1VhXlR5AgVs3.","active":"yes","role":"user","passworddate":"2021-11-27","createdat":"2021-08-29 22:31:12.0","updatedat":"2021-08-29 22:31:12.0"}
+    , {"id":139,"username":"robin94","email":"suzee.parker94@gmail.com","password":"1234","active":"Yes","role":"User","passworddate":"2021-11-27","createdat":"2021-08-30 00:52:34.0","updatedat":"2021-08-30 00:52:34.0"}
+    , {"id":140,"username":"robin33","email":"robin.mattern33@gmail.com","password":"$2a$08$JYWeTJpW7m7FOiFQKgPP\/eIOxtiMw9Tg.SbhiJpwHJo3QiQQDL0qe","active":"yes","role":"viewer","passworddate":"2021-11-27","createdat":"2021-08-30 02:38:34.0","updatedat":"2021-08-30 02:38:34.0"}
+    , {"id":141,"username":"robin34","email":"robin.mattern34@gmail.com","password":"$2a$08$kK8Na2zEPXd9ryLJKSvI2uzhbVMQggJfQ0MUyEMuhic9mtJX.v5Za","active":"yes","role":"viewer","passworddate":"2021-11-28","createdat":"2021-08-30 15:02:55.0","updatedat":"2021-08-30 15:02:55.0"}
+    ]
+  }
+}
