@@ -1,9 +1,8 @@
-       var  pFS      =  require( 'fs' )
        var  inspect  =  function( pObj ) { return require( 'util' ).inspect( pObj, { depth: 99 } ) }
 
 //---------------------------------------------------------------------------------------------------
 
-  function  shoJSON_Counts( aFile ) {
+     const  shoJSON_Counts = function( aFile ) {
        var  pJSON    =  parseJSON( aFile )
 
             console.log( shoHeader( aFile, pJSON ) )
@@ -18,9 +17,17 @@
             }
 //--------  -------  =  -------------------------------------------------------
 
+  function  shoJSON_HTML( aFile ) {
+       var  pJSON    =  parseJSON( aFile )
+
+       var  aHTML    =  fmtMembers( pJSON )
+            console.log( aHTML )
+            }
+//--------  -------  =  -------------------------------------------------------
+
             shoJSON_Object( "IODD-members_u2c_export.json" )
             shoJSON_Counts( "IODD-members_u2c_export.json" )
-            shoJSON_HTML(   "IODD-members_u2c_export.json" )
+            shoJSON_HTML(   "IODD-members_u2a_export.json" )
             process.exit()
 
             shoJSON_Counts( "IODD-users_u2a_export.json" )
@@ -35,32 +42,33 @@
 
 //---------------------------------------------------------------------------------------------------
 
-  function  shoJSON_HTML( aFile ) {
-       var  pJSON    =  parseJSON( aFile )
-       var  pMembers =  pJSON.results.items
+  function  fmtMembers( pJSON ) {     
+       var  mMembers =  pJSON.results.items
 
-       var  aHTML    =  pMembers.map( fmtMember ).join( "\n" )
-
-            console.log( aHTML )
-
+       var  aHTML    =  mMembers.map( fmtMember ).join( "\n" )
+//     var  mHTMLs=[];  mMembers.forEach( ( pMember, i ) => { fmtMember( pMember, i ) } ); aHTML = mHTMLs.join( "\n" ) 
+    return  aHTML
+            
 //     ---  -------  =  -----------------------------------
 
-  function  fmtMember( pMember ) {
+  function  fmtMember( pMember, i ) {
 
        var  aMI      =     pMember.middlename;  aMI = ( aMI  > "" ) ?   `${ aMI.substr(0,1) }. ` : ""
        var  aName    = `${ pMember.firstname }${aMI} ${ pMember.lastname }`
        var  aPhone   =     pMember.phone1 + ( pMember.phone2 > ""   ? `, ${ pMember.phone2  }` : "" )
        var  aEmail   =     pMember.email
 
-       var  aRow     = '<tr>\n'
-                     + `  <td><strong><a href="syschangepassword.asp?username=${ aName }">${ aName }</a></strong></td>\n`
+       var  aRow     = `<tr id="R${ `${ i + 1 }`.padStart( 3, "0" ) }">\n`
+                     + `  <td><strong><a href="syschangepassword.js?username=${ aName }">${ aName }</a></strong></td>\n`
                      + `  <td><small ><a href="mailto:${ aEmail }">Email Address</a></small></td>\n`
                      + `  <td><small >${ aPhone }&nbsp;&nbsp;&nbsp;</small></td>\n`
-                     + "</tr>\n"
+                     + `</tr>\n`
+
+//          mHTMLs.push( aRow )                  
      return aRow
             }   // eof  fmtMember
 //     ---  -------  =  ----------------------------------
-            }   // eof  shoJSON_HTML
+            }   // eof  fmtMembers
 //--------  -------  =  -------------------------------------------------------
 
   function  shoHeader(  aFile, pJSON ) {
@@ -73,10 +81,18 @@
 //--------  -------  =  -------------------------------------------------------
 
   function  parseJSON(  aFile ) {
-       var  aText    =  pFS.readFileSync( aFile, "ASCII" )
+       var  pFS      =  require( 'fs' )
+       var  aDir     =  __dirname
+       var  aText    =  pFS.readFileSync( `${aDir}/${aFile}`, "ASCII" )
             aText    =  aText.replace( //g, "'" )
             aText    =  aText.replace( //g, "'" )
+
+        if (aFile.match( /\.json$/)) {   
        var  pJSON    =  JSON.parse( aText )
+            }
+        if (aFile.match( /\.js$/)) {   
+            eval( aText )    
+            }
     return  pJSON
             }   // eof  parseJSON
 //--------  -------  =  -------------------------------------------------------
