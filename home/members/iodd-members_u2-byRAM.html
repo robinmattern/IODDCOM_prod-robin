@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="assets/json/IODD-members_u2a.json.js" ></script>
+<!--<script src="http:127.0.0.1:50003/api/members" ></script>-->
+    <script src="assets/js/IODD-members.js" ></script>
+  </head>
+  <body>
+    <table id="Members">
+    </table>
+    <script>
+      var pMembers = document.getElementById( "Members" )
+          pMembers.innerHTML = fmtMembers( pJSON )
+    </script>
+  </body>  
+</html>
+
