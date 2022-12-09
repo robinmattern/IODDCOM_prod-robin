@@ -22,7 +22,7 @@ body {
     margin: -10px 0px 0px 40px;
 }
 .main-table {
-    margin: 20px 0 0 50px;
+    margin: 20px 0 0 30px;
     border-collapse: collapse;
     width: 85%;
     border: black 0px solid;
@@ -30,13 +30,16 @@ body {
 .head-row {
     font-size: 20px;
     text-decoration: underline;
-    padding-bottom: 10px;
+    padding-left: 0px;
+    background-color: #C0C0C0;
+    color: balck;
+    height: 25px;
 }
-.row-odd {
+.xrow-odd {
     background-color: #DCDCDC;
 }
-.xrow-even {
-    background-color: #c0c0c0;
+.row-even {
+    background-color: #DCDCDC;
 }
 .name {
     font-size: 18px;
