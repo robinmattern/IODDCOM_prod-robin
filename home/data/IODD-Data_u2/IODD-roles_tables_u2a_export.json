@@ -1,0 +1,48 @@
+{"results":
+  {"columns":
+    [ {"name":"id","type":""}
+    , {"name":"tableId","type":""}
+    , {"name":"roleId","type":""}
+    , {"name":"allowInsert","type":""}
+    , {"name":"allowUpdate","type":""}
+    , {"name":"allowDelete","type":""}
+    , {"name":"createdAt","type":""}
+    , {"name":"updatedAt","type":""}
+    ]
+  ,"items":
+    [ {"id":1,"tableid":1,"roleid":3,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-12-01 16:00:58.0"}
+    , {"id":2,"tableid":2,"roleid":3,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":3,"tableid":3,"roleid":3,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":4,"tableid":4,"roleid":3,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":5,"tableid":5,"roleid":3,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":6,"tableid":7,"roleid":3,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":7,"tableid":8,"roleid":3,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":8,"tableid":9,"roleid":3,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":9,"tableid":10,"roleid":3,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":10,"tableid":11,"roleid":3,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":11,"tableid":12,"roleid":3,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":129,"tableid":1,"roleid":1,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":130,"tableid":2,"roleid":1,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":131,"tableid":3,"roleid":1,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":132,"tableid":4,"roleid":1,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":133,"tableid":5,"roleid":1,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":134,"tableid":7,"roleid":1,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":135,"tableid":8,"roleid":1,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":136,"tableid":9,"roleid":1,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":137,"tableid":10,"roleid":1,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":138,"tableid":11,"roleid":1,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":139,"tableid":12,"roleid":1,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":140,"tableid":1,"roleid":2,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":141,"tableid":2,"roleid":2,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":142,"tableid":3,"roleid":2,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":143,"tableid":4,"roleid":2,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":144,"tableid":5,"roleid":2,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":145,"tableid":7,"roleid":2,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":146,"tableid":8,"roleid":2,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":147,"tableid":9,"roleid":2,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":148,"tableid":10,"roleid":2,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":149,"tableid":11,"roleid":2,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    , {"id":150,"tableid":12,"roleid":2,"allowinsert":1,"allowupdate":1,"allowdelete":1,"createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 18:22:40.0"}
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{"results":
+  {"columns":
+    [ {"name":"MemberID","type":""}
+    , {"name":"MemberNo","type":""}
+    , {"name":"TitleName","type":""}
+    , {"name":"FirstName","type":""}
+    , {"name":"Middlename","type":""}
+    , {"name":"LastName","type":""}
+    , {"name":"PostName","type":""}
+    , {"name":"Company","type":""}
+    , {"name":"Address1","type":""}
+    , {"name":"Address2","type":""}
+    , {"name":"City","type":""}
+    , {"name":"State","type":""}
+    , {"name":"Zip","type":""}
+    , {"name":"Country","type":""}
+    , {"name":"Phone1","type":""}
+    , {"name":"Phone2","type":""}
+    , {"name":"Fax","type":""}
+    , {"name":"WebSite","type":""}
+    , {"name":"Email","type":""}
+    , {"name":"Skills","type":""}
+    , {"name":"Active","type":""}
+    , {"name":"Bio","type":""}
+    , {"name":"createdAt","type":""}
+    , {"name":"updatedAt","type":""}
+    , {"name":"LastUpdated","type":""}
+    ]
+  ,"items":
+    [ {"memberid":1,"memberno":1,"titlename":"Ms.","firstname":"Carolyn","middlename":"","lastname":"Adelsten1","postname":"","company":"WebSoft, Inc.","address1":"14929 Cub Run Park Drive","address2":"","city":"Centreville","state":"VA","zip":"22120","country":"USA","phone1":"703-755-7994","phone2":"703-815-1030","fax":"","website":"","email":"carolyn.adelsten@websoft-inc.com","skills":"abc","active":"N","bio":"Carolyn is a consulting project manager. Her current project is with Teligent","createdat":"2020-11-06 23:20:25.0","updatedat":"2020-11-30 23:09:15.0","lastupdated":"2020-11-06 23:20:25.0"}
+    , {"memberid":104,"memberno":40,"titlename":"Mr.","firstname":"John","middlename":"B.","lastname":"Hagan","company":"Commonwealth Technology Consulting, Inc.","address1":"PO Box 479","city":"Norfolk","state":"VA","zip":"23501","country":"USA","phone1":"757-575-8000","website":"http:\/\/www.commonwealthtc.com\/","email":"John@CommonwealthTC.com","active":"Y","bio":"John Hagan has been in IT support since ‘93 and currently runs Commonwealth Technology Consulting, Inc. He has a background in networking, desktop\/server implementation, call center management, and end user support. Areas of expertise include Windows environments, MS Exchange, IIS, VPN, Wireless, Switching and Routing, Dell and HP servers.","createdat":"2020-11-06 23:20:25.0","lastupdated":"2020-11-06 23:20:25.0"}
+    ]
+  }
+}

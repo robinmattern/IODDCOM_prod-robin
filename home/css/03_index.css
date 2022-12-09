@@ -7,26 +7,9 @@
 :root selector for variables
 -------------------------------------------*/
 :root {
-    --Header_background-color: whitesmoke; 
-    --Header_hover-color:blue;
-    --HeaderLogo-image: url( 'assets/images/formR-icon.jpg' );
-    --HeaderLogo_margin: 0px 0px 0px 50px;
-    --HeaderList-font-size: 1.1rem;
-  
-    --Section1_background-color: cornflowerblue;
-    --Section1_background-image: url( 'assets/images/cloud2.jpg' );
-    --Section1Paragraph-font-color: whitesmoke;  
-  
-    --Section2-font-color: darkblue;  
-    --Section2_background-color: whitesmoke;
-    --Section2Paragraph-font-color: darkblue;  
-    --Section2Paragraph_hover-color: blue;
-
-    --Footer_background-color:whitesmoke; 
-    --Footer_hover-color: blue;
-    --FooterListFontSize: .9rem;  
-    
     --GlobalFontFamily: "Arial, Helvetica, sans-serif";
+    --HeaderFooterBGColor: rgb(198 210 222);
+    --NextMeetingDate: "02/09/2023";    
     
     --CalloutIconCheck: "\f14a  \A"; /*checkbox*/
     --CalloutIconCheck: "\f0da  \A"; /*Right Arrow*/
@@ -37,6 +20,7 @@
     --CalloutIconCheck: "\f064  \A"; /*Forward Arrow*/
     --CalloutIconCheck: "\f0ae  \A"; /*ToDo List*/
     --CalloutIconCheck: "\f35a  \A"; /*Right Arrow in Circles*/
+
     --CalloutIconFontFamily: "Font Awesome 5 Free";    
 
 } 
@@ -45,8 +29,8 @@
     box-sizing          :  border-box;
     padding             :  0;
     margin              :  0;
-    font-family         :  var(--GlobalFontFamily);
-    font-size           :  1rem;
+    font-family         :  "Arial, Helvetica, sans-serif";
+    font-size           :  16px;
     }
 
 .container {            /* custom element style */
@@ -56,17 +40,18 @@
     height              :  100vh;
     } 
 
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
+/*Next meeting date*/
+.next-meeting-date::after {
+  content: var(--NextMeetingDate);
+    }
 /*-----------------------------------------
 The .Header properites
 ------------------------------------------*/
 .Header {
-    background: rgb(198 210 222);
+    background: var(--HeaderFooterBGColor);
     border-bottom: 0px #000 solid;
     width: 100%;
-    height: 10%;
+    height: 70px;
     position: fixed;  /*was relative*/
     z-index: 100;
     display: flex;
@@ -80,9 +65,6 @@ The .Header properites
   }
 /* Header END^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
   
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
 /*-----------------------------------------
 The .HeaderNavList (horizontal menu) properites
 ------------------------------------------*/
@@ -93,14 +75,14 @@ The .HeaderNavList (horizontal menu) properites
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: var(--HeaderList-font-size);
-    font-family: var(--GlobalFontFamily);
+    font-size: 20px;
+    font-family: "Arial, Helvetica, sans-serif";
 }
 /*------------------------------------------*/
 .HeaderNavListItem a {
     color: black;
     font-weight: bold;
-    font-family: var(--GlobalFontFamily);
+    font-family: "Arial, Helvetica, sans-serif";
     text-decoration: none;
     margin: 8px 0;
     padding: 25px;
@@ -108,7 +90,7 @@ The .HeaderNavList (horizontal menu) properites
 /*------------------------------------------*/
 .HeaderNavListItem a:hover,
 .HeaderNavListItem a:active {
-    color: var(--Header_hover-color);
+    color: blue;
 }
 /*------------------------------------------*/
 .HeaderNavListItemCTA a {
@@ -117,7 +99,7 @@ The .HeaderNavList (horizontal menu) properites
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    font-family: var(--GlobalFontFamily);
+    font-family: "Arial, Helvetica, sans-serif";
 }
 /*------------------------------------------*/
 .HeaderNavListItemCTA {
@@ -135,37 +117,34 @@ The @keyframes wiggle properties
 /*------------------------------------------*/
 .HeaderNavListItemCTA a:hover,
 .HeaderNavListItemCTA a:active {
-    color: var(--Header_hover-color);
+    color: blue;
     color: #C0C0C0;
 }
 
 /* Header Nav END ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
   
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
 .Logo {
   padding: 0px 0px 10px 10px;
 }
 
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Logo END ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
 
 /*-----------------------------------------
 The .Section1 properites
 ------------------------------------------*/
 .Section1 {
-    background: var(--Section1_background-image);
-    /*background-color: whitesmoke;*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-bottom: 0px black solid;
-    width: 100%;
-    height: 39%;
-    position: relative;
-    top: 10%;
-    overflow: auto;
+  background: url( '../assets/images/cloud2.jpg');
+  /*background-color: whitesmoke;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 0px black solid;
+  width: 100%;
+  height: 35%;
+  position: relative;
+  top: 70px;
+  overflow: auto;
 }
 /*------------------------------------------*/
 .Section1Title {
@@ -189,14 +168,10 @@ The .Section1 properites
   margin: 20px 20px 0px 40px;
   font-size: 22px;
   font-weight: 600;
-  text-shadow: 1px 1px 3px #000000;
-
+  text-shadow: 1px 1px 3px black;
+  text-align: left !important;
 }
 /* Section-1 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
 /*-----------------------------------------
 The .Section2 properites
 ------------------------------------------*/
@@ -204,10 +179,10 @@ The .Section2 properites
     background: aliceblue;
     background-image: ;
     width: 100%;
-    height: 51%;
+    height: 65%;
     position: relative;
     color: black;
-    top:10%; /*<---ADD to adjust the top position*/
+    top: 70px; /*<---ADD to adjust the top position*/
     overflow: auto;
   }
 /*------------------------------------------*/
@@ -236,7 +211,6 @@ The .Section2 properites
     list-style-type: none;
     margin: 20px 0px 5px 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 5px;
     columns: 3;
     -webkit-columns: 3;
     -moz-columns: 3;
@@ -269,7 +243,7 @@ The .Section2 properites
 /*------------------------------------------*/
 .Section2Paragraph ul a:hover,
 .Section2Paragraph ul a:active {
-    color: var(--Section2Paragraph_hover-color);
+    color: blue;
   }  
 .MainOrderedList {
   font-size: 20px;
@@ -281,15 +255,12 @@ The .Section2 properites
 }
 /* Section2 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
 /*-----------------------------------------
 The .Footer properites
 ------------------------------------------*/
 .Footer {
   background: rgb(175 170 150);
-  background: rgb(198 210 222);
+  background: var(--HeaderFooterBGColor);
   width: 100%;
   height: 60px; 
   /*top: 10%;  /*Removed in place of the bottom property*/
@@ -311,7 +282,7 @@ The .Footer properites
 .FooterNavListItem a {
     color: black;
     font-weight: bold;
-    font-size: var(--FooterListFontSize);
+    font-size: 20px;
     text-decoration: none;
     margin: 8px 0;
     padding: 12px;
@@ -319,7 +290,7 @@ The .Footer properites
 /*------------------------------------------*/
 .FooterNavListItem a:hover,
 .FooterNavListItem a:active {
-  color: var(--Footer_hover-color);
+  color: blue;
 }
 
 .footer-break{
@@ -330,203 +301,6 @@ The .Footer properites
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-/* Responsive Code */  
-/*The @media MIN-width query properties
-***** About 75% of my Mac book 15" screen on chrome
-=========================================*/
-@media only screen and (min-width: 1200px) {
-
-  /*@media (max-width: 1000px) {*/
-    /*
-    .Section1 {
-      background-color: lightskyblue;
-    }
-    */
-    .Section1Paragraph {
-      font-size: 125%;
-    } 
-  }  
-
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
-/*-----------------------------------------
-The @media MAX-width query properties
-***** IPAD
-=========================================*/
-@media only screen and (max-width: 860px) {
-
-/*@media (max-width: 760px) {*/
-
-  .Header {
-    height: 80px;
-  } 
-  .HeaderNavList {
-    display: none;
-  }
-  .MenuWrap {
-    display: flex;
-  }
-  .MenuWrap .Menu > div {
-    /*move menu around*/
-      justify-content: left; /*was center*/
-      padding-left: 140px; /*was deleted*/
-      margin-top: -310px; /*was deleted*/
-    /*end of move around*/
-    }
-  .Logo {
-    padding-left: 60px;
-  }
-  .Section1 {
-    /*background-color: purple;*/
-    border: 1px solid blue;
-    height: 30%;    
-    top: 80px;
-  }  
-   .Section1Title {
-    font-size: 1.5rem;
-    padding: 5px 10px 0px 20px;
-    text-align: center;
-  }
-  .Section1Paragraph {
-    font-size: 95%;
-  }
-  .Section2 {
-    height: 70%; 
-  }  
-  .Section2Title {
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 2px #000000;
-    padding: 5px 10px 0px 22px;
-    text-align: center;
-  }
-  .Section2Paragraph ol {
-    font-size: 125%;
-  }
-  .Section2Paragraph ul {
-    font-size: 100%;
-    margin: 5px 0px 10px 10px;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;  
-  }
-  .Section2Paragraph li {
-    font-size: 80%;
-  }
-  .Section2Paragraph a {
-    font-size: 100%;
-    font-weight: 600;
-    margin: 8px 0;
-    padding: 2px;
-  }
-  .Section2Paragraph ul a:hover,
-  .Section2Paragraph ul a:active {
-    font-size: 110%;
-  } 
-  .Footer {
-    display: none;
-  }
-}
-
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
-/*-----------------------------------------
-The @media MIN-width query properties
-IPHONE *****
-=========================================*/
-@media only screen and (max-width: 400px) {
-/*@media (min-width: 400px) {*/
-.Header {
-   height: 60px;
-}
-.HeaderNavList {
-    display: none;
-}
-.MenuWrap {
-    display: flex;
-}
-.MenuWrap .Menu > div {
-/*move menu around*/
-  justify-content: left; /*was center*/
-  padding-left: 90px; /*was deleted*/
-  margin-top: -80px; /*was deleted*/
-/*end of move around*/
-}
-.Logo {
-  padding-left: 2.8rem;
-}
-.Section1 {
-  /*background-color: pink;*/
-  border: 0px solid blue;
-  top: 60px;
-  height: 45%;
-}
-.Section1Title {
-  font-size: 150%;
-  text-align: center;
-}
-.Section1Paragraph {
-  font-size: 100%;
-  margin: 40px 20px 0px 20px;
-}
-.Section2 {
-  height: 36%; 
-  top: 60px;
-}
-.Section2Title {
-  font-size: 150%;
-  text-align: center;
-  text-shadow: 1px 1px 1px #000000;
-}
-.Section2Paragraph {
-  font-size: 75%;
-  padding-left: 15px;
-  margin: 5px 0px 5px 60px;
-}
-.Section2Paragraph ul {
-  margin: 0px 0px 5px 30px;
-  font-size: 110%;
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  column-rule: none;
-  border-bottom: none;
-}
-.Section2Paragraph li {
-  font-size: 100%;
-  margin: 0px 0px 5px -40px;
-}
-.Section2Paragraph a {
-  font-size: 90%;
-  font-weight: 600;
-  margin: 0px;
-  padding: 2px;      
-}
-.Section2Paragraph ul a:hover,
-.Section2Paragraph ul a:active {
-  font-size: 110%;
-}
-.Footer {
-   display: block;
-   position: relative;
-   top: 60px;
-   height: 10%;
-   bottom: 0;
-} 
-.FooterNavList {
-  margin-top: 10px;
-  padding: 0;
-}
-/*------------------------------------------*/
-.FooterNavListItem a {
-  font-size: 15px;
-  margin-top: 18px;
-  padding-top: 12px;
-}
-}
-
-/* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 
-/* END CSS */
+/* END CSS*/

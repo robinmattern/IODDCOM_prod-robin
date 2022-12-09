@@ -1,0 +1,27 @@
+{"results":
+  {"columns":
+    [ {"name":"id","type":""}
+    , {"name":"name","type":""}
+    , {"name":"title","type":""}
+    , {"name":"group","type":""}
+    , {"name":"description","type":""}
+    , {"name":"enabled","type":""}
+    , {"name":"url","type":""}
+    , {"name":"createdAt","type":""}
+    , {"name":"updatedAt","type":""}
+    ]
+  ,"items":
+    [ {"id":1,"name":"members","title":"Members","group":"Tables","description":"A Members Table","enabled":1,"url":"\/members","createdat":"2020-11-18 02:59:10.0","updatedat":"2020-12-01 15:38:16.0"}
+    , {"id":2,"name":"tutorials","title":"Tutorials","group":"Tables","description":"A Tutorials Table","enabled":1,"url":"\/tutorials","createdat":"2020-11-18 02:59:10.0","updatedat":"2020-11-18 02:59:10.0"}
+    , {"id":3,"name":"users","title":"Users","group":"Admin","description":"A Users Table","enabled":1,"url":"\/users","createdat":"2020-11-18 02:59:10.0","updatedat":"2020-11-18 02:59:10.0"}
+    , {"id":4,"name":"roles","title":"Roles","group":"Admin","description":"A Roles Table","enabled":1,"url":"\/roles","createdat":"2020-11-18 02:59:10.0","updatedat":"2020-11-18 02:59:10.0"}
+    , {"id":5,"name":"user_roles","title":"User Roles","group":"Views","description":"A User Roles View","enabled":1,"url":"\/user_roles","createdat":"2020-11-18 02:59:10.0","updatedat":"2020-11-18 02:59:10.0"}
+    , {"id":7,"name":"configurations","title":"Configurations","group":"Admin","description":"A System Configurations Table","enabled":1,"url":"\/configurations","createdat":"2020-11-24 05:00:00.0","updatedat":"2020-11-24 05:00:00.0"}
+    , {"id":8,"name":"lookups","title":"Look Ups","group":"Admin","description":"A Look Ups Table","enabled":1,"url":"\/lookups","createdat":"2020-11-25 05:00:00.0","updatedat":"2020-11-25 05:00:00.0"}
+    , {"id":9,"name":"members_projects","title":"Members Projects","group":"Tables","description":"A Members Projects Table","enabled":1,"url":"\/members_projects","createdat":"2020-11-25 05:00:00.0","updatedat":"2020-11-25 05:00:00.0"}
+    , {"id":10,"name":"roles_tables","title":"Roles Tables","group":"Admin","description":"A Roles Table","enabled":0,"url":"\/roles_tables","createdat":"2020-11-25 05:00:00.0","updatedat":"2020-11-25 05:00:00.0"}
+    , {"id":11,"name":"projects","title":"Projects","group":"Tables","description":"A Projects Table","enabled":1,"url":"\/projects","createdat":"2020-11-25 05:00:00.0","updatedat":"2020-11-25 05:00:00.0"}
+    , {"id":12,"name":"tables","title":"Tables","group":"Admin","description":"A Table Table","enabled":1,"url":"\/tables","createdat":"2020-11-25 05:00:00.0","updatedat":"2020-11-25 05:00:00.0"}
+    ]
+  }
+}
