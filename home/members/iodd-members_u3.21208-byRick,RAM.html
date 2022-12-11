@@ -5,24 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>Home</title>
-        <link rel="shortcut icon" href="favicon.png">
+        <title>Members</title>
+        <link rel="shortcut icon" href="/home/favicon.png">
         <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+        <link rel="stylesheet"    href="../hamburger2.css">
 
-        <!--BEGINNING OF STYLE SHEETS (CSS)-->
-        <link rel="stylesheet"    href="css/01_iodd_logo.css">
-        <link rel="stylesheet"    href="css/02_hamburger1.css">
-        <link rel="stylesheet"    href="css/02_hamburger2.css">
-        <link rel="stylesheet"    href="css/03_index.css">
+        <link rel="stylesheet"    href="../css/01_iodd_logo.css">
+        <!--<link rel="stylesheet"    href="css/01_pfep_logo.css">-->
+        <link rel="stylesheet"    href="../css/02_hamburger1.css">
+        <link rel="stylesheet"    href="../css/03_index.css">
+        <link rel="stylesheet"    href="../css/04_main-menu.css">
+        <link rel="stylesheet"    href="../css/05_navbar.css">
+        <link rel="stylesheet"    href="../css/06_resp_1900-3000-desktop.css">
+        <link rel="stylesheet"    href="../css/07_resp_1100-1900-laptop.css">
+        <link rel="stylesheet"    href="../css/08_resp_950-1100-tabletLandscape.css">
+        <link rel="stylesheet"    href="../css/09_resp_700-950-tabletPortrait.css">
+        <link rel="stylesheet"    href="../css/10_resp_412-700-mobileLandscape.css">
+        <link rel="stylesheet"    href="../css/11_resp_LT0412-mobile.css">
+        <link rel="stylesheet"    href="iodd-members.css">
 
-
-        <link rel="stylesheet"    href="css/06_resp_1900-3000-desktop.css">
-        <link rel="stylesheet"    href="css/07_resp_1100-1900-laptop.css">
-        <link rel="stylesheet"    href="css/08_resp_950-1100-tabletLandscape.css">
-        <link rel="stylesheet"    href="css/09_resp_700-950-tabletPortrait.css">
-        <link rel="stylesheet"    href="css/10_resp_412-700-mobileLandscape.css">
-        <link rel="stylesheet"    href="css/11_resp_LT0412-mobile.css">
-
+        <script src="../assets/json/IODD-members_u2a.json.js" type="application/javascript" ></script>
+        <script src="../assets/js/IODD-members.js"            type="application/javascript" ></script>
 
     </head>
     <body>
@@ -48,12 +51,13 @@
                     </div>
                 </div>
                 <div class="Logo">
-                    <span class="LogoText">iodd</span>&nbsp;&nbsp;
+                    <span class="LogoText">iodd</span>
                     <span class="device-text"></span>
                 </div>
                 <div class="HeaderSpacer"></div>
                 <div>
                     <ul  class="HeaderNavList">
+                        <li class="HeaderNavListItem"><a href="../index.html" title="Go to Home Page">Home</a></li>
                         <li class="HeaderNavListItem"><a href="#" target="_blank" title="Next Meetins">Meeting Location</a></li>
                         <li class="HeaderNavListItemCTA"><a href="#" target="_blank" title="Next Meetins">Next Meetiing <span class="next-meeting-date"></span></a></li>
                     </ul>
@@ -74,35 +78,16 @@
 
             <!--  Section2 -->
             <div    class="Section2">
-                <div class="Section2Title">Links</div>
-                <div  class="Section2Paragraph">
-                    <ol class="OrderedList">
-                        <li class="MainOrderedList">Members:</li>
-                            <ul>    
-                                <li><a href="members/iodd-members.html">Member Listing</a></li>
-                                <li><a href="#" target="_blank">Bios</a></li>
-                                <li><a href="#" target="_blank">Contact Sheet</a></li>
-                            </ul>
-                        <li class="MainOrderedList">Projects:</li>
-                            <ul>
-                                <li><a href="members-projects/members-projects.html">Project Listing</a></li>
-                                <li><a href="#" target="_blank">Project Details</a></li>
-                            </ul>
-                        <li class="MainOrderedList">Games:</li>
-                            <ul>
-                                <li><a href="#" target="_blank">Play Othello</a></li>
-                                <li><a href="#" target="_blank">Wonder</a></li>
-                                <li><a href="#" target="_blank">Illusions</a></li>
-                            </ul>
-<!--
-                            <ul>
-                                <li><a href="#" target="_blank">Guru Mail</a></li>
-                            </ul>
--->
-                        </ol>
-                </div>
+            <div class="Section2Title">Members</div>
+            <div class="members-list">
+                <table class="main-table" id="Members">
+                  </table>
+                <script>
+                      var pMembers = document.getElementById( "Members" )
+                          pMembers.innerHTML = fmtMembers( pJSON )
+                </script>                  
             </div>
-            <!-- END  Section2 -->
+        <!-- END  Section2 -->
 
             <!--  Footer -->
             <div class="Footer"><span class="footer-break"><br></span>

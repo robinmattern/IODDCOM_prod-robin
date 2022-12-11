@@ -1,0 +1,46 @@
+{"results":
+  {"columns":
+    [ {"name":"userId","type":""}
+    , {"name":"roleId","type":""}
+    , {"name":"createdAt","type":""}
+    , {"name":"updatedAt","type":""}
+    ]
+  ,"items":
+    [ {"userid":1,"roleid":1,"createdat":"2020-10-09 17:27:01.0","updatedat":"2020-10-09 17:27:01.0"}
+    , {"userid":5,"roleid":1,"createdat":"2020-10-29 18:44:49.0","updatedat":"2020-10-29 18:44:49.0"}
+    , {"userid":7,"roleid":1,"createdat":"2020-11-06 18:49:34.0","updatedat":"2020-11-06 18:49:34.0"}
+    , {"userid":27,"roleid":1,"createdat":"2021-02-20 04:39:19.0","updatedat":"2021-02-20 04:39:19.0"}
+    , {"userid":28,"roleid":1,"createdat":"2021-02-24 01:09:25.0","updatedat":"2021-02-24 01:09:25.0"}
+    , {"userid":31,"roleid":1,"createdat":"2021-03-01 08:59:50.0","updatedat":"2021-03-01 08:59:50.0"}
+    , {"userid":32,"roleid":1,"createdat":"2021-03-01 09:05:41.0","updatedat":"2021-03-01 09:05:41.0"}
+    , {"userid":33,"roleid":1,"createdat":"2021-03-03 20:00:33.0","updatedat":"2021-03-03 20:00:33.0"}
+    , {"userid":35,"roleid":1,"createdat":"2021-03-10 16:16:46.0","updatedat":"2021-03-10 16:16:46.0"}
+    , {"userid":36,"roleid":1,"createdat":"2021-03-10 17:06:32.0","updatedat":"2021-03-10 17:06:32.0"}
+    , {"userid":37,"roleid":1,"createdat":"2021-03-10 18:03:46.0","updatedat":"2021-03-10 18:03:46.0"}
+    , {"userid":38,"roleid":1,"createdat":"2021-03-10 20:00:06.0","updatedat":"2021-03-10 20:00:06.0"}
+    , {"userid":45,"roleid":1,"createdat":"2021-03-12 17:17:13.0","updatedat":"2021-03-12 17:17:13.0"}
+    , {"userid":46,"roleid":1,"createdat":"2021-03-12 17:17:14.0","updatedat":"2021-03-12 17:17:14.0"}
+    , {"userid":47,"roleid":1,"createdat":"2021-03-12 17:17:14.0","updatedat":"2021-03-12 17:17:14.0"}
+    , {"userid":48,"roleid":1,"createdat":"2021-03-12 17:17:29.0","updatedat":"2021-03-12 17:17:29.0"}
+    , {"userid":49,"roleid":1,"createdat":"2021-03-12 17:17:31.0","updatedat":"2021-03-12 17:17:31.0"}
+    , {"userid":50,"roleid":1,"createdat":"2021-03-12 17:20:24.0","updatedat":"2021-03-12 17:20:24.0"}
+    , {"userid":51,"roleid":1,"createdat":"2021-03-12 17:33:10.0","updatedat":"2021-03-12 17:33:10.0"}
+    , {"userid":53,"roleid":1,"createdat":"2021-03-12 23:36:07.0","updatedat":"2021-03-12 23:36:07.0"}
+    , {"userid":54,"roleid":1,"createdat":"2021-03-12 23:41:28.0","updatedat":"2021-03-12 23:41:28.0"}
+    , {"userid":1,"roleid":2,"createdat":"2020-10-09 17:27:01.0","updatedat":"2020-10-09 17:27:01.0"}
+    , {"userid":2,"roleid":2,"createdat":"2020-10-10 04:29:51.0","updatedat":"2020-10-10 04:29:51.0"}
+    , {"userid":3,"roleid":2,"createdat":"2020-10-13 04:58:51.0","updatedat":"2020-10-13 04:58:51.0"}
+    , {"userid":34,"roleid":2,"createdat":"2021-03-10 16:09:49.0","updatedat":"2021-03-10 16:09:49.0"}
+    , {"userid":39,"roleid":2,"createdat":"2021-03-11 18:41:59.0","updatedat":"2021-03-11 18:41:59.0"}
+    , {"userid":40,"roleid":2,"createdat":"2021-03-11 18:42:27.0","updatedat":"2021-03-11 18:42:27.0"}
+    , {"userid":41,"roleid":2,"createdat":"2021-03-11 18:49:52.0","updatedat":"2021-03-11 18:49:52.0"}
+    , {"userid":42,"roleid":2,"createdat":"2021-03-11 18:51:22.0","updatedat":"2021-03-11 18:51:22.0"}
+    , {"userid":43,"roleid":2,"createdat":"2021-03-11 18:52:19.0","updatedat":"2021-03-11 18:52:19.0"}
+    , {"userid":44,"roleid":2,"createdat":"2021-03-12 15:01:42.0","updatedat":"2021-03-12 15:01:42.0"}
+    , {"userid":52,"roleid":2,"createdat":"2021-03-12 18:25:57.0","updatedat":"2021-03-12 18:25:57.0"}
+    , {"userid":59,"roleid":2,"createdat":"2021-03-14 01:31:15.0","updatedat":"2021-03-14 01:31:15.0"}
+    , {"userid":7,"roleid":3,"createdat":"2020-11-06 08:00:00.0","updatedat":"2020-11-06 08:00:00.0"}
+    , {"userid":6,"roleid":17,"createdat":"2021-04-15 15:18:09.0","updatedat":"2021-04-15 15:18:09.0"}
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Responsive Code */  
+/*The @media MAX-width query properties
+***** About 75% of my Mac book 15" screen on chrome
+/*If Device Width is Between 900 to 2000px Then...*/
+/*=========================================*/
+
+/*=========================================*/
+
+@media only screen
+ and (max-width: 3000px) 
+ and (min-width: 1900px) 
+{
+ 
+  .Section1 {
+    height: 35%
+    background-color: #D8F3FA;
+  }
+  .imgSize {
+    width: 45%;
+  }
+  .MenuColText {
+    padding: 5px 0px 0px 0px;
+  }  
+  .MenuColText a {
+    font-size: 30px !important;
+  }
+  .MenuColMid {
+    width: 0px;
+  }
+  .MenuColImage {
+    padding: 15px 20px 0px 0px;
+  }
+.device-text::after {
+    content: "\  [desktop]";
+}
+.device-text {
+    font-size: 30px;
+    font-weight: 800;
+/*  color:#dadada;*/
+    color: goldenrod; /* rgb(255,201,14); /*gold*/
+    text-shadow: 2px 2px 2px black;
+    padding-bottom: 20px;
+}
+
+}

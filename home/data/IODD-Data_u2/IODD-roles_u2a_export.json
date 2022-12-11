@@ -1,0 +1,18 @@
+{"results":
+  { "columns":
+    [ {"name":"id","type":""}
+    , {"name":"name","type":""}
+    , {"name":"createdAt","type":""}
+    , {"name":"updatedAt","type":""}
+      ]
+  , "items":
+    [ {"id":1,"name":"User","createdat":"2020-10-09 04:00:00.0","updatedat":"2020-12-28 00:04:26.0"}
+    , {"id":2,"name":"Editor","createdat":"2021-03-10 15:58:48.0","updatedat":"2021-03-16 23:48:34.0"}
+    , {"id":3,"name":"Admin","createdat":"2020-10-09 04:00:00.0","updatedat":"2020-12-01 15:46:42.0"}
+    , {"id":4,"name":"Author","createdat":"2021-03-21 20:50:43.0","updatedat":"2021-03-22 14:20:27.0"}
+    , {"id":12,"name":"Swimmer","createdat":"2021-04-02 22:37:47.0","updatedat":"2021-04-05 00:53:56.0"}
+    , {"id":16,"name":"Sales","createdat":"2021-04-04 00:04:28.0","updatedat":"2021-04-04 00:04:28.0"}
+    , {"id":17,"name":"Viewer","createdat":"2021-04-13 23:50:02.0","updatedat":"2021-04-13 23:50:02.0"}
+      ]
+    }
+  }
