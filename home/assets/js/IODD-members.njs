@@ -32,8 +32,8 @@
 
 //---------------------------------------------------------------------------------------------------
 
-       aTests='live in Browser'
-//     aTests='test1 in NodeJS'
+//     aTests='live in Browser'
+       aTests='test1 in NodeJS'
 
 // var aHeadRow = `<tr class="head-row"><td>Name</td><td>Email</td><td>Phone / Mobile</td></tr>`
 
