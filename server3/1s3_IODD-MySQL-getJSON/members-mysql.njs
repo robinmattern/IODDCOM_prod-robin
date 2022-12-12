@@ -1,0 +1,6 @@
+ pFS   = require( 'fs' )
+ aText = pFS.readFileSync( 'members-mysql.json', 'ASCII' )
+ aText = aText.replace( //g, '\'' )
+ aText = aText.replace( //g, '\'' )
+ pJSON = JSON.parse( aText )
+ console.dir( pJSON, { depth: 9 } )

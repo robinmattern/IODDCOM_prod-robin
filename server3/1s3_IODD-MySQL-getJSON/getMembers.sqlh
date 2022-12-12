@@ -1,0 +1,5 @@
+   \use io
+   print("Hello World\n");
+   shell.options.set('resultFormat','json')
+// session.sql( "SELECT members.MemberID, members.LastName WHERE members.MemberID < 10" )
+   db.getTable( "members" )
