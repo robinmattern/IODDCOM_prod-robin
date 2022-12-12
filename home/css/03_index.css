@@ -1,7 +1,8 @@
 
 /* Basic Blocks Custom App */
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre');
-@import url('/font-awesome-4.6.3/css/font-awesome.min.css');
+   @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre');
+/* @import url('/font-awesome-4.6.3/css/font-awesome.min.css');                                       *//* .(21211.05.4 RAM Not local) */
+   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');   /* .(21211.05.4) */
 
 /*-----------------------------------------
 :root selector for variables
