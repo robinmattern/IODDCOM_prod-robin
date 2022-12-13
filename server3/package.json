@@ -1,0 +1,25 @@
+{
+  "name": "iodd-server3_express-sequelize-mysql",
+  "version": "0.1.5",
+  "description": "Installs NodeJS server modules for developing API apps with Express, Sequelize & MySQL",
+  "author": "8020data",
+  "license": "ISC",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-list-endpoints": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mssql": "^6.2.3",
+    "mysql2": "^2.0.2",
+    "sequelize": "^6.11.0",
+    "tedious": "^9.2.1"
+  },
+  "scripts": {
+    "start": "echo npm ERROR: * You must be in an app folder to start app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

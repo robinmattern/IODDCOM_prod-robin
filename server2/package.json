@@ -1,8 +1,8 @@
 {
-  "name": "nodejs-express-json-server",
+  "name": "iodd-server2_json-server",
   "description": "Installs JSON-Server module for developing API apps that return JSON data",
   "version": "0.1.5",
-  "author": "Bruce Troutman",
+  "author": "Robin Mattern",
   "license": "ISC",
   "dependencies": {
     "json-server": ""
