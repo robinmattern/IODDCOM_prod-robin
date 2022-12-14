@@ -38,7 +38,7 @@
 //---------------------------------------------------------------------------------------------------
 
        aTests='live in Browser'
-       aTests='test1 in NodeJS'
+//     aTests='test1 in NodeJS'
 
        API_URL       = 'http://localhost:3000/members'
 
@@ -99,13 +99,15 @@ async  function renderJSON( fmtRecords, aURL, pDIV, aBug ) {                    
 
 async  function getJSON( aURL ) {                                                       // .(21214.02.8 RAM Beg Write getJSON) 
        var  aAPI_URL            = `${aURL}`.match( 'http' ) ? aURL : API_URL 
-	   var  pResponse 			=  await fetch( aAPI_URL );
+       var  pResponse 	    =  await fetch( aAPI_URL );
        var  pJSON               =  await pResponse.json( );
 //     var  aText               =  await pResponse.text( )  // body aslready used for ...
     return  pJSON 
              
   		    } // eof getJSON                                                            // .(21214.02.8 RAM End) 
 //--------  -------  =  -------------------------------------------------------
+async  function getData( aTable ) {  
+       }
 
 async  function getMembersJSON( aURL ) {                                                // .(21214.02.10 RAM Beg Write getMembersJSON) 
        var  aAPI_URL            = `${aURL}`.match( 'http' ) ? aURL : API_URL 

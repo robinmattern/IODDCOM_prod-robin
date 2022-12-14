@@ -86,7 +86,7 @@
             </tbody>
             <script type="module">
                 var   pDIV           =  document.getElementById( "Members" )
-//                    pJSON          =  getJSON( 'http://localhost:3000/members' )      // .(21214.02.10) 
+//                    pJSON          =  await getJSON( 'http://localhost:3000/members' )      // .(21214.02.10) 
                       pJSON          =  await getMembersJSON( )                         // .(21214.02.11) 
                       pDIV.innerHTML =  fmtMembers( pJSON )    
 //                    renderJSON( 'http://localhost:3000/members', fmtMembers, pDIV )   // .(21214.02.12)

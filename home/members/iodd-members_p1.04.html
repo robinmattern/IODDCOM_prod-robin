@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>IODD-Members u1.05</title>
+        <title>IODD-Members p1.04</title>
         <link rel="shortcut icon" href="/home/favicon.png">
         <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 <!--    <link rel="stylesheet"    href="../hamburger2.css">                                              --><!--#.(21211.05.1 RAM Remove)-->
@@ -86,7 +86,7 @@
             </tbody>
             <script type="module">
                 var   pDIV           =  document.getElementById( "Members" )
-//                    pJSON          =  getJSON( 'http://localhost:3000/members' )      // .(21214.02.10) 
+//                    pJSON          =  await getJSON( 'http://localhost:3000/members' )      // .(21214.02.10) 
                       pJSON          =  await getMembersJSON( )                         // .(21214.02.11) 
                       pDIV.innerHTML =  fmtMembers( pJSON )    
 //                    renderJSON( 'http://localhost:3000/members', fmtMembers, pDIV )   // .(21214.02.12)
