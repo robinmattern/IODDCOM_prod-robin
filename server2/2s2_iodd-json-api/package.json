@@ -6,8 +6,8 @@
   "dependencies": {
   },
   "scripts": {
-    "start":   "json-server  -p 54372 -r api/routes/routes.json --watch api/models/db.json api/models/db.json",
-    "start1":  "json-server  -p 54372                           --watch api/models/db.json api/models/db.json",
+    "start1":  "json-server  -p 54372 -r api/routes/routes.json --watch api/models/db.json api/models/db.json",
+    "start":   "json-server                                     --watch api/models/db.json",
     "start2":  "json-server  -p 54372 --routes  --no-cors       --watch api/models/db.json api/models/db.json",
     "start-unix": "../node_modules/.bin/json-server  -p 50352 -r api/routes/routes.json --watch api/models/db.json api/models/db.json"
   },
