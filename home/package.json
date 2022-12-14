@@ -1,0 +1,14 @@
+{
+  "name": "json-server_client",
+  "description": "Installs client module for test json-server apps with NodeJS",
+  "version": "0.01.010",
+  "author": "Robin Mattern",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "scripts": {
+    "start": "echo npm ERROR: * You must be in an app folder to start app",
+    "test": "echo npm TEST error: No test specified && exit 1"
+  }
+}
