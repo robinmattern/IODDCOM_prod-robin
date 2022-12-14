@@ -25,8 +25,8 @@
         <link rel="stylesheet"    href="../css/11_resp_LT0412-mobile.css">
         <link rel="stylesheet"    href="iodd-members.css">
 
-        <script src="../assets/json/db.json.js"     type="application/javascript" ></script>                <!-- .(21213.06.6 RJS Was json/IODD-members_u2a.json.js) -->
-        <script src="../assets/js/IODD-members.js"  type="application/javascript" ></script>    
+        <script src="../assets/json/IODD-members_u2a.json.js" type="application/javascript" ></script>
+<!--    <script src="../assets/js/IODD-members.js"            type="application/javascript" ></script>   --><!--#.(21211.01.11) -->
     </head>
 <body>
 <div class="container">
@@ -84,7 +84,8 @@
             <tr class="head-row"><td>&nbsp;Name</td><td>&nbsp;Email</td><td>&nbsp;Phone / Mobile</td></tr>
             <tbody id="Members">
             </tbody>    
-            <script> 
+            <script type="module">                                                                          // .(21211.02.10 RAM Script must be type="module")
+             import { fmtMembers, sortitem } from "../assets/js/IODD-Members_p1.05.mjs";                    // .(21211.02.11 RAM Import seperately named functions or vars)
                 var   pMembers =  document.getElementById( "Members" )
                       pMembers.innerHTML = fmtMembers( pJSON )
             </script>                  

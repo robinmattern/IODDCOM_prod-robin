@@ -23,6 +23,7 @@
 # .(21208.01 12/08/21 RAM  9:30a| Created
 # .(21209.04 12/09/21 RJS  1:15p| Add sortitems
 # .(21210.03 12/10/21 RAM  4:40p| Add readFile
+# .(21213.06 12/13/21 RAM 11:20p| Read db.json.js, not IODD-members_u2a.json.js
 
 ##PRGM     +====================+===============================================+
 ##ID 69.600. Main               |
@@ -32,14 +33,14 @@
 
 //---------------------------------------------------------------------------------------------------
 
-       aTests='live in Browser'
-//     aTests='test1 in NodeJS'
+      aTests='live in Browser'
+//    aTests='test1 in NodeJS'
 
 // var aHeadRow = `<tr class="head-row"><td>Name</td><td>Email</td><td>Phone / Mobile</td></tr>`
 
   if ( aTests.match( /test1/ ) ) {
 
-       var  pJSON    =  parseJSON( '../json/IODD-members_u2a.json.js' )
+       var  pJSON    =  parseJSON( '../json/db.json.js' )                               // .(21213.06.1 RJS Was: IODD-members_u2a.json.js) 
        var  aHTML    =  fmtMembers(  pJSON )
 
             console.log( aHTML )
@@ -48,7 +49,7 @@
 //---------------------------------------------------------------------------------------------------
 
   function  fmtMembers( pJSON ) {
-       var  mMembers =  pJSON.results.items
+       var  mMembers =  pJSON.members                                                   // .(21213.06.2 RJS Was pJSON.results.items)  
 
 //     var  aHTML    =  mMembers.map( fmtMember ).join( "\n" )
        var  aHTML    =  mMembers.sort(sortitem).map( fmtMember ).join( "\n" )
@@ -63,10 +64,11 @@
 //     var  aClass   = "row-" + ( i % 2      ?     "even" :     "odd" )
 //     var  aClass   =   (  `class="row-even"` )
 
-       var  aMI      =     pMember.middlename;  aMI = ( aMI  > "" ) ?   ` ${ aMI.substr(0,1) }. ` : ""
-       var  aName    = `${ pMember.firstname }${aMI} ${ pMember.lastname }`
-       var  aPhone   =     pMember.phone1 + ( pMember.phone2 > ""   ? `, ${ pMember.phone2  }` : "" )
-       var  aEmail   =     pMember.email
+       var  aMI      =     pMember.Middlename;  aMI = ( aMI  > "" ) ?   ` ${ aMI.substr(0,1) }. ` : ""      // .(21213.06.3 RJS Beg Change case of column names)
+       var  aName    = `${ pMember.FirstName }${aMI} ${ pMember.LastName }`
+       var  aPhone   =     pMember.Phone1 + ( pMember.Phone2 > ""   ? `, ${ pMember.Phone2  }` : "" )
+            aPhone   =     aPhone == "null" ? "" : aPhone                                                   // .(21213.06.4 RJS Get rid of "null")
+       var  aEmail   =     pMember.Email                                                                    // .(21213.06.3 RJS End) 
 
        var  aRow     = `  <tr Class="${ aClass }" id="R${ `${ i + 1 }`.padStart( 3, "0" ) }">\n`
                      + `  <td class="name"><strong><a href="syschangepassword.js?username=${ aName }">${ aName }</a></strong></td>\n`
@@ -108,7 +110,7 @@
 //--------  -------  =  -------------------------------------------------------
 
   function  sortitem( a, b ) {                                                          // .(21209.04.1 RJS Beg Add SortItems)
-    return (a.lastname + a.firstname) > (b.lastname + b.firstname) ? 1 : -1
+    return (a.LastName + a.FirstName) > (b.LastName + b.FirstName) ? 1 : -1             // .(21213.06.5)
             }                                                                           // .(21209.04.1 RJS End)
 //---------------------------------------------------------------------------------------------------
 
