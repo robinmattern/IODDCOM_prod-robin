@@ -5,18 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>IODD-Members u1.05</title>
+        <title>Members</title>
         <link rel="shortcut icon" href="/home/favicon.png">
         <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-<!--    <link rel="stylesheet"    href="../hamburger2.css">                                              --><!--#.(21211.05.1 RAM Remove)-->
+        <link rel="stylesheet"    href="../hamburger2.css">
 
         <link rel="stylesheet"    href="../css/01_iodd_logo.css">
-    <!--<link rel="stylesheet"    href="../css/01_pfep_logo.css">-->
+        <!--<link rel="stylesheet"    href="css/01_pfep_logo.css">-->
         <link rel="stylesheet"    href="../css/02_hamburger1.css">
-        <link rel="stylesheet"    href="../css/02_hamburger2.css">                                          <!-- .(21211.05.1 RAM Was href="/hamberger2.css")-->
         <link rel="stylesheet"    href="../css/03_index.css">
-<!--    <link rel="stylesheet"    href="../css/04_main-menu.css">                                        --><!--#.(21211.05.2 RAM Renamed to xxx04_main-menu.css)-->
-<!--    <link rel="stylesheet"    href="../css/05_navbar.css">                                           --><!--#.(21211.05.3 RAM Renamed to xxx04_navbar.css)-->
+        <link rel="stylesheet"    href="../css/04_main-menu.css">
+        <link rel="stylesheet"    href="../css/05_navbar.css">
         <link rel="stylesheet"    href="../css/06_resp_1900-3000-desktop.css">
         <link rel="stylesheet"    href="../css/07_resp_1100-1900-laptop.css">
         <link rel="stylesheet"    href="../css/08_resp_950-1100-tabletLandscape.css">
@@ -25,10 +24,11 @@
         <link rel="stylesheet"    href="../css/11_resp_LT0412-mobile.css">
         <link rel="stylesheet"    href="iodd-members.css">
 
-        <script src="../assets/json/db.json.js"           type="application/javascript" ></script>          <!-- .(21213.06.6 RJS Was json/IODD-members_u2a.json.js) -->
-        <script src="../assets/js/IODD-members_p1.04.js"  type="application/javascript" ></script>          <!-- .(21213.07.1 RAM Uses json-server) -->
-    </head>
-<body> 
+        <script src="../assets/json/db.json.js" type="application/javascript" ></script>
+        <script src="../assets/js/IODD-members.js"            type="application/javascript" ></script>
+
+</head>
+<body>
 <div class="container">
 
 <!--  Header -->
@@ -40,12 +40,12 @@
             <div>
                 <div>
                     <ul>
-                        <li class="BtnCTA"><a href="https://8020data.github.io/FRDocs_prod-master/#/" target="_blank" title="Go to the Tutorial">Do our Tutorial</a></li>
-                        <li><a href="https://discord.com/channels/928752444316483585/928752444316483587" target="_blank" title="Be Part Of Our formR Discord Discussions">Discord Discussion</a></li>
-                        <li><hr color="blue"></li>
-                        <li><a href="https://discord.com/channels/928752444316483585/928752444316483587" target="_blank" title="Go to Our Support Page">Support</a></li>
-                        <li><a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" title="View Our License Agreement">License</a></li>
-                    </ul>
+                        <li class="MenuListItem"><a href="../index.html" >Home</a></li>
+                        <li class="MenuListItem"><a href="#" target="_blank" >Guru Mail</a></li>
+                        <!--<li class="MenuListItem"><hr color="blue"></li>-->
+                        <li class="MenuListItem"><a href="#">Support</a></li>
+                        <li class="MenuListItem"><a href="#">License</a></li>
+                </ul>
                 </div>
             </div>
         </div>
@@ -57,8 +57,8 @@
     <div class="HeaderSpacer"></div>
     <div>
         <ul  class="HeaderNavList">
-            <li class="HeaderNavListItem"><a href="../index.html" title="Go to Home Page">Home</a></li>
-            <li class="HeaderNavListItem"><a href="#" target="_blank" title="Next Meetins">Meeting Location</a></li>
+            <li class="HeaderNavListItem1"><a href="../index.html" title="Go to Home Page">Home</a></li>
+            <li class="HeaderNavListItem2"><a href="#" target="_blank" title="Next Meetins">Meeting Location</a></li>
             <li class="HeaderNavListItemCTA"><a href="#" target="_blank" title="Next Meetins">Next Meetiing <span class="next-meeting-date"></span></a></li>
         </ul>
     </div>
@@ -71,7 +71,7 @@
     <div  class="Section1Paragraph">
         IODD members have demonstrated expertise in one or more areas of database analysis, design, implementation, management and maintenance.
         <br><br>
-        IODD members serve as advisors to other members and their companies about the constantly changing database issues.
+        IODD members serve as advisors to other members and their companies about the constantly changing database issues.                
     </div>
 </div>
 <!-- END  Section1 -->
@@ -81,16 +81,14 @@
     <div class="Section2Title">Members</div>
     <div class="members-list">
         <table class="main-table">
-            <tr class="head-row"><td>&nbsp;Name</td><td>&nbsp;Email</td><td>&nbsp;Phone / Mobile</td></tr>
+            <tr class="head-row"><td class="head-name">Name</td><td class="head-email">Email</td><td class="head-phone1">Phone</td><td class="head-phone2">Mobile</td></tr>
             <tbody id="Members">
-            </tbody>
-            <script type="module">
-                var   pDIV           =  document.getElementById( "Members" )
-//                    pJSON          =  await getJSON( 'http://localhost:3000/members' )      // .(21214.02.10) 
-                      pJSON          =  await getMembersJSON( )                         // .(21214.02.11) 
-                      pDIV.innerHTML =  fmtMembers( pJSON )    
-//                    renderJSON( 'http://localhost:3000/members', fmtMembers, pDIV )   // .(21214.02.12)
-            </script>
+            </tbody>    
+            <script>
+                var pMembers = document.getElementById( "Members" )
+                    pMembers.innerHTML = fmtMembers( pJSON )
+            </script>                  
+            <tr class="last-row"><td colspan="3"></td></tr>
         </table>
     </div>
 </div>

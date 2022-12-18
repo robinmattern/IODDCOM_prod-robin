@@ -11,6 +11,7 @@
     --GlobalFontFamily: "Arial, Helvetica, sans-serif";
     --HeaderFooterBGColor: rgb(198 210 222);
     --NextMeetingDate: "02/09/2023";    
+    --GlobalMaxWidth: 900px;
     
     --CalloutIconCheck: "\f14a  \A"; /*checkbox*/
     --CalloutIconCheck: "\f0da  \A"; /*Right Arrow*/
@@ -33,13 +34,22 @@
     font-family         :  "Arial, Helvetica, sans-serif";
     font-size           :  16px;
     }
+html {
+  max-width: var(--GlobalMaxWidth);
+  margin: auto;
+}
+body {
+  background-color: cornflowerblue;
+}
 
 .container {            /* custom element style */
     padding             :  0;
-    margin              :  0;
-    width               :  100%;
+/*  margin              :  0;     *//* .(21217.11.1 RJS Remove) */
+/*  width               :  100%;  *//* .(21217.11.2 RJS Remove) */ 
     height              :  100vh;
-    } 
+    max-height: 99%;
+  } 
+
 
 /*Next meeting date*/
 .next-meeting-date::after {
@@ -58,7 +68,9 @@ The .Header properites
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    max-width: var(--GlobalMaxWidth);
+    margin: auto;
+  }
 
 /*------------------------------------------*/
 .HeaderSpacer {
@@ -80,7 +92,8 @@ The .HeaderNavList (horizontal menu) properites
     font-family: "Arial, Helvetica, sans-serif";
 }
 /*------------------------------------------*/
-.HeaderNavListItem a {
+.HeaderNavListItem1 a, 
+.HeaderNavListItem2 a{
     color: black;
     font-weight: bold;
     font-family: "Arial, Helvetica, sans-serif";
@@ -178,9 +191,8 @@ The .Section2 properites
 ------------------------------------------*/
 .Section2 {
     background: aliceblue;
-    background-image: ;
     width: 100%;
-    height: 65%;
+    height: 75%;
     position: relative;
     color: black;
     top: 70px; /*<---ADD to adjust the top position*/
@@ -207,7 +219,64 @@ The .Section2 properites
     font-size: 16px;
     font-weight: 600;
   }
-/*------------------------------------------*/
+  .Links {
+    width: 100%;
+    border: 0px solid #000;
+    margin: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }  
+    .Links ol {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding-left: 30px;
+        padding-top: 10px;  
+      }
+    .Links ol li {
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 10px;
+      }
+    .Links ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 90%;
+      padding-left: 20px;
+      /*column-rule: dotted 1px #333;*/
+      /*column-width: auto;*/
+      border-bottom: dotted 1px black;
+      }
+  
+    .Links ul li {
+      list-style: none;
+      display: inline-block;
+      width: calc(100% / 3);
+      height: 40px;
+      text-align: left;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      margin: 10px 0px 10px 0px;
+    }
+  
+    .Links ul li:before { 
+      font-family: var(--CalloutIconFontFamily);
+      font-weight: 600;
+      content: var(--CalloutIconCheck); /*checkbox*/ 
+      padding: 0px 5px 0px 0px;
+    }
+    .Links ul li a {
+      color: blue;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .Links ul a:hover,
+    .Links ul a:active {
+      font-family: Arial, Helvetica, sans-serif;
+      color: blue;
+      }  
+  /*------------------------------------------*/
+/*
 .Section2Paragraph ul {
     list-style-type: none;
     margin: 20px 0px 5px 20px;
@@ -221,16 +290,21 @@ The .Section2 properites
     column-width: auto; 
     border-bottom: dotted 1px black;
   }
-/*------------------------------------------*/
+*/
+  /*------------------------------------------*/
+/*
 .Section2Paragraph ul li:before { 
     font-family: var(--CalloutIconFontFamily);
     font-weight: 600;
     content: var(--CalloutIconCheck); /*checkbox*/ 
+/*
     margin-left: 0px; 
     margin-right: 0px;
     padding: 0px 0px 0px 10px; 
   } 
-/*------------------------------------------*/  
+*/
+  /*------------------------------------------*/  
+/*
   .Section2Paragraph a {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -241,7 +315,9 @@ The .Section2 properites
     margin: 8px 0;
     padding: 6px;
 }
+*/
 /*------------------------------------------*/
+/*
 .Section2Paragraph ul a:hover,
 .Section2Paragraph ul a:active {
     color: blue;
@@ -254,6 +330,7 @@ The .Section2 properites
   margin: 8px 0px 0px 30px;
   text-decoration: underline;
 }
+*/
 /* Section2 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 /*-----------------------------------------
@@ -263,13 +340,15 @@ The .Footer properites
   background: rgb(175 170 150);
   background: var(--HeaderFooterBGColor);
   width: 100%;
-  height: 60px; 
+  height: 75px; 
   /*top: 10%;  /*Removed in place of the bottom property*/
   border-top: 0px solid darkgray;
   bottom: 0;
   position: fixed;
   z-index: 99;
-  } 
+  max-width: var(--GlobalMaxWidth);
+  margin: auto;
+} 
 /*------------------------------------------*/
 .FooterNavList {
     list-style: none;
@@ -282,8 +361,9 @@ The .Footer properites
 /*------------------------------------------*/
 .FooterNavListItem a {
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     margin: 8px 0;
     padding: 12px;

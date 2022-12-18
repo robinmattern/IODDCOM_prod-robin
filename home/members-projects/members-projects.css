@@ -1,74 +1,210 @@
+:root {
+    --GlobalMaxWidth: 900px;
+}
+
+
+html {
+    max-width: var(--GlobalMaxWidth);
+    margin: auto;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
 body {
     width: 100%;
+    background-color: cornflowerblue;
+}
+.container {            /* custom element style */
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  } 
+.Header {
+    max-width: var(--GlobalMaxWidth);
+    margin: auto;
 }
 .Section1 {
     display: none;
 }
 .Section2 {
     top: 65px;
-    height: 81%;
+    height: 87%;
     background-color: "#E5E4E2"; /*platinum*/
 }
 .Section2Title {
     font-size: 150%;
-    padding: 20px 0px 0px 40px;
+    padding: 30px 0px 20px 30px;
 }
-.title {
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
+.Footer {
+    max-width: var(--GlobalMaxWidth);
+    margin: auto;
+    font-size: 200%;
+}
+.Footer a {
+    font-size: 100%;
 }
 .main-table {
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0 0 5px;
     border-collapse: collapse;
     width: 95%;
     border: black 0px solid;
 }
-.members-info {
-    margin: 20px 0px 0px 20px;
-    border: black 0px solid;
+.Secondary {
+    display: none;
+}
+
+.members-list {
+    margin: -10px 0px 0px 40px;
 }
 .members-name {
     font-size: 28px;
     font-weight: 700;
     color: blue;
+    /*background-color: #EAEAEA;*/
     vertical-align: middle;
-    padding: 2px 20px 2px 5px;
-    border-top: solid 1px black;
-    border-left: solid 1px black;
+    padding: 2px 20px 2px 10px;
+    border-top: solid 0px black;
+    border-left: solid 0px black;
+    /*height: 75px;*/
+    /*border-radius: 5%;*/
 }
 .members-resume {
-    font-size: 18px;
-    padding: 10px 20px 10px 20px;
-    border: solid 1px black;
+    border: 1px solid black;
+    text-align: left;
+    height: 200px;
+    padding: 0px 10px 0px 20px;
     vertical-align: middle;
+    border-radius: 2%;
+    box-shadow: 5px 5px #888888;
+}
+.member-bio-tag {
+    font-size: 20px;
+    font-weight: 700;
 }
 .members-address {
     font-size: 18px;
-    width: 100%;
-    padding: 12px 4px 12px 4px;
-    border-bottom: solid 1px black;
-    border-top: solid 1px black;
-    border-left: solid 1px black;
+    font-weight: 400;
+    padding: 5px 20px 5px 5px;
+    border-bottom: solid 0px black;
+    border-top: solid 0px black;
+    border-left: solid 0px black;
+    /*height: 125px;*/
+    width: 200px;
+    vertical-align: text-top;
+/*    border-radius: 5%;*/
+}
+.project-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: blue;
+    padding: 20px 0px 0px 10px;
 }
 .project-summary {
-    padding: 0px 5px 0px 30px;
+    padding: 0px 10px 10px 20px;
 }
 .project-details {
-    vertical-align: top;
-    padding: 0px 20px 0px 5px;
+    vertical-align: text-top;
 }
-.mid-hr hr {
+.xemail {
+    font-size: 20px;
+    padding: 0 20px 0 0;
+    border-bottom: dotted 1px black;
+}
+.email-image  {
+    width: 15%;
+}        
+.phone1, .phone2 {
+    font-size: 16px;
+    padding: 0 20px 0 0;
+    border-bottom: dotted 1px black;
+}
+.cellphone {
+    font-size: 20px;
+    padding: 0 20px 0 0;
+}
+.member-line hr {
     position: relative;
     border: none;
-    height: 2px;
+    height: 4px;
     background: blue;
     margin: 20px 0px 20px 20px;    
 }
-hr {
+.project-title hr,
+.project-line hr {
     position: relative;
-    border: none;
-    height: 6px;
-    background: blue;
-    margin: 20px 0px 20px 20px;
+    border-top: 1px dashed blue;
+    height: 1px;
+    margin: 20px 0px 20px 20px;    
+}
+
+/*
+The @media MAX-width query properties
+***** IPHONE
+/*If Device Width is <= to 414px Then...*/
+
+/*=========================================*/
+  @media only screen
+  and (max-width: 414px)
+{
+    .HeaderNavListItem1 a {
+        font-size: 13px;
+        display: none;
+    }
+    .Section2 {
+        background-color: #E5E4E2; /*platinum*/
+        width: 100%;
+        height: 300%;
+        top: 0px; /*<---ADD to adjust the top position*/
+        overflow-y: auto;
+      }
+    .Section2Title {
+        font-size: 110%;
+        text-align: left;
+    }  
+    .members-list {
+        margin: -10px 0px 0 5px;
+    }
+    .main-table {
+        margin: 20px 0 0 5px;
+        border-collapse: collapse;
+        width: 95%;
+        border: black 0px solid;
+    }
+    .head-name {
+    /*    padding: 0px 10px 0px 20px;*/
+        width: 25%;
+    }
+    .head-email {
+    /*    padding: 0px 10px 0px 20px;*/
+        width: 10%;
+    }
+    .head-phone1 {
+    /*    padding: 0px 10px 0px 20px;*/
+        width: 65%;
+    }
+    .name {
+        width: 50%;
+        padding: 0 20px 0 0;
+        height: 40px;
+        font-size: 110%;
+        font-weight: 800;
+    }
+    .email {
+        width: 5%;
+        height: 40px;
+    }
+    .email-image  {
+        width: 140%;
+    }        
+    .phone1 {
+        width: 40%;
+        height: 40px;
+        font-size: 110%;
+    }    
+    .phone2 {
+        display: none;
+    }
+    .head-phone2 {
+        display: none;
+    }    
 }
