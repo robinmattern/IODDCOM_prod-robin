@@ -1,12 +1,11 @@
 {
-  "name": "5s-react-wi-data",
+  "name": "1s1_iodd-json-js",
   "version": "0.01.010",
-  "author": "8020data",
+  "author": "Robin Mattern",
   "license": "ISC",
   "dependencies": {
   },
   "scripts": {
-    "start":   "json-server -p 54371 --watch db.json",
     "getJSON": "node getJSON.mjs"
   },
   "browserslist": {
