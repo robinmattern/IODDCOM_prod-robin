@@ -2,9 +2,10 @@
 <html>
  <body>
   <style>
-    details ul li            { margin-top:-10px !important; margin-bottom:20px !important; }
-    details ul li  p         { color: green; padding:0px !important; margin-top:-20px !important; }
-    details ul li:last-child { display: none; }    /* .(21218.02.1 RAM Don't display MT last child) */
+    details > ul > li            { margin-top:-10px !important; margin-bottom:20px !important; }
+    details > ul > li > p        { color: #810d0d; padding-left: 20px; margin-top:-17px !important; text-indent: -20px; line-height: 22px !important; }
+    details > ul > li:last-child { display: none; }                    					            /* .(21218.02.1 RAM Don't display MT last child) */
+    code                         { color: black; font-size: 12px; margin: 0px 0px 0px 16px !important; padding-bottom: 0px; }   /* .(21218.02.3 RAM) */
   </style>
 
   <div style="margin-left:25px;">
@@ -24,7 +25,22 @@
   <details><summary><b style="font-size:24px;">Server1 getJSON Tool</b></summary>
 
   - ### [1s1. JSON Data API](server1/1s1-iodd-json.js/testAPIs.html)
-    A Node script to extract data from MySQL DB.  See .env for parameters.
+    A Node script to extract data from MySQL DB.  See .env for parameters.   
+              1. Install Server1 modules   
+                `$ cd server1    `  
+                `$ npm install    `  
+                      
+              2. Configure MySQL extraction parameters   
+                `$ cd 1s1*    `  
+                `$ nano .env    `  
+                 &nbsp;&nbsp;&nbsp; &bull;&nbsp; DBSQL1-n=SELECT * FROM ... statements will be joined together into one db.json file   
+                 &nbsp;&nbsp;&nbsp; &bull;&nbsp; RENAME_EM=false will add a timestamp to the saved db.json and db.json.js   
+                 &nbsp;&nbsp;&nbsp; &bull;&nbsp; RENAME_EM=true will save the current file with a timestamp      
+                       
+              3. Copy the db.json.js or db.json to its data locaton      
+                 &nbsp;&nbsp;&nbsp; &bull;&nbsp; Remove the _vYMMDD.HHMM if necessary   
+                 &nbsp;&nbsp;&nbsp; &bull;&nbsp; Copy the db.json file for use by json-server    
+              
 
   -
 
