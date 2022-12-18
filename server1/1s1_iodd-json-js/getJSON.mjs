@@ -11,8 +11,8 @@
       var __filename    =   aURI.replace( /^.+\//, "" )
       var __dirname     =   aURI.replace( `/${__filename}`, "" ).replace( "file:///", "" )
 
-
             dotenv.config()
+
       var   aDBName     =  process.env.DBNAME || ''
       var   aDBHost     =  process.env.DBHOST || '127.0.0.1'
       var   aDBUser     =  process.env.DBUSER || ''
@@ -41,9 +41,11 @@ async function savEm( mDBSQLs ) {
 
        for (i in mDBSQLs) {                      await getJSON( mDBSQLs[i] ) }
 
-//     var  aJSON       = "var pJSON =\n" + inspect( pJSON ) + "\n\n  if (process) { console.log(    require('util'                   ).inspect( pJSON, { depth: 99 } ) ) }"
-       var  aJSON       = "var pJSON =\n" + inspect( pJSON ) + "\n\n  if (process) { var util =      require('util'). console.log( util.inspect( pJSON, { depth: 99 } ) ) }
-//     var  aJSON       = "var pJSON =\n" + inspect( pJSON ) + "\n\n  if (process) { var util = await import('util'); console.log( util.inspect( pJSON, { depth: 99 } ) ) }
+       var  ifProcess   = "if ( typeof( process ) != 'undefined' ) {"                  // .(21218.01.1 Was "if (process) { "
+//     var  aJSON       = "var pJSON =\n" + inspect( pJSON ) + "\n\n  if (process) { var util = await import('util'); console.log( util.inspect( pJSON, { depth: 99 } ) ) }"
+//     var  aJSON       = "var pJSON =\n" + inspect( pJSON ) + "\n\n  if (process) { console.log(    require('util'               ).inspect( pJSON, { depth: 99 } ) ) }"
+//     var  aJSON       = "var pJSON =\n" + inspect( pJSON ) + "\n\n  if (process) {  var util = require('util'); console.log( util.inspect( pJSON, { depth: 99 } ) ) }"
+       var  aJSON       = "var pJSON =\n" + inspect( pJSON ) + "\n\n  "+ ifProcess +" var util = require('util'); console.log( util.inspect( pJSON, { depth: 99 } ) ) }"  // .(21218.01.2)
 
 //          ----------  =  --------------------------------
 
