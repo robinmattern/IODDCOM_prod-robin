@@ -1,12 +1,12 @@
 
 <html>
  <body>
-  <style>
+  <style><!--
     details > ul > li            { margin-top:-10px !important; margin-bottom:20px !important; }
     details > ul > li > p        { color: #810d0d; padding-left: 20px; margin-top:-17px !important; text-indent: -20px; line-height: 22px !important; }
     details > ul > li:last-child { display: none; }                    					            /* .(21218.02.1 RAM Don't display MT last child) */
     code                         { color: black; font-size: 12px; margin: 0px 0px 0px 16px !important; padding-bottom: 0px; }   /* .(21218.02.3 RAM) */
-  </style>
+  --></style>
 
   <div style="margin-left:25px;">
 
