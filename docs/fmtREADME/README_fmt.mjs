@@ -11,7 +11,7 @@
       var  mProjs =  README_JSON()
 
       var  nPrt   =  2    // 1) to stdout, 2) to file, 3) both
-      var  nCmd   =  2    // 1) RREADME, 2) Index.html, 3) Apps, 4) Links
+      var  nCmd   =  1    // 1) README.md, 2) Index.html, 3) Apps, 4) Links
 
       var  aCmd   =  [ , 'ReadMe', 'Index', 'Apps', 'Links' ][ nCmd ]
 
@@ -27,12 +27,12 @@
       var  aTop = `
 <html>
  <body>
-  <style>
+  <style><!--
     details > ul > li            { margin-top:-10px !important; margin-bottom:20px !important; }
     details > ul > li > p        { color: #810d0d; padding-left: 20px; margin-top:-17px !important; text-indent: -20px; line-height: 22px !important; }
     details > ul > li:last-child { display: none; }                    					            /* .(21218.02.1 RAM Don't display MT last child) */
     code                         { color: black; font-size: 12px; margin: 0px 0px 0px 16px !important; padding-bottom: 0px; }   /* .(21218.02.3 RAM) */
-  </style>
+  --></style>
 
   <div style="margin-left:25px;">
 
@@ -77,8 +77,8 @@
 //  -----   ------------------- =  ----------------------------------
 
  function  fmtApp( pApp ) {
-           pApp.txt = pApp.txt.replace( /  - /g, "  &nbsp;&nbsp;&nbsp; &bull;&nbsp; " )
- //        pApp.txt = pApp.txt.replace( /\n +\n/g,  "\n                 <blankline>  \n"  )
+//         pApp.txt = pApp.txt.replace( /  - /g, "  &nbsp;&nbsp;&nbsp; &bull;&nbsp; " )
+//         pApp.txt = pApp.txt.replace( /\n +\n/g,  "\n                 <blankline>  \n"  )
            pApp.txt = pApp.txt.replace( /  \$ (.+)\n /g,  " `$ $1 `  \n "       )     
 
    return  `- ### [${pApp.app}](${pApp.url})\n    `      

@@ -15,13 +15,14 @@ return [
 
     , { app: "1c1. IODD Home App"
       , txt: "Brilliant work by Rick "
-      , url: 'client1/1c1_iodd-home-app/index.html' }
+      , url: 'home/index.html' }
     ] } // eoo stage apps
 
   , { stage: "Server1 getJSON Tool", apps: [
 
     , { app: "1s1. JSON Data API"
-      , txt: `A Node script to extract data from MySQL DB.  See .env for parameters.   
+      , txt: `A Node script to extract data from MySQL DB.  See .env for parameters. 
+        
               1. Install Server1 modules   
                  $ cd server1   
                  $ npm install   
