@@ -21,31 +21,49 @@ return [
   , { stage: "Server1 getJSON Tool", apps: [
 
     , { app: "1s1. JSON Data API"
-      , txt: `A Node script to extract data from MySQL DB.  See .env for parameters. 
-        
-              1. Install Server1 modules   
-                 $ cd server1   
-                 $ npm install   
-                      
-              2. Configure MySQL extraction parameters   
-                 $ cd 1s1*   
-                 $ nano .env   
-                 - DBSQL1-n=SELECT * FROM ... statements will be joined together into one db.json file   
-                 - RENAME_EM=false will add a timestamp to the saved db.json and db.json.js   
-                 - RENAME_EM=true will save the current file with a timestamp      
-                       
-              3. Copy the db.json.js or db.json to its data locaton      
-                 - Remove the _vYMMDD.HHMM if necessary   
-                 - Copy the db.json file for use by json-server    
-              `         
-      , url: 'server1/1s1-iodd-json.js/testAPIs.html' }
+      , url: 'server1/1s1-iodd-json.js/db.json'
+      , txt: `A Node script to extract data from MySQL DB.  See .env for parameters.
+
+              1. Install Server1 node_modules    
+                 $ cd server1    
+                 $ npm install    
+
+              2. Configure MySQL extraction parameters    
+                 $ cd server1/1s1*  
+                 $ nano .env 
+                 - DBNAME, DBHOST, DBUSER, DBPASS = database connection parameters  
+                 - DBSQL1-n=SELECT * FROM ... statements will be joined together into one db.json file  
+                 - RENAME_EM=false will add a timestamp to the saved db.json and db.json.js  
+                 - RENAME_EM=true will save the current file with a timestamp  
+
+              3. Run the extraction program
+                 $ ./getJSON.mjs 
+
+              4. Copy the extracted db.json files to their data locaton
+                 - Remove the _vYMMDD.HHMM if necessary
+                 - Copy the db.json.js file into ./client1/home/assets/json for use by the Client1 App
+              ` }
     ] } // eoo stage apps
 
   , { stage: "Server2 JSON Server APIs", apps: [
 
     , { app: "2s1. JSON Server API"
-      , txt: "A simple API that returns data using json-server and a db.json file."
-      , url: 'server2/2s1-json-server-api/testAPIs.html' }
+      , url: 'server2/2s1-json-server-api/testAPIs.html'
+      , txt: `A simple API that returns data using json-server with a db.json file.
+
+              1. Install Server2 node_modules    
+                 $ cd server2    
+                 $ npm install    
+
+              2. Extract db.json from MySQL   
+                 - Use the Server1 getJSON Tool described above   
+                 - Copy the db.json file into ./server2/api/models for use by the JSON Server APIs   
+
+              3. Run and test the JSON Server APIs  
+                 $ cd server2/1s2*  
+                 $ ./startServer.mjs
+                 - Open testAPI.html in live server
+              ` }
     ] } // eoo stage apps
 
   , { stage: "Server3 MySQL Server APIs", apps: [

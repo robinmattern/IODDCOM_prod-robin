@@ -1,10 +1,10 @@
 <html>
   <head>
-    <title>Test Links Page</title>
+    <title>2s1. IODD JSON Server API - Test Page</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
 //          width           = 1200   // 1184
-            width           = 1050   //
+            width           = 1300   //
             height          = 2100
     </script>
     <style>
@@ -72,19 +72,18 @@
 
             <div class="title"><u><b>json-server examples</b></u></div>
 
-              <li><a href="http://localhost:54372/members"                            >members</a                           ></li>
-              <li><a href="http://localhost:54372/members?memberid=90"                >members?memberid=90</a               ></li>
-              <li><a href="http://localhost:54372/members?lastname=schinner"          >members?lastname=schinner</a         ></li>
-              <li><a href="http://localhost:54372/members?state=MD&active=Y"          >members?state=MD&active=Y</a         ></li>
-              <li><a href="http://localhost:54372/members?state=VA&zip_lte=20190"     >members?state=VA&zip_lte=20190</a    ></li>
-              <li><a href="http://localhost:54372/members?skills_like=javascript"     >members?skills_like=javascript</a    ></li>
-              <li><a href="http://localhost:54372/members?_sort=memberno&_order=desc" >members?_sort=memberno&_order=desc</a></li>
-              <li><a href="http://localhost:54372/members_projects?memberid=90"       >members_projects?memberid=90</a      ></li>
-              <li><a href="http://localhost:54372/projects?_sort=client"              >projects?_sort=client</a             ></li>
-              <li><a href="http://localhost:54372/members?_page=3"                    >members?_page=3</a                   ></li>
-              <li><a href="http://localhost:54372/members?_page=5&_limit=5"           >members?_page=5&_limit=5</a          ></li>
-              <li><a href="http://localhost:54372/members?_start=20&_end=22"          >members?_start=20&_end=22</a         ></li>
-
+              <li><a href="http://localhost:54371/members"                            >members</a                           ></li>
+              <li><a href="http://localhost:54371/members?Id=90"                      >members?Id=90</a                     ></li>
+              <li><a href="http://localhost:54371/members?LastName=Schinner"          >members?LastName=Schinner</a         ></li>
+              <li><a href="http://localhost:54371/members?State=MD&Active=Y"          >members?State=MD&Active=Y</a         ></li>
+              <li><a href="http://localhost:54371/members?State=VA&Zip_lte=20190"     >members?State=VA&Zip_lte=20190</a    ></li>
+              <li><a href="http://localhost:54371/members?Skills_like=javascript"     >members?Skills_like=javascript</a    ></li>
+              <li><a href="http://localhost:54371/members?_sort=MemberNo&_order=desc" >members?_sort=MemberNo&_order=desc</a></li>
+              <li><a href="http://localhost:54371/members_projects?Memberid=90"       >members_projects?Memberid=90</a      ></li>
+              <li><a href="http://localhost:54371/projects?_sort=Client"              >projects?_sort=Client</a             ></li>
+              <li><a href="http://localhost:54371/members?_page=3"                    >members?_page=3</a                   ></li>
+              <li><a href="http://localhost:54371/members?_page=5&_limit=5"           >members?_page=5&_limit=5</a          ></li>
+              <li><a href="http://localhost:54371/members?_start=20&_end=22"          >members?_start=20&_end=22</a         ></li>
 
             <!-- ------- --------------------------------------------------  ------------------ --------------- -->
 <!--
@@ -114,11 +113,15 @@
     </table>
   </body>
   <script>
+// -------- -------------------------------------------------------------------------------------------------
+
             $( "a"      ).click( Link_onClick )
 //          $( ".size1" ).click( Size_onClick )
 //          $( '#new_tab' ).prop( 'checked', true )
             console.log( $._data( $( 'a' )[3], "events").click[0].handler )
             console.log( $( $( 'a' )[3] ).html )
+
+// -------- ------------------------------------------------------------------
 
   function  Link_onClick1( e ) {
         var aStyle = `display: block; width: ${width}px; height: ${height}px;`
@@ -130,6 +133,7 @@
 
             alert( "Hello: " + aLink1 )
             }
+// -------- ------------------------------------------------------------------
 
   function  Link_onClick( ) {
 

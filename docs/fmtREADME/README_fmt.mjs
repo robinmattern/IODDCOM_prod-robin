@@ -79,7 +79,7 @@
  function  fmtApp( pApp ) {
 //         pApp.txt = pApp.txt.replace( /  - /g, "  &nbsp;&nbsp;&nbsp; &bull;&nbsp; " )
 //         pApp.txt = pApp.txt.replace( /\n +\n/g,  "\n                 <blankline>  \n"  )
-           pApp.txt = pApp.txt.replace( /  \$ (.+)\n /g,  " `$ $1 `  \n "       )     
+           pApp.txt = pApp.txt.replace( /  \$ (.+)\n/g,  " `$ $1 `  \n"       )     
 
    return  `- ### [${pApp.app}](${pApp.url})\n    `      
         +  `${pApp.txt }\n`
