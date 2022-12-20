@@ -1,0 +1,222 @@
+<html>
+  <head>
+    <title>2s1. IODD JSON Server API - Test Page</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+//          width           = 1200   // 1184
+            width           = 1200   // #myiframe default width
+            height          = 1500   // #myiframe default height. Was 2100
+//          sidebar-width   = 400    // see below
+
+//          default-width   = 950    // height: 1500
+//          medium-width    = 900    // height: 750
+//          small-width     = 375    // height: 667
+
+    </script>
+    <style>
+        body {
+            font-family     : arial;
+            size            : 10px;
+            background-color: #EEEEEE;
+            }
+        td {
+            vertical-align  : top;
+            }
+        .title {
+            margin-top      : 8px;
+            }
+        a:visited, a:link {
+            color           : black;
+            text-decoration : none;
+            }
+        #mysidebar {                            /* .(21219.02.5) */
+/*          width           : 400px; */
+            min-width       : 360px;
+            }
+        #myiframe {                             /* .(21219.02.1) */
+            display         : none;
+            padding         : 4px;
+            background-color: #A4A6F7;
+            vertical-align  : top;
+            }
+        #url {
+            padding-bottom  :  6px;
+            }
+        input {
+            width           : 38px;
+            }
+        .size1 {
+            padding         :  0px;
+            margin-right    :-10px;
+            }
+        .newTab: {
+           width            : 12px !important;
+            }
+    </style>
+  </head>
+  <body>
+
+    <table>
+      <tr>
+        <td id="mysidebar">  <!-- .(21219.02.6) -->
+
+          <ol>
+
+            <li><a href="http://basec.sicomm.net/nfs/u04/help/blank.html">CLEAR</a>
+              &nbsp; &nbsp; Open in new tab: <input id="new-tab" style="margin-left:-15px;" type="checkbox">
+              <span id="size">
+                <input type="radio" class="size" name="size" value="small" >Small (375)
+                <input type="radio" class="size" name="size" value="medium">Medium (900)
+                <input type="radio" class="size" name="size" value="large" >Large (1200)
+              </span>
+            </li>
+
+            <!-- ------- --------------------------------------------------  ------------------ --------------- -->
+
+            <div  class="title"><u><b>Remote Sites</b></u></div>
+
+              <li><a href="http://formr.net"                                          >formR.Net</a></li>
+              <li><a href="http://iodd.com"                                           >IODD.com</a></li>
+
+            <!-- ------- --------------------------------------------------  ------------------ --------------- -->
+
+            <div class="title"><u><b>json-server examples</b></u></div>
+
+              <li><a href="http://localhost:54371/members"                            >members</a                           ></li>
+              <li><a href="http://localhost:54371/members?Id=90"                      >members?Id=90</a                     ></li>
+              <li><a href="http://localhost:54371/members?LastName=Schinner"          >members?LastName=Schinner</a         ></li>
+              <li><a href="http://localhost:54371/members?State=MD&Active=Y"          >members?State=MD&Active=Y</a         ></li>
+              <li><a href="http://localhost:54371/members?State=VA&Zip_lte=20190"     >members?State=VA&Zip_lte=20190</a    ></li>
+              <li><a href="http://localhost:54371/members?Skills_like=javascript"     >members?Skills_like=javascript</a    ></li>
+              <li><a href="http://localhost:54371/members?_sort=MemberNo&_order=desc" >members?_sort=MemberNo&_order=desc</a></li>
+              <li><a href="http://localhost:54371/members_projects?MemberNo=205"      >members_projects?MemberNo=205</a     ></li>
+              <li><a href="http://localhost:54371/members_projects2?ProjectId=99"     >members_projects2?ProjectId=99</a    ></li>
+              <li><a href="http://localhost:54371/projects?_sort=Client"              >projects?_sort=Client</a             ></li>
+              <li><a href="http://localhost:54371/members?_page=3"                    >members?_page=3</a                   ></li>
+              <li><a href="http://localhost:54371/members?_page=5&_limit=5"           >members?_page=5&_limit=5</a          ></li>
+              <li><a href="http://localhost:54371/members?_start=20&_end=22"          >members?_start=20&_end=22</a         ></li>
+
+            <!-- ------- --------------------------------------------------  ------------------ --------------- -->
+<!--
+            <div  class="title"><u><b>Sites requiring a login</b></u></div>
+
+              <li><a href="http://basec.sicomm.net/login"                     >basec../buyerlogin</a>
+                <select          id="basec-login">
+                  <option     value="{UID}:{PWD}"                             >username      </option>
+                </select>
+              </li>
+
+              <li><a href="http://basec.sicomm.net/admin"                     >basec../adminlogin</a>
+                <select          id="basec-admin">
+                  <option     value="{UID1}:{PWD1}"                           >username1     </option>
+                  <option     value="{UID2}:{PWD2}"                           >username2     </option>
+                  <option     value="{UID3}:{PWD3}"                           >username3     </option>
+                </select>
+              </li>
+-->
+          </ol>
+        </td>
+        <td>
+          <div id="URL" ></div>
+          <iframe src="" id="myiframe"></iframe>                                <!-- .(21219.02.2 RAM Google has an iFrame too) -->
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script>
+// -------- -------------------------------------------------------------------------------------------------
+
+            $( "a"      ).click( Link_onClick )
+//          $( ".size1" ).click( Size_onClick )
+//          $( '#new_tab' ).prop( 'checked', true )
+        var aLink3 = $( $( 'a' )[3] ).html()
+            console.log( `Link3: ${aLink3} -`, $._data( $( 'a' )[3], "events").click[0].handler )
+
+// -------- ------------------------------------------------------------------
+
+   function Link_onClick1( e ) {
+        var aStyle = `display: block; width: ${width}px; height: ${height}px;`
+        var aDate  = (new Date).toUTCString(); aDate  = aDate.substr(8,4) + aDate.substr(5,3) + aDate.substr(17,8)
+
+        var pLink  = $( this )
+        var aLink1 =  pLink.attr( 'href' ),    aPort  =  pLink[0].childNodes[1] ? pLink[0].childNodes[1].value : ''
+            aLink1 =  aPort ? aLink1.replace( /{port}/, aPort ) : aLink1
+
+            alert( "Hello: " + aLink1 )
+            }
+// -------- ------------------------------------------------------------------
+
+   function Link_onClick( ) {
+
+        var aStyle = `display: block; width: ${width}px; height: ${height}px;`
+        var aDate  = (new Date).toUTCString(); aDate  = aDate.substr(8,4) + aDate.substr(5,3) + aDate.substr(17,8)
+
+        var pLink  = $( this )
+//      var aLink1 =  pLink.attr( 'href' ),    aPort  =  pLink[0].childNodes[1].value                                   // .(21022.01.1 RAM fixed bug)
+        var aLink1 =  pLink.attr( 'href' ),    aPort  =  pLink[0].childNodes[1] ? pLink[0].childNodes[1].value : ''     // .(21022.01.1 RAM fixed bug)
+            aLink1 = (aPort) ? aLink1.replace( /{port}/, aPort ) : aLink1
+//          alert(`aLink1: ${aLink1}`)
+
+        var aURL   =  aDate + ": &nbsp; &nbsp;<b>" + aLink1.replace( /admin/, 'login') + "</b>"
+        var aTab   = (aLink1.match( /links|vendorlogin/ ) || $( '#new-tab' ).prop( 'checked' )) ? 'on'  : 'off'
+        var aTab   = (aLink1.match( /blank/             )                                     ) ? 'off' : aTab
+
+            aLink1 = chk_login( aLink1 )
+
+            $( '#URL'   ).html(  aURL + chk_size() )
+            $( ".size1" ).click( Size_onClick )
+
+            $( '#myiframe' ).attr( 'style', aStyle )                                    // .(21219.02.3)
+        if (aTab != 'on') {
+            $( '#myiframe' ).attr( 'src',   aLink1 )                                    // .(21219.02.4)
+        } else {
+        var pWin   =  window.open( aLink1, '_blank'); pWin.focus();
+            }
+     return false
+            }
+// -------- ------------------------------------------------------------------
+
+   function chk_login( aLink1 ) {
+        var aSite  =  aLink1.substr(7,5) + '-' + aLink1.substr(24,5)
+        var aLink2 = (aSite == "basec-login") ? '{URL}/loginhandler.html?{ANO}username={UID}&password={PWD}'   : aLink1
+            aLink2 = (aSite == "basec-admin") ? '{URL}/loginhandler.html?{ANO}username={UID}&password={PWD}'   : aLink2
+            aLink2 = (aSite == "basec-vendo") ? '{URL}/pe_system_login_handler.html?logonID={UID}&pswrd={PWD}' : aLink2
+            aLink2 = (aSite == "train-login") ? '{URL}/loginhandler.html?{ANO}username={UID}&password={PWD}'   : aLink2
+            aLink2 = (aSite == "train-admin") ? '{URL}/loginhandler.html?{ANO}username={UID}&password={PWD}'   : aLink2
+            aLink2 = (aSite == "train-vendo") ? '{URL}/pe_system_login_handler.html?logonID={UID}&pswrd={PWD}' : aLink2
+
+        var aLink3 = aLink1.replace( /admin/, 'login')
+        if (aLink1 != aLink2) {
+            mUser  =  $( "#" + aSite ).val().split( ':' )
+            aLink2 =  aLink2.replace( /{UID}/, mUser[0] )
+            aLink2 =  aLink2.replace( /{PWD}/, mUser[1] )
+            aLink2 =  aLink2.replace( /{ANO}/, ""       ) // agency_id=A00000000064&
+            aLink1 =  aLink2.replace( /{URL}/, aLink3   )
+            }
+     return aLink1
+            }
+// -------- ------------------------------------------------------------------
+
+   function chk_size( ) {
+        var aHTML = $( '#size' ).html();
+            $( '#size' ).hide()
+            aHTML = aHTML.replace( /class="size"/g, `class="size1"` )
+     return aHTML
+            }
+// -------- ------------------------------------------------------------------
+
+   function Size_onClick( ) {
+            var pSize   = $( this )
+            var aSize   =  pSize[0].value
+            var nWidth  = (aSize == 'small') ? 375 : ( aSize == 'medium' ? 900 : width  )
+            var nHeight = (aSize == 'small') ? 667 : ( aSize == 'medium' ? 750 : height )
+            var aStyle  = `display: block; width: ${nWidth}px; height: ${nHeight}px;`
+//          alert( `aSize: ${aSize}, aWidth: ${aWidth}, aStyle: ${aStyle}` )
+            $( '#myiframe' ).attr( 'style',  aStyle )                                    // .(21219.02.5)
+            }
+// -------- ------------------------------------------------------------------
+
+  </script>
+</html>
+
+

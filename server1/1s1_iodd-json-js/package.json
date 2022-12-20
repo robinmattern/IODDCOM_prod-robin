@@ -1,0 +1,23 @@
+{
+  "name": "1s1_iodd-json-js",
+  "version": "0.01.010",
+  "author": "Robin Mattern",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "scripts": {
+    "getJSON": "node getJSON.mjs"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

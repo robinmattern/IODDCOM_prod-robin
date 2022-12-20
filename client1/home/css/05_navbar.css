@@ -1,0 +1,117 @@
+
+/* Basic Blocks Custom App */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre');
+@import url('/font-awesome-4.6.3/css/font-awesome.min.css');
+
+/*-----------------------------------------
+:root selector for variables
+-------------------------------------------*/
+:root {
+
+} 
+/*------------------------------------------*/
+/*Drop UP menu */
+  .btn{
+    font-size: 15px;
+    padding: 0.2rem .4rem;
+    border: solid #DCDCDC 0px;
+    outline: none;
+    background-color: cornflowerblue;
+    color: black;
+    border-radius: 3px;
+  }
+  
+  .btn.active{
+    color: red;
+    background-color: #E5E4E2; /*Platinum*/
+    border: 1px solid red;
+    box-shadow: 1px 1px 3px 0 black;
+    border-radius: 5px;
+  }
+  
+  .drop-menu a:hover,
+  .drop-menu a:active {
+    color: red;
+    font-weight: 600;
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+
+  .drop-wrapper {
+    text-align: center;
+    position: relative;
+    min-width: 0px;
+  }
+  
+  .drop-menu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    margin-left: 0px;
+    border: 1px solid red;
+    box-shadow: 1px 1px 3px 0 black;
+    background-color: whitesmoke; /*#E5E4E2 Platinum*/
+    border-radius: 10px;
+  }
+  .drop-menu.active{
+    display: block;
+  }
+
+  /*
+  .dropdown{
+    top: 100%;
+    margin-top: 0.125rem;
+  }
+  */
+  .dropup{
+    bottom: 100%;
+    margin-bottom: 0.125rem;
+  }
+  
+  .drop-menu a{
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .MenuBreak {
+    display: none;
+  }
+  .divider {
+    padding-left: 2px;
+  }
+
+  hr {
+    border-color: red;
+  }
+
+/*Dropup menu positions*/  
+  #dropup01 {left:80px}  /*Plants*/
+  #dropup02 {left:138px} /*Inventory*/
+  #dropup03 {left:210px} /*WOs*/
+  #dropup04 {left:258px} /*POs*/
+  #dropup05 {left:300px} /*BOMs*/
+  #dropup06 {left:358px} /*Workbooks*/
+  #dropup07 {left:442px} /*Lean Tools*/
+  #dropup08 {left:527px} /*Email*/
+  #dropup09 {left:577px} /*Download*/
+  #dropup10 {left:645px} /*Work Instructions (removed)*/
+  #dropup11 {left:655px} /*Pultrusions*/
+  #dropup12 {left:744px} /*Utilities*/
+  
+ /*Dropup menu Widths*/
+  #dropup01 {width:140px} /*Plants*/
+  #dropup02 {width:200px} /*Inventory*/
+  #dropup03 {width:130px} /*WOs*/
+  #dropup04 {width:120px} /*POs*/
+  #dropup05 {width:150px} /*BOMs*/
+  #dropup06 {width:210px} /*WorkBooks*/
+  #dropup07 {width:220px} /*Lean Tools*/
+  #dropup08 {width:120px} /*Email*/
+  #dropup09 {width:150px} /*Download*/
+  #dropup10 {width:170px} /*Work Instructions (removed)*/
+  #dropup11 {width:200px} /*Pultrusions*/
+  #dropup12 {width:200px} /*Utilities*/
+ 
+/* END CSS */

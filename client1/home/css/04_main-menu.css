@@ -1,0 +1,59 @@
+/* Basic Blocks Custom App */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre');
+@import url('/font-awesome-4.6.3/css/font-awesome.min.css');
+
+/*-----------------------------------------
+:root selector for variables
+-------------------------------------------*/
+:root {
+  --Global_Font-Family: "Times New Roman";
+  --Menu_Font-Size: 30px;
+  --Menu_Font-Weight: 800;
+  } 
+
+
+  .MainMenu {
+    padding: 20px 0px 0px 20px;
+  }
+
+  .MenuColImage {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 0px;
+    text-align: right;
+  }
+  
+  .MenuColText {
+    padding-top: 30px;
+    padding-left: 0px;
+    font-size: var(--Menu_Font-Size);
+    font-weight: var(--Menu_Font-Weight);
+    font-family: var(--Global_Font-Family);
+  }
+
+  .MenuColMid {
+    width: 10px;
+  }
+  
+  .imgSize {
+    width: 52%;
+  }
+  
+    .MenuColText a:link {color: inherit; font-family: var(--Global_Font-Family); font-size: var(--Menu_Font-Size); text-decoration: none; }
+    .MenuColText a:visited {color: inherit; font-family: var(--Global_Font-Family); font-size: var(--Menu_Font-Size); text-decoration: none; }
+    .MenuColText a:hover {color: orangered; font-family: var(--Global_Font-Family); font-size: var(--Menu_Font-Size); text-decoration: none; }
+    .MenuColText a:active {color: inherit; font-family: var(--Global_Font-Family); font-size: var(--Menu_Font-Size); text-decoration: none; }
+    
+    /*
+    .MenuColText a:link    { color: inherit; font-family: var(--Global_Font-Family); font-size: var(--Menu_Font-Size); text-decoration: none; }
+    .MenuColText a:visited { color: inherit; font-family: var(--Global_Font-Family); font-size: var(--Menu_Font-Size); text-decoration: none; }
+    .MenuColText a:hover   { color: orangered; font-family: var(--Global_Font-Family); font-size: var(--Menu_Font-Size); text-decoration: none; }
+    .MenuColText a:active  { color: inherit; font-family: var(--Global_Font-Family); font-size: var(--Menu_Font-Size); text-decoration: none; }
+  ``*/
+
+    .MenuBullets {
+        margin: 0px 20px 0px 65px;
+        font-size: .9rem;
+        font-weight: 600;
+        display: none;
+      }

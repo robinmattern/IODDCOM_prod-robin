@@ -1,0 +1,26 @@
+{
+  "name": "1s2-iodd-json-api",
+  "version": "0.01.010",
+  "author": "Robin Mattern",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "scripts": {
+    "start1":  "json-server  -p 54371 -r api/routes/routes.json --watch api/models/db.json api/models/db.json",
+    "start":   "json-server  -p 54371                           --watch api/models/db.json",
+    "start2":  "json-server  -p 54371 --routes  --no-cors       --watch api/models/db.json api/models/db.json",
+    "start-unix": "../node_modules/.bin/json-server  -p 50352 -r api/routes/routes.json --watch api/models/db.json api/models/db.json"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

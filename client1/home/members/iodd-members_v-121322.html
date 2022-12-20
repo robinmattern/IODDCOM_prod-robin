@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Members</title>
+        <link rel="shortcut icon" href="/home/favicon.png">
+        <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+        <link rel="stylesheet"    href="../hamburger2.css">
+
+        <link rel="stylesheet"    href="../css/01_iodd_logo.css">
+        <!--<link rel="stylesheet"    href="css/01_pfep_logo.css">-->
+        <link rel="stylesheet"    href="../css/02_hamburger1.css">
+        <link rel="stylesheet"    href="../css/03_index.css">
+        <link rel="stylesheet"    href="../css/04_main-menu.css">
+        <link rel="stylesheet"    href="../css/05_navbar.css">
+        <link rel="stylesheet"    href="../css/06_resp_1900-3000-desktop.css">
+        <link rel="stylesheet"    href="../css/07_resp_1100-1900-laptop.css">
+        <link rel="stylesheet"    href="../css/08_resp_950-1100-tabletLandscape.css">
+        <link rel="stylesheet"    href="../css/09_resp_700-950-tabletPortrait.css">
+        <link rel="stylesheet"    href="../css/10_resp_412-700-mobileLandscape.css">
+        <link rel="stylesheet"    href="../css/11_resp_LT0412-mobile.css">
+        <link rel="stylesheet"    href="iodd-members.css">
+
+        <script src="../assets/json/IODD-members_u2a.json.js" type="application/javascript" ></script>
+        <script src="../assets/js/IODD-members.js"            type="application/javascript" ></script>
+
+</head>
+<body>
+<div class="container">
+
+<!--  Header -->
+<div class="Header">
+    <div class="MenuWrap">
+        <input type="checkbox" class="Toggler">
+        <div class="Hamburger" style="background: rgb(198 210 222);"><div></div></div>
+        <div class="Menu">
+            <div>
+                <div>
+                    <ul>
+                        <li class="BtnCTA"><a href="https://8020data.github.io/FRDocs_prod-master/#/" target="_blank" title="Go to the Tutorial">Do our Tutorial</a></li>
+                        <li><a href="https://discord.com/channels/928752444316483585/928752444316483587" target="_blank" title="Be Part Of Our formR Discord Discussions">Discord Discussion</a></li>
+                        <li><hr color="blue"></li>
+                        <li><a href="https://discord.com/channels/928752444316483585/928752444316483587" target="_blank" title="Go to Our Support Page">Support</a></li>
+                        <li><a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" title="View Our License Agreement">License</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Logo">
+        <span class="LogoText">iodd</span>
+        <span class="device-text"></span>
+    </div>
+    <div class="HeaderSpacer"></div>
+    <div>
+        <ul  class="HeaderNavList">
+            <li class="HeaderNavListItem1"><a href="../index.html" title="Go to Home Page">Home</a></li>
+            <li class="HeaderNavListItem2"><a href="#" target="_blank" title="Next Meetins">Meeting Location</a></li>
+            <li class="HeaderNavListItemCTA"><a href="#" target="_blank" title="Next Meetins">Next Meetiing <span class="next-meeting-date"></span></a></li>
+        </ul>
+    </div>
+</div>
+<!-- END  Header -->
+
+<!--  Section1 -->
+<div class="Section1">
+    <div class="Section1Title">Institute Of Database Developers</div>
+    <div  class="Section1Paragraph">
+        IODD members have demonstrated expertise in one or more areas of database analysis, design, implementation, management and maintenance.
+        <br><br>
+        IODD members serve as advisors to other members and their companies about the constantly changing database issues.                
+    </div>
+</div>
+<!-- END  Section1 -->
+
+<!--  Section2 -->
+<div    class="Section2">
+    <div class="Section2Title">Members</div>
+    <div class="members-list">
+        <table class="main-table">
+            <tr class="head-row"><td>Name</td><td>Email</td><td>Phone / Mobile</td></tr>
+            <tbody id="Members">
+            </tbody>    
+            <script>
+                var pMembers = document.getElementById( "Members" )
+                    pMembers.innerHTML = fmtMembers( pJSON )
+            </script>                  
+            <tr class="last-row"><td colspan="3"></td></tr>
+        </table>
+    </div>
+</div>
+<!-- END  Section2 -->
+
+<!--  Footer -->
+<div class="Footer">
+    <ul class="FooterNavList">
+        <li class="FooterNavListItem"><a href="https://discord.com/channels/928752444316483585/928752444316483587" target="_blank" title="Go to Our Support Page">Support</a></li>
+        <li class="FooterNavListItem"><a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" title="View Our License Agreement">License</a></li>
+        <li class="FooterNavListItem"><a href="#" target="_blank">Guru Mail</a></li>
+    </ul>
+</div>
+<!-- END  Footer -->
+
+</div> <!--Container ending div-->
+</body>
+</html>

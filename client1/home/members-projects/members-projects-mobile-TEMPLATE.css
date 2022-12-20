@@ -1,0 +1,100 @@
+body {
+    width: 100%;
+}
+.Section1 {
+    display: none;
+}
+.Section2 {
+    top: 0px;
+    height: 81%;
+    background-color: "#E5E4E2"; /*platinum*/
+    background-color: aliceblue;
+}
+.Section2Title {
+    font-size: 150%;
+    padding: 40px 0px 0px 40px;
+}
+.HeaderNavListItem {
+    display: none;
+}
+.title {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+/*----------------------------------*/
+.main-table-mobile {
+    margin: -15px 0px 0px 0px;
+    border-collapse: collapse;
+    width: 95%;
+    border: black 0px solid;
+}
+.members-info-mobile {
+    /*display: none;*/
+    width: 90%;
+    margin: 20px 0px 0px 20px;
+    border: black 0px solid;
+}
+.members-name-mobile {
+    font-size: 28px;
+    font-weight: 700;
+    width: 40%;
+    color: blue;
+    vertical-align: top;
+    padding: 10px 20px 2px 5px;
+    border-top: solid 0px black;
+    border-left: solid 0px black;
+}
+.members-address-mobile {
+    font-size: 18px;
+    width: 100%;
+    padding: 12px 4px 12px 4px;
+    border-bottom: solid 0px black;
+    border-top: solid 0px black;
+    border-left: solid 0px black;
+}
+.members-resume-mobile {
+    font-size: 18px;
+    padding: 10px 30px 20px 20px;
+    border: solid 1px black;
+    vertical-align: middle;
+    border-radius: 5%;
+    box-shadow: 5px 5px #888888;
+}
+.project-title-mobile {
+    font-size: 25px;
+    color: blue;
+}
+
+.project-summary-mobile-left {
+    padding: 0px 5px 0px 5px;
+}
+.project-summary-mobile-right {
+    padding: 0px 5px 0px 5px;
+}
+.project-details-mobile {
+    width: 90%;
+    vertical-align: top;
+    padding: 10px 0px 0px 10px;
+    border-top: dashed black 1px;
+}
+
+hr {
+    position: relative;
+    border: none;
+    height: 6px;
+    background: blue;
+    margin: 20px 0px 20px 20px;
+}
+/*-----------------------------------*/
+.xproject-title-line {
+    font-size: 25px;
+    color: pink;
+}
+.xmid-hr hr {
+    position: relative;
+    border: none;
+    height: 2px;
+    background: blue;
+    margin: 20px 0px 20px 20px;    
+}
