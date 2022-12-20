@@ -4,8 +4,14 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
 //          width           = 1200   // 1184
-            width           = 1300   //
-            height          = 2100
+            width           = 1200   // #myiframe default width
+            height          = 1500   // #myiframe default height. Was 2100
+//          sidebar-width   = 400    // see below
+
+//          default-width   = 950    // height: 1500
+//          medium-width    = 900    // height: 750
+//          small-width     = 375    // height: 667
+
     </script>
     <style>
         body {
@@ -23,7 +29,11 @@
             color           : black;
             text-decoration : none;
             }
-        iframe {
+        #mysidebar {                            /* .(21219.02.5) */
+/*          width           : 400px; */
+            min-width       : 360px;
+            }
+        #myiframe {                             /* .(21219.02.1) */
             display         : none;
             padding         : 4px;
             background-color: #A4A6F7;
@@ -48,16 +58,16 @@
 
     <table>
       <tr>
-        <td width="600px">
+        <td id="mysidebar">  <!-- .(21219.02.6) -->
 
           <ol>
 
             <li><a href="http://basec.sicomm.net/nfs/u04/help/blank.html">CLEAR</a>
               &nbsp; &nbsp; Open in new tab: <input id="new-tab" style="margin-left:-15px;" type="checkbox">
               <span id="size">
-                <input type="radio" class="size" name="size" value="small" >Small
-                <input type="radio" class="size" name="size" value="medium">Medium
-                <input type="radio" class="size" name="size" value="large" >Large
+                <input type="radio" class="size" name="size" value="small" >Small (375)
+                <input type="radio" class="size" name="size" value="medium">Medium (900)
+                <input type="radio" class="size" name="size" value="large" >Large (1200)
               </span>
             </li>
 
@@ -79,7 +89,8 @@
               <li><a href="http://localhost:54371/members?State=VA&Zip_lte=20190"     >members?State=VA&Zip_lte=20190</a    ></li>
               <li><a href="http://localhost:54371/members?Skills_like=javascript"     >members?Skills_like=javascript</a    ></li>
               <li><a href="http://localhost:54371/members?_sort=MemberNo&_order=desc" >members?_sort=MemberNo&_order=desc</a></li>
-              <li><a href="http://localhost:54371/members_projects?Memberid=90"       >members_projects?Memberid=90</a      ></li>
+              <li><a href="http://localhost:54371/members_projects?MemberNo=205"      >members_projects?MemberNo=205</a     ></li>
+              <li><a href="http://localhost:54371/members_projects2?ProjectId=99"     >members_projects2?ProjectId=99</a    ></li>
               <li><a href="http://localhost:54371/projects?_sort=Client"              >projects?_sort=Client</a             ></li>
               <li><a href="http://localhost:54371/members?_page=3"                    >members?_page=3</a                   ></li>
               <li><a href="http://localhost:54371/members?_page=5&_limit=5"           >members?_page=5&_limit=5</a          ></li>
@@ -107,7 +118,7 @@
         </td>
         <td>
           <div id="URL" ></div>
-          <iframe src=""></iframe>
+          <iframe src="" id="myiframe"></iframe>                                <!-- .(21219.02.2 RAM Google has an iFrame too) -->
         </td>
       </tr>
     </table>
@@ -118,12 +129,12 @@
             $( "a"      ).click( Link_onClick )
 //          $( ".size1" ).click( Size_onClick )
 //          $( '#new_tab' ).prop( 'checked', true )
-            console.log( $._data( $( 'a' )[3], "events").click[0].handler )
-            console.log( $( $( 'a' )[3] ).html )
+        var aLink3 = $( $( 'a' )[3] ).html()
+            console.log( `Link3: ${aLink3} -`, $._data( $( 'a' )[3], "events").click[0].handler )
 
 // -------- ------------------------------------------------------------------
 
-  function  Link_onClick1( e ) {
+   function Link_onClick1( e ) {
         var aStyle = `display: block; width: ${width}px; height: ${height}px;`
         var aDate  = (new Date).toUTCString(); aDate  = aDate.substr(8,4) + aDate.substr(5,3) + aDate.substr(17,8)
 
@@ -135,7 +146,7 @@
             }
 // -------- ------------------------------------------------------------------
 
-  function  Link_onClick( ) {
+   function Link_onClick( ) {
 
         var aStyle = `display: block; width: ${width}px; height: ${height}px;`
         var aDate  = (new Date).toUTCString(); aDate  = aDate.substr(8,4) + aDate.substr(5,3) + aDate.substr(17,8)
@@ -155,9 +166,9 @@
             $( '#URL'   ).html(  aURL + chk_size() )
             $( ".size1" ).click( Size_onClick )
 
-            $( 'iframe' ).attr( 'style', aStyle )
+            $( '#myiframe' ).attr( 'style', aStyle )                                    // .(21219.02.3)
         if (aTab != 'on') {
-            $( 'iframe' ).attr( 'src',   aLink1 )
+            $( '#myiframe' ).attr( 'src',   aLink1 )                                    // .(21219.02.4)
         } else {
         var pWin   =  window.open( aLink1, '_blank'); pWin.focus();
             }
@@ -201,7 +212,7 @@
             var nHeight = (aSize == 'small') ? 667 : ( aSize == 'medium' ? 750 : height )
             var aStyle  = `display: block; width: ${nWidth}px; height: ${nHeight}px;`
 //          alert( `aSize: ${aSize}, aWidth: ${aWidth}, aStyle: ${aStyle}` )
-            $( 'iframe' ).attr( 'style',  aStyle )
+            $( '#myiframe' ).attr( 'style',  aStyle )                                    // .(21219.02.5)
             }
 // -------- ------------------------------------------------------------------
 
