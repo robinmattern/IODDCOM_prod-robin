@@ -98,7 +98,7 @@ var pJSON =
       Phone1: '202-647-9480',
       Phone2: '703-619-9482',
       Fax: null,
-      WebSite: 'http://www.state.;v',
+      WebSite: 'http://www.state.gov',
       Email: 'dcutting@cox.net',
       Skills: 'access, vb, sql server, management, asp, UML, JAVA',
       Active: 'N',
@@ -151,8 +151,8 @@ var pJSON =
       Phone1: '202-273-3567',
       Phone2: '703-425-1428',
       Fax: '202-273-3559',
-      WebSite: 'http://facadatabase.;v',
-      Email: 'kennett.fussell@gsa.;v',
+      WebSite: 'http://facadatabase.gov',
+      Email: 'kennett.fussell@gsa.gov',
       Skills: 'web,access,dbase,foxpro,vi,visual interdev,managem',
       Active: 'Y',
       Bio: 'Doctorate in Education. Worked with microcomputers and software development\n' +
@@ -181,7 +181,7 @@ var pJSON =
       Phone2: null,
       Fax: null,
       WebSite: 'http://icewarp.com',
-      Email: 'l;c@icewarp.com',
+      Email: 'lgoc@icewarp.com',
       Skills: 'foxpro, sql server, merak email server, asp, xml',
       Active: 'Y',
       Bio: 'I have been designing and building database solutions since 1987. I am an expert in digital and audio processing and preparing content for streaming over the Internet. I am also experienced in th preparation and delivery of training programs. I love Bond girls. I am currently investigating the use of XML in for my future solutions.'
@@ -825,11 +825,11 @@ var pJSON =
       Id: 1,
       Name: 'NATO Summit',
       Client: 'Departments of State and Defense',
-      ClientWeb: 'http://www.state.;v',
+      ClientWeb: 'http://www.state.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Internet - Multi-user LAN - Windows NT - Access 97',
-      Industry: ';vt Summit',
+      Industry: 'Government',
       Description: "The project supported the NATO Summit's 50th Anniversary meeting. The system provided credentials for 2,000 foreign dignitaries and 10,000 US citizens. The Summit staff was able to monitor Airport arrivals and departures , Hotel and Event information. The Operations Center was managed using a real-time Incident System from their browser. The technology used was NT 4.0 and Active Server Pages."
     },
     {
@@ -847,11 +847,11 @@ var pJSON =
       Id: 3,
       Name: 'Web Directory',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Internet - Multi-user LAN - Windows 95/NT - Access',
-      Industry: ';vt Committees',
+      Industry: 'Government',
       Description: 'This project updates the original SAMI database from Access 2.0 to Access 97. Also provided is a searchable web database feature that allows users to analyze the directory on-line. Finally committee members can update changes in their status through a browser from any point on the internet.'
     },
     {
@@ -869,44 +869,44 @@ var pJSON =
       Id: 5,
       Name: 'Committee Web System',
       Client: 'General Service Administration',
-      ClientWeb: 'http://www.gsa.;v',
+      ClientWeb: 'http://www.gsa.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: '1,000+ Users - Internet - Multi-user LAN - Windows',
-      Industry: ';vt Committees',
-      Description: 'The Committee Management Secretariat is responsible for tracking almost 1,000 committees and 13,000 members from 60 agencies of the Federal ;vernment. The new web based system replaces the formerly manual paper system. Representatives from each agency log in to the system via a Netscape or Internet Explorer browser and updates their appropriate data. The data is used by an Access application to produce a written report that is sent to the President and then forwarded to Congress.'
+      Industry: 'Government',
+      Description: 'The Committee Management Secretariat is responsible for tracking almost 1,000 committees and 13,000 members from 60 agencies of the Federal Government. The new web based system replaces the formerly manual paper system. Representatives from each agency log in to the system via a Netscape or Internet Explorer browser and updates their appropriate data. The data is used by an Access application to produce a written report that is sent to the President and then forwarded to Congress.'
     },
     {
       Id: 6,
       Name: 'Day Care System',
       Client: 'District of Columbia',
-      ClientWeb: 'http://www.washingtondc.;v/',
+      ClientWeb: 'http://www.washingtondc.gov/',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Multi-user LAN - Windows 95/NT - Access 97 - SQL S',
-      Industry: ';vt Childcare',
+      Industry: 'Government',
       Description: 'The Day Care project manages the assignment of eligible children to authorized day care providers. It replaces a legacy Paradox system. The eligible children are provided from a main frame system. Providers are captured by the system. The link is made by a case worker. Histories are provided. A future enhancement will link the assignment to the billing system.'
     },
     {
       Id: 7,
       Name: 'GATT Web System',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Internet - Multi-user LAN - Windows 3.x/95/NT - Ac',
-      Industry: ';vt WTO',
+      Industry: 'Government',
       Description: 'The GATT project involves the collection and management of proposed standards from the World Trade Organization in Switzerland. This data is collected via the Internet and then imported into an Access database. As events take place regarding each item, additional information can be added by NIST personnel. Full featured filtering and reporting was included.'
     },
     {
       Id: 8,
       Name: 'Publications System',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Multi-user LAN - Windows 95/NT - Access 97 ',
-      Industry: ';vt Publications',
+      Industry: 'Government',
       Description: "The Publications project was designed to replace the client's existing legacy database R:Base for DOS computer system. It manages the process of technical publications throughout NIST at both of the Gaithersburg and Boulder locations. The process includes editorial review, production, accounting, and inventory/distribution control."
     },
     {
@@ -990,11 +990,11 @@ var pJSON =
       Id: 16,
       Name: 'NIST Directory',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Multi-user Novell LAN - Access 2.0 ',
-      Industry: ';vt Committees',
+      Industry: 'Government',
       Description: `The NIST Directory project was designed to replace the client's existing computer system. The system was designed, tested and implemented in 4 months. The existing system required several difficult processes including "sneaker net" to function properly. The new system provides a single point of data entry and will print out the source documents for printing.`
     },
     {
@@ -1254,22 +1254,22 @@ var pJSON =
       Id: 40,
       Name: 'FACA Database',
       Client: 'General Services Administration',
-      ClientWeb: 'http://www.gsa.;v',
-      ProjectWeb: 'http://fido.;v/facadatabase',
+      ClientWeb: 'http://www.gsa.gov',
+      ProjectWeb: 'http://facadatabase.gov',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, SQL7, XML, Internet database',
-      Industry: ';vt Committees',
+      Industry: 'Government',
       Description: 'The 2 year old FACA Database received a face lift and additional reporting capabilities. A new Public area was created that allows anyone to log one and view or download data from the system.'
     },
     {
       Id: 41,
       Name: 'Patient Tracking System',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Multi-User LAN - Access 97',
-      Industry: ';vt Patents',
+      Industry: 'Government',
       Description: 'NIST was provided with enhancements to their existing system that performs work flow management of the Patent Application Process.'
     },
     {
@@ -1320,11 +1320,11 @@ var pJSON =
       Id: 46,
       Name: 'Case Management System',
       Client: 'Department of Interior',
-      ClientWeb: 'http://www.doi.;v',
+      ClientWeb: 'http://www.doi.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Multi-user LAN Access 97',
-      Industry: ';vt Case Tracking',
+      Industry: 'Government',
       Description: 'Provided enhancement support for the tracking of legal cases as they flow through the Department of Interior.'
     },
     {
@@ -1353,22 +1353,22 @@ var pJSON =
       Id: 50,
       Name: 'Standards Committee Members',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://nist.;v',
-      ProjectWeb: 'http://standards.;v/MemberSearch',
+      ClientWeb: 'http://nist.gov',
+      ProjectWeb: 'http://standards.gov/MemberSearch',
       Location: 'Alabama, Maryland, Virginia, Pennsylvania',
       ProjectType: 'NT4, IIS4, SQL7 database, XML, Access',
-      Industry: ';vt',
+      Industry: 'Government',
       Description: 'The process involves a new calling web server and existing remote servers at NIST, DOD and NASA. The user browses to the calling server. The calling server uses standard CGI scripting to contact the remote servers. The remote servers retrieve the desired information from their databases, format it and return it to the calling server. The calling server combines and formats the results using state of the art XML and XSL, returning HTML to the user’s browser.'
     },
     {
       Id: 51,
       Name: 'Office of Weights and Measures',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Access97, Multi-user NT4.0',
-      Industry: ';vt',
+      Industry: 'Government',
       Description: 'This project allows the OWM office to collect information about NIST members and merge it with the National Committees database. It also tracks the training for members. It produces a directory, labels, class roles and certicates.'
     },
     {
@@ -1388,11 +1388,11 @@ var pJSON =
       Id: 60,
       Name: 'USPS Automation',
       Client: 'US Postal Service',
-      ClientWeb: 'http://www.usps.;v',
+      ClientWeb: 'http://www.usps.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Financial Transaction Accumulation',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Systems received awards for saving over $1,000,000 per month. Focus is on cost saving through automation. Significant achievements include 90 million tranactions in a 10 minute window each day. Currently deploying an electronic travel voucher system to 81,000 customers.'
     },
     {
@@ -1410,33 +1410,33 @@ var pJSON =
       Id: 62,
       Name: 'Remedy Action Reporting System',
       Client: 'US State Department',
-      ClientWeb: 'http://www.state.;v',
+      ClientWeb: 'http://www.state.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Business Process Re-Engineering',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Application provides management information and tracking for IRM and its customers with web-based reporting.  Remedy alerts provide email status for over-due and critical path activities.  Participated in several management workshops to develop a Vision and Mission Statement to promote customer focus and strategic values.  Facilitate management consensus on supporting workflow processes, key metrics and customer-specific service level agreements.'
     },
     {
       Id: 63,
       Name: 'PORTAL PILOT',
       Client: 'US State Department',
-      ClientWeb: 'http://www.state.;v',
+      ClientWeb: 'http://www.state.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Emerging Technology',
-      Industry: ';vernment',
-      Description: 'The Portal pilot is evaluating emerging technologies to deliver electronic ;vernment services to other agencies and the general public using PKI, XML and application integration.  We are implementing a pilot web portal with several vendors to accomplish proof of concept demonstrations for knowledge management, on-line collaboration, and personalization services in the form of opt-in / opt-out subscriptions to list servers and customer newsletters.'
+      Industry: 'Government',
+      Description: 'The Portal pilot is evaluating emerging technologies to deliver electronic government services to other agencies and the general public using PKI, XML and application integration.  We are implementing a pilot web portal with several vendors to accomplish proof of concept demonstrations for knowledge management, on-line collaboration, and personalization services in the form of opt-in / opt-out subscriptions to list servers and customer newsletters.'
     },
     {
       Id: 64,
       Name: 'Help Desk Ticket System',
       Client: 'US Department Of State',
-      ClientWeb: 'http://www.state.;v',
+      ClientWeb: 'http://www.state.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Web Database - SQL Server - IIS ISAPI - MTS - MSMQ',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Project to track and manage call center operations and provide management status reporting for approximately 800 customers in the A  Bureau.\n' +
         '\n' +
         'The application allows call center operators to track multiple customer\n' +
@@ -1452,7 +1452,7 @@ var pJSON =
       Id: 66,
       Name: 'Unmanned Aerial Vehicle Ground Control Station',
       Client: 'Department of Defense',
-      ClientWeb: 'http://www.dod.;v',
+      ClientWeb: 'http://www.dod.gov',
       ProjectWeb: 'http://www.usmc.mil/',
       Location: 'Washington, DC',
       ProjectType: 'Intranet - Multi-user LAN - Windows NT - MS Access',
@@ -1575,11 +1575,11 @@ var pJSON =
       Id: 81,
       Name: 'Standards Annual Report',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://nist.;v',
-      ProjectWeb: 'http://standards.;v/annualreport',
+      ClientWeb: 'http://nist.gov',
+      ProjectWeb: 'http://standards.gov/annualreport',
       Location: 'Gaithersburg, MD',
       ProjectType: 'NT4, IIS4, SQL7 database, XML, Access',
-      Industry: ';vt',
+      Industry: 'Government',
       Description: 'The process uses the Internet to collect annual report information about the Standards activity of Federal Agencies. Information about the use of world-wide standards is particularly important.'
     },
     {
@@ -1628,46 +1628,46 @@ var pJSON =
     },
     {
       Id: 95,
-      Name: 'Standards ;v',
+      Name: 'Standards Gov',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://nist.;v',
-      ProjectWeb: 'http://standards.;v/',
+      ClientWeb: 'http://nist.gov',
+      ProjectWeb: 'http://standards.gov/',
       Location: 'Gaithersburg, MD',
       ProjectType: 'XML,NT4, IIS4, SQL7 database, XML, Access',
-      Industry: ';vernment',
-      Description: 'Standards.;v is a one-stop location for finding information related to the use of voluntary consensus standards in ;vernment. Each federal agency web site  (as well as state and local ;vernments sites) has important, standards-related information. Locating that information can be a time-consuming and difficult task. At Standards.;v, you can find links that take you directly to the information you want, thus reducing time and effort spent in needlessly locating and then searching numerous agency web sites.'
+      Industry: 'Government',
+      Description: 'Standards.gov is a one-stop location for finding information related to the use of voluntary consensus standards in government. Each federal agency web site  (as well as state and local governments sites) has important, standards-related information. Locating that information can be a time-consuming and difficult task. At Standards.gov, you can find links that take you directly to the information you want, thus reducing time and effort spent in needlessly locating and then searching numerous agency web sites.'
     },
     {
       Id: 99,
       Name: 'Financial Management Systems Inventory',
       Client: 'Office of Management and Budget',
-      ClientWeb: 'http://www.whitehouse.;v/omb/',
-      ProjectWeb: 'Http://fido.;v/fmsi',
+      ClientWeb: 'http://www.whitehouse.gov/omb/',
+      ProjectWeb: 'Http://fido.gov/fmsi',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, ASP, VB, SQL7 database, XML, Access',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Federal agencies use FMSI to report information about the Financial Managemnet tools that they use. The information is used to assist in budget preparation and monitoring.In 2001 over 280 federal employees reported on 1426 systems. The system included security and a link to the dMail service to allow tracking of email related to this project.'
     },
     {
       Id: 101,
       Name: 'Federal Interagency Databases Online',
-      Client: 'Office of ;vernment-wide Policy GSA',
-      ClientWeb: 'http://www.gsa.;v',
-      ProjectWeb: 'Http://fido.;v',
+      Client: 'Office of Government-wide Policy GSA',
+      ClientWeb: 'http://www.gsa.gov',
+      ProjectWeb: 'Http://fido.gov',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, ASP, VB, SQL7 database, XML, Access',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'FIDO provides access to database that are used by many agencies. A score300 chart is available to compare agencies across numerous data collection processes.'
     },
     {
       Id: 104,
       Name: 'Financial Improvement Progress System',
       Client: 'Office of Management and Budget',
-      ClientWeb: 'http://www.whitehouse.;v/omb/',
-      ProjectWeb: 'Http://fido.;v/fips',
+      ClientWeb: 'http://www.whitehouse.gov/omb/',
+      ProjectWeb: 'Http://fido.gov/fips',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, ASP, VB, SQL7 database, XML, Access',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Federal agencies are audited each year. The FIPS system tracks audit information and findings. Agency initatives are associated with findings to track progress of the improvements discovered in the findings.'
     },
     {
@@ -1753,11 +1753,11 @@ var pJSON =
       Dates: '1994-2001',
       ProjectName: 'USPS Automation',
       Client: 'US Postal Service',
-      ClientWeb: 'http://www.usps.;v',
+      ClientWeb: 'http://www.usps.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Financial Transaction Accumulation',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Systems received awards for saving over $1,000,000 per month. Focus is on cost saving through automation. Significant achievements include 90 million tranactions in a 10 minute window each day. Currently deploying an electronic travel voucher system to 81,000 customers.'
     },
     {
@@ -1816,7 +1816,7 @@ var pJSON =
       Phone1: '202-647-9480',
       Phone2: '703-619-9482',
       Fax: null,
-      WebSite: 'http://www.state.;v',
+      WebSite: 'http://www.state.gov',
       Email: 'dcutting@cox.net',
       Skills: 'access, vb, sql server, management, asp, UML, JAVA',
       Active: 'N',
@@ -1827,12 +1827,12 @@ var pJSON =
       Dates: '2001',
       ProjectName: 'PORTAL PILOT',
       Client: 'US State Department',
-      ClientWeb: 'http://www.state.;v',
+      ClientWeb: 'http://www.state.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Emerging Technology',
-      Industry: ';vernment',
-      Description: 'The Portal pilot is evaluating emerging technologies to deliver electronic ;vernment services to other agencies and the general public using PKI, XML and application integration.  We are implementing a pilot web portal with several vendors to accomplish proof of concept demonstrations for knowledge management, on-line collaboration, and personalization services in the form of opt-in / opt-out subscriptions to list servers and customer newsletters.'
+      Industry: 'Government',
+      Description: 'The Portal pilot is evaluating emerging technologies to deliver electronic government services to other agencies and the general public using PKI, XML and application integration.  We are implementing a pilot web portal with several vendors to accomplish proof of concept demonstrations for knowledge management, on-line collaboration, and personalization services in the form of opt-in / opt-out subscriptions to list servers and customer newsletters.'
     },
     {
       Id: 93,
@@ -1853,7 +1853,7 @@ var pJSON =
       Phone1: '202-647-9480',
       Phone2: '703-619-9482',
       Fax: null,
-      WebSite: 'http://www.state.;v',
+      WebSite: 'http://www.state.gov',
       Email: 'dcutting@cox.net',
       Skills: 'access, vb, sql server, management, asp, UML, JAVA',
       Active: 'N',
@@ -1864,11 +1864,11 @@ var pJSON =
       Dates: '2000-2001',
       ProjectName: 'Remedy Action Reporting System',
       Client: 'US State Department',
-      ClientWeb: 'http://www.state.;v',
+      ClientWeb: 'http://www.state.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Business Process Re-Engineering',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Application provides management information and tracking for IRM and its customers with web-based reporting.  Remedy alerts provide email status for over-due and critical path activities.  Participated in several management workshops to develop a Vision and Mission Statement to promote customer focus and strategic values.  Facilitate management consensus on supporting workflow processes, key metrics and customer-specific service level agreements.'
     },
     {
@@ -1890,7 +1890,7 @@ var pJSON =
       Phone1: '202-647-9480',
       Phone2: '703-619-9482',
       Fax: null,
-      WebSite: 'http://www.state.;v',
+      WebSite: 'http://www.state.gov',
       Email: 'dcutting@cox.net',
       Skills: 'access, vb, sql server, management, asp, UML, JAVA',
       Active: 'N',
@@ -1901,11 +1901,11 @@ var pJSON =
       Dates: '1999',
       ProjectName: 'Help Desk Ticket System',
       Client: 'US Department Of State',
-      ClientWeb: 'http://www.state.;v',
+      ClientWeb: 'http://www.state.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Web Database - SQL Server - IIS ISAPI - MTS - MSMQ',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Project to track and manage call center operations and provide management status reporting for approximately 800 customers in the A  Bureau.\n' +
         '\n' +
         'The application allows call center operators to track multiple customer\n' +
@@ -1936,7 +1936,7 @@ var pJSON =
       Phone1: '202-647-9480',
       Phone2: '703-619-9482',
       Fax: null,
-      WebSite: 'http://www.state.;v',
+      WebSite: 'http://www.state.gov',
       Email: 'dcutting@cox.net',
       Skills: 'access, vb, sql server, management, asp, UML, JAVA',
       Active: 'N',
@@ -1947,11 +1947,11 @@ var pJSON =
       Dates: '1999',
       ProjectName: 'NATO Summit',
       Client: 'Departments of State and Defense',
-      ClientWeb: 'http://www.state.;v',
+      ClientWeb: 'http://www.state.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Internet - Multi-user LAN - Windows NT - Access 97',
-      Industry: ';vt Summit',
+      Industry: 'Government',
       Description: "The project supported the NATO Summit's 50th Anniversary meeting. The system provided credentials for 2,000 foreign dignitaries and 10,000 US citizens. The Summit staff was able to monitor Airport arrivals and departures , Hotel and Event information. The Operations Center was managed using a real-time Incident System from their browser. The technology used was NT 4.0 and Active Server Pages."
     },
     {
@@ -1973,7 +1973,7 @@ var pJSON =
       Phone1: '202-647-9480',
       Phone2: '703-619-9482',
       Fax: null,
-      WebSite: 'http://www.state.;v',
+      WebSite: 'http://www.state.gov',
       Email: 'dcutting@cox.net',
       Skills: 'access, vb, sql server, management, asp, UML, JAVA',
       Active: 'N',
@@ -1984,11 +1984,11 @@ var pJSON =
       Dates: '1997 ',
       ProjectName: 'Day Care System',
       Client: 'District of Columbia',
-      ClientWeb: 'http://www.washingtondc.;v/',
+      ClientWeb: 'http://www.washingtondc.gov/',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Multi-user LAN - Windows 95/NT - Access 97 - SQL S',
-      Industry: ';vt Childcare',
+      Industry: 'Government',
       Description: 'The Day Care project manages the assignment of eligible children to authorized day care providers. It replaces a legacy Paradox system. The eligible children are provided from a main frame system. Providers are captured by the system. The link is made by a case worker. Histories are provided. A future enhancement will link the assignment to the billing system.'
     },
     {
@@ -2010,8 +2010,8 @@ var pJSON =
       Phone1: '202-273-3567',
       Phone2: '703-425-1428',
       Fax: '202-273-3559',
-      WebSite: 'http://facadatabase.;v',
-      Email: 'kennett.fussell@gsa.;v',
+      WebSite: 'http://facadatabase.gov',
+      Email: 'kennett.fussell@gsa.gov',
       Skills: 'web,access,dbase,foxpro,vi,visual interdev,managem',
       Active: 'Y',
       Bio: 'Doctorate in Education. Worked with microcomputers and software development\n' +
@@ -2026,11 +2026,11 @@ var pJSON =
       Dates: '2011-1987',
       ProjectName: 'FACA Database',
       Client: 'General Services Administration',
-      ClientWeb: 'http://www.gsa.;v',
-      ProjectWeb: 'http://fido.;v/facadatabase',
+      ClientWeb: 'http://www.gsa.gov',
+      ProjectWeb: 'http://facadatabase.gov',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, SQL7, XML, Internet database',
-      Industry: ';vt Committees',
+      Industry: 'Government',
       Description: 'The 2 year old FACA Database received a face lift and additional reporting capabilities. A new Public area was created that allows anyone to log one and view or download data from the system.'
     },
     {
@@ -2052,8 +2052,8 @@ var pJSON =
       Phone1: '202-273-3567',
       Phone2: '703-425-1428',
       Fax: '202-273-3559',
-      WebSite: 'http://facadatabase.;v',
-      Email: 'kennett.fussell@gsa.;v',
+      WebSite: 'http://facadatabase.gov',
+      Email: 'kennett.fussell@gsa.gov',
       Skills: 'web,access,dbase,foxpro,vi,visual interdev,managem',
       Active: 'Y',
       Bio: 'Doctorate in Education. Worked with microcomputers and software development\n' +
@@ -2068,11 +2068,11 @@ var pJSON =
       Dates: '2002,2001',
       ProjectName: 'Financial Management Systems Inventory',
       Client: 'Office of Management and Budget',
-      ClientWeb: 'http://www.whitehouse.;v/omb/',
-      ProjectWeb: 'Http://fido.;v/fmsi',
+      ClientWeb: 'http://www.whitehouse.gov/omb/',
+      ProjectWeb: 'Http://fido.gov/fmsi',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, ASP, VB, SQL7 database, XML, Access',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Federal agencies use FMSI to report information about the Financial Managemnet tools that they use. The information is used to assist in budget preparation and monitoring.In 2001 over 280 federal employees reported on 1426 systems. The system included security and a link to the dMail service to allow tracking of email related to this project.'
     },
     {
@@ -2094,8 +2094,8 @@ var pJSON =
       Phone1: '202-273-3567',
       Phone2: '703-425-1428',
       Fax: '202-273-3559',
-      WebSite: 'http://facadatabase.;v',
-      Email: 'kennett.fussell@gsa.;v',
+      WebSite: 'http://facadatabase.gov',
+      Email: 'kennett.fussell@gsa.gov',
       Skills: 'web,access,dbase,foxpro,vi,visual interdev,managem',
       Active: 'Y',
       Bio: 'Doctorate in Education. Worked with microcomputers and software development\n' +
@@ -2104,18 +2104,18 @@ var pJSON =
         ' graphics software.  Since 1993 have managed networks and software automation\n' +
         ' projects for the federal ;vernment.  Currently developing interactive web\n' +
         'databases.',
-      Sort: 4,
+      Sort: 7,
       Role: 'System Analysis, Design, Production',
       Duration: '12 months',
       Dates: '2002',
-      ProjectName: 'Financial Improvement Progress System',
-      Client: 'Office of Management and Budget',
-      ClientWeb: 'http://www.whitehouse.;v/omb/',
-      ProjectWeb: 'Http://fido.;v/fips',
+      ProjectName: 'Federal Interagency Databases Online',
+      Client: 'Office of Government-wide Policy GSA',
+      ClientWeb: 'http://www.gsa.gov',
+      ProjectWeb: 'Http://fido.gov',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, ASP, VB, SQL7 database, XML, Access',
-      Industry: ';vernment',
-      Description: 'Federal agencies are audited each year. The FIPS system tracks audit information and findings. Agency initatives are associated with findings to track progress of the improvements discovered in the findings.'
+      Industry: 'Government',
+      Description: 'FIDO provides access to database that are used by many agencies. A score300 chart is available to compare agencies across numerous data collection processes.'
     },
     {
       Id: 6,
@@ -2136,8 +2136,8 @@ var pJSON =
       Phone1: '202-273-3567',
       Phone2: '703-425-1428',
       Fax: '202-273-3559',
-      WebSite: 'http://facadatabase.;v',
-      Email: 'kennett.fussell@gsa.;v',
+      WebSite: 'http://facadatabase.gov',
+      Email: 'kennett.fussell@gsa.gov',
       Skills: 'web,access,dbase,foxpro,vi,visual interdev,managem',
       Active: 'Y',
       Bio: 'Doctorate in Education. Worked with microcomputers and software development\n' +
@@ -2146,18 +2146,18 @@ var pJSON =
         ' graphics software.  Since 1993 have managed networks and software automation\n' +
         ' projects for the federal ;vernment.  Currently developing interactive web\n' +
         'databases.',
-      Sort: 7,
+      Sort: 4,
       Role: 'System Analysis, Design, Production',
       Duration: '12 months',
       Dates: '2002',
-      ProjectName: 'Federal Interagency Databases Online',
-      Client: 'Office of ;vernment-wide Policy GSA',
-      ClientWeb: 'http://www.gsa.;v',
-      ProjectWeb: 'Http://fido.;v',
+      ProjectName: 'Financial Improvement Progress System',
+      Client: 'Office of Management and Budget',
+      ClientWeb: 'http://www.whitehouse.gov/omb/',
+      ProjectWeb: 'Http://fido.gov/fips',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, ASP, VB, SQL7 database, XML, Access',
-      Industry: ';vernment',
-      Description: 'FIDO provides access to database that are used by many agencies. A score300 chart is available to compare agencies across numerous data collection processes.'
+      Industry: 'Government',
+      Description: 'Federal agencies are audited each year. The FIPS system tracks audit information and findings. Agency initatives are associated with findings to track progress of the improvements discovered in the findings.'
     },
     {
       Id: 94,
@@ -2179,7 +2179,7 @@ var pJSON =
       Phone2: null,
       Fax: null,
       WebSite: 'http://icewarp.com',
-      Email: 'l;c@icewarp.com',
+      Email: 'lgoc@icewarp.com',
       Skills: 'foxpro, sql server, merak email server, asp, xml',
       Active: 'Y',
       Bio: 'I have been designing and building database solutions since 1987. I am an expert in digital and audio processing and preparing content for streaming over the Internet. I am also experienced in th preparation and delivery of training programs. I love Bond girls. I am currently investigating the use of XML in for my future solutions.',
@@ -2216,7 +2216,7 @@ var pJSON =
       Phone2: null,
       Fax: null,
       WebSite: 'http://icewarp.com',
-      Email: 'l;c@icewarp.com',
+      Email: 'lgoc@icewarp.com',
       Skills: 'foxpro, sql server, merak email server, asp, xml',
       Active: 'Y',
       Bio: 'I have been designing and building database solutions since 1987. I am an expert in digital and audio processing and preparing content for streaming over the Internet. I am also experienced in th preparation and delivery of training programs. I love Bond girls. I am currently investigating the use of XML in for my future solutions.',
@@ -2263,11 +2263,11 @@ var pJSON =
       Dates: '2011-2001',
       ProjectName: 'Financial Management Systems Inventory',
       Client: 'Office of Management and Budget',
-      ClientWeb: 'http://www.whitehouse.;v/omb/',
-      ProjectWeb: 'Http://fido.;v/fmsi',
+      ClientWeb: 'http://www.whitehouse.gov/omb/',
+      ProjectWeb: 'Http://fido.gov/fmsi',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, ASP, VB, SQL7 database, XML, Access',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Federal agencies use FMSI to report information about the Financial Managemnet tools that they use. The information is used to assist in budget preparation and monitoring.In 2001 over 280 federal employees reported on 1426 systems. The system included security and a link to the dMail service to allow tracking of email related to this project.'
     },
     {
@@ -2368,18 +2368,18 @@ var pJSON =
       Skills: 'dbase,foxpro,vfp,access,author',
       Active: 'Y',
       Bio: 'Joseph has been developing database applications since 1981.  He runs August Technologies, Inc., a consulting firm out of the Philadelphia area, which specializes in the development of data intensive web applications.  He has experience in a number of industries, such as Telecommunications, Oil, Banking, Managed Care, Medical, ;vernment, etc.  Joseph has spoken at technical conferences in the US and Canada, and is a contributing author for several FoxPro books.  He has also written numerous magazine articles.',
-      Sort: 8,
-      Role: 'System Analysis, Design, Production',
-      Duration: '3 months',
+      Sort: 7,
+      Role: 'Application Architect',
+      Duration: null,
       Dates: '2000',
-      ProjectName: 'Standards Committee Members',
-      Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://nist.;v',
-      ProjectWeb: 'http://standards.;v/MemberSearch',
-      Location: 'Alabama, Maryland, Virginia, Pennsylvania',
-      ProjectType: 'NT4, IIS4, SQL7 database, XML, Access',
-      Industry: ';vt',
-      Description: 'The process involves a new calling web server and existing remote servers at NIST, DOD and NASA. The user browses to the calling server. The calling server uses standard CGI scripting to contact the remote servers. The remote servers retrieve the desired information from their databases, format it and return it to the calling server. The calling server combines and formats the results using state of the art XML and XSL, returning HTML to the user’s browser.'
+      ProjectName: 'PROVIDER CONNECT ELITE',
+      Client: 'InfoMC, Inc.',
+      ClientWeb: 'http://www.infomc.com/',
+      ProjectWeb: null,
+      Location: 'Philadelphia Metro Area',
+      ProjectType: null,
+      Industry: 'Healthcare',
+      Description: 'Enhancement to the Provider Connect system, providing access to open-ended back-end database systems via XML interface.'
     },
     {
       Id: 7,
@@ -2405,18 +2405,18 @@ var pJSON =
       Skills: 'dbase,foxpro,vfp,access,author',
       Active: 'Y',
       Bio: 'Joseph has been developing database applications since 1981.  He runs August Technologies, Inc., a consulting firm out of the Philadelphia area, which specializes in the development of data intensive web applications.  He has experience in a number of industries, such as Telecommunications, Oil, Banking, Managed Care, Medical, ;vernment, etc.  Joseph has spoken at technical conferences in the US and Canada, and is a contributing author for several FoxPro books.  He has also written numerous magazine articles.',
-      Sort: 7,
-      Role: 'Application Architect',
-      Duration: null,
+      Sort: 8,
+      Role: 'System Analysis, Design, Production',
+      Duration: '3 months',
       Dates: '2000',
-      ProjectName: 'PROVIDER CONNECT ELITE',
-      Client: 'InfoMC, Inc.',
-      ClientWeb: 'http://www.infomc.com/',
-      ProjectWeb: null,
-      Location: 'Philadelphia Metro Area',
-      ProjectType: null,
-      Industry: 'Healthcare',
-      Description: 'Enhancement to the Provider Connect system, providing access to open-ended back-end database systems via XML interface.'
+      ProjectName: 'Standards Committee Members',
+      Client: 'National Institute of Standards and Technology',
+      ClientWeb: 'http://nist.gov',
+      ProjectWeb: 'http://standards.gov/MemberSearch',
+      Location: 'Alabama, Maryland, Virginia, Pennsylvania',
+      ProjectType: 'NT4, IIS4, SQL7 database, XML, Access',
+      Industry: 'Government',
+      Description: 'The process involves a new calling web server and existing remote servers at NIST, DOD and NASA. The user browses to the calling server. The calling server uses standard CGI scripting to contact the remote servers. The remote servers retrieve the desired information from their databases, format it and return it to the calling server. The calling server combines and formats the results using state of the art XML and XSL, returning HTML to the user’s browser.'
     },
     {
       Id: 7,
@@ -2606,80 +2606,6 @@ var pJSON =
     {
       Id: 91,
       MemberNo: 27,
-      Style: 'Secondary',
-      TitleName: 'Mr.',
-      FirstName: 'Chris',
-      MiddleName: null,
-      LastName: 'Grady',
-      PostName: null,
-      Company: 'XaaS',
-      Address1: '6506 Loisdale Road',
-      Address2: null,
-      City: 'Springfield',
-      State: 'VA',
-      Zip: '22150',
-      Country: 'USA',
-      Phone1: '888-99UNIFY',
-      Phone2: '<a href="http://www.xaas.com">Cloud Computing</a>',
-      Fax: null,
-      WebSite: 'http://www.xaas.com',
-      Email: 'chris.grady@xaas.com',
-      Skills: null,
-      Active: 'N',
-      Bio: 'Chris Grady is an Internet guru with specific expertise in the setup and configuration of web, database and streaming servers. He is also an expert in the design of "search engine friendly" web pages.',
-      Sort: 3,
-      Role: 'Design and Production',
-      Duration: 'NATO 50th Ceremonies',
-      Dates: '1999',
-      ProjectName: 'NATO Summit',
-      Client: 'Departments of State and Defense',
-      ClientWeb: 'http://www.state.;v',
-      ProjectWeb: null,
-      Location: 'Washington, DC',
-      ProjectType: 'Internet - Multi-user LAN - Windows NT - Access 97',
-      Industry: ';vt Summit',
-      Description: "The project supported the NATO Summit's 50th Anniversary meeting. The system provided credentials for 2,000 foreign dignitaries and 10,000 US citizens. The Summit staff was able to monitor Airport arrivals and departures , Hotel and Event information. The Operations Center was managed using a real-time Incident System from their browser. The technology used was NT 4.0 and Active Server Pages."
-    },
-    {
-      Id: 91,
-      MemberNo: 27,
-      Style: 'Secondary',
-      TitleName: 'Mr.',
-      FirstName: 'Chris',
-      MiddleName: null,
-      LastName: 'Grady',
-      PostName: null,
-      Company: 'XaaS',
-      Address1: '6506 Loisdale Road',
-      Address2: null,
-      City: 'Springfield',
-      State: 'VA',
-      Zip: '22150',
-      Country: 'USA',
-      Phone1: '888-99UNIFY',
-      Phone2: '<a href="http://www.xaas.com">Cloud Computing</a>',
-      Fax: null,
-      WebSite: 'http://www.xaas.com',
-      Email: 'chris.grady@xaas.com',
-      Skills: null,
-      Active: 'N',
-      Bio: 'Chris Grady is an Internet guru with specific expertise in the setup and configuration of web, database and streaming servers. He is also an expert in the design of "search engine friendly" web pages.',
-      Sort: 3,
-      Role: 'Design and Production',
-      Duration: 'NATO 50th Ceremonies',
-      Dates: '1999',
-      ProjectName: 'NATO Summit',
-      Client: 'Departments of State and Defense',
-      ClientWeb: 'http://www.state.;v',
-      ProjectWeb: null,
-      Location: 'Washington, DC',
-      ProjectType: 'Internet - Multi-user LAN - Windows NT - Access 97',
-      Industry: ';vt Summit',
-      Description: "The project supported the NATO Summit's 50th Anniversary meeting. The system provided credentials for 2,000 foreign dignitaries and 10,000 US citizens. The Summit staff was able to monitor Airport arrivals and departures , Hotel and Event information. The Operations Center was managed using a real-time Incident System from their browser. The technology used was NT 4.0 and Active Server Pages."
-    },
-    {
-      Id: 91,
-      MemberNo: 27,
       Style: 'Primary',
       TitleName: 'Mr.',
       FirstName: 'Chris',
@@ -2738,13 +2664,87 @@ var pJSON =
       Skills: null,
       Active: 'N',
       Bio: 'Chris Grady is an Internet guru with specific expertise in the setup and configuration of web, database and streaming servers. He is also an expert in the design of "search engine friendly" web pages.',
+      Sort: 3,
+      Role: 'Design and Production',
+      Duration: 'NATO 50th Ceremonies',
+      Dates: '1999',
+      ProjectName: 'NATO Summit',
+      Client: 'Departments of State and Defense',
+      ClientWeb: 'http://www.state.gov',
+      ProjectWeb: null,
+      Location: 'Washington, DC',
+      ProjectType: 'Internet - Multi-user LAN - Windows NT - Access 97',
+      Industry: 'Government',
+      Description: "The project supported the NATO Summit's 50th Anniversary meeting. The system provided credentials for 2,000 foreign dignitaries and 10,000 US citizens. The Summit staff was able to monitor Airport arrivals and departures , Hotel and Event information. The Operations Center was managed using a real-time Incident System from their browser. The technology used was NT 4.0 and Active Server Pages."
+    },
+    {
+      Id: 91,
+      MemberNo: 27,
+      Style: 'Secondary',
+      TitleName: 'Mr.',
+      FirstName: 'Chris',
+      MiddleName: null,
+      LastName: 'Grady',
+      PostName: null,
+      Company: 'XaaS',
+      Address1: '6506 Loisdale Road',
+      Address2: null,
+      City: 'Springfield',
+      State: 'VA',
+      Zip: '22150',
+      Country: 'USA',
+      Phone1: '888-99UNIFY',
+      Phone2: '<a href="http://www.xaas.com">Cloud Computing</a>',
+      Fax: null,
+      WebSite: 'http://www.xaas.com',
+      Email: 'chris.grady@xaas.com',
+      Skills: null,
+      Active: 'N',
+      Bio: 'Chris Grady is an Internet guru with specific expertise in the setup and configuration of web, database and streaming servers. He is also an expert in the design of "search engine friendly" web pages.',
+      Sort: 3,
+      Role: 'Design and Production',
+      Duration: 'NATO 50th Ceremonies',
+      Dates: '1999',
+      ProjectName: 'NATO Summit',
+      Client: 'Departments of State and Defense',
+      ClientWeb: 'http://www.state.gov',
+      ProjectWeb: null,
+      Location: 'Washington, DC',
+      ProjectType: 'Internet - Multi-user LAN - Windows NT - Access 97',
+      Industry: 'Government',
+      Description: "The project supported the NATO Summit's 50th Anniversary meeting. The system provided credentials for 2,000 foreign dignitaries and 10,000 US citizens. The Summit staff was able to monitor Airport arrivals and departures , Hotel and Event information. The Operations Center was managed using a real-time Incident System from their browser. The technology used was NT 4.0 and Active Server Pages."
+    },
+    {
+      Id: 91,
+      MemberNo: 27,
+      Style: 'Secondary',
+      TitleName: 'Mr.',
+      FirstName: 'Chris',
+      MiddleName: null,
+      LastName: 'Grady',
+      PostName: null,
+      Company: 'XaaS',
+      Address1: '6506 Loisdale Road',
+      Address2: null,
+      City: 'Springfield',
+      State: 'VA',
+      Zip: '22150',
+      Country: 'USA',
+      Phone1: '888-99UNIFY',
+      Phone2: '<a href="http://www.xaas.com">Cloud Computing</a>',
+      Fax: null,
+      WebSite: 'http://www.xaas.com',
+      Email: 'chris.grady@xaas.com',
+      Skills: null,
+      Active: 'N',
+      Bio: 'Chris Grady is an Internet guru with specific expertise in the setup and configuration of web, database and streaming servers. He is also an expert in the design of "search engine friendly" web pages.',
       Sort: 1,
       Role: 'Project Management, Database Design, System Design',
       Duration: '2 Years',
       Dates: '1998,1997,1996',
       ProjectName: 'Unmanned Aerial Vehicle Ground Control Station',
       Client: 'Department of Defense',
-      ClientWeb: 'http://www.dod.;v',
+      ClientWeb: 'http://www.dod.gov',
       ProjectWeb: 'http://www.usmc.mil/',
       Location: 'Washington, DC',
       ProjectType: 'Intranet - Multi-user LAN - Windows NT - MS Access',
@@ -3178,11 +3178,11 @@ var pJSON =
       Dates: '2011-2001',
       ProjectName: 'Financial Management Systems Inventory',
       Client: 'Office of Management and Budget',
-      ClientWeb: 'http://www.whitehouse.;v/omb/',
-      ProjectWeb: 'Http://fido.;v/fmsi',
+      ClientWeb: 'http://www.whitehouse.gov/omb/',
+      ProjectWeb: 'Http://fido.gov/fmsi',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, ASP, VB, SQL7 database, XML, Access',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Federal agencies use FMSI to report information about the Financial Managemnet tools that they use. The information is used to assist in budget preparation and monitoring.In 2001 over 280 federal employees reported on 1426 systems. The system included security and a link to the dMail service to allow tracking of email related to this project.'
     },
     {
@@ -3289,11 +3289,11 @@ var pJSON =
       Dates: '2002,2001',
       ProjectName: 'Financial Management Systems Inventory',
       Client: 'Office of Management and Budget',
-      ClientWeb: 'http://www.whitehouse.;v/omb/',
-      ProjectWeb: 'Http://fido.;v/fmsi',
+      ClientWeb: 'http://www.whitehouse.gov/omb/',
+      ProjectWeb: 'Http://fido.gov/fmsi',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, ASP, VB, SQL7 database, XML, Access',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Federal agencies use FMSI to report information about the Financial Managemnet tools that they use. The information is used to assist in budget preparation and monitoring.In 2001 over 280 federal employees reported on 1426 systems. The system included security and a link to the dMail service to allow tracking of email related to this project.'
     },
     {
@@ -3326,11 +3326,11 @@ var pJSON =
       Dates: '2000',
       ProjectName: 'Office of Weights and Measures',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Access97, Multi-user NT4.0',
-      Industry: ';vt',
+      Industry: 'Government',
       Description: 'This project allows the OWM office to collect information about NIST members and merge it with the National Committees database. It also tracks the training for members. It produces a directory, labels, class roles and certicates.'
     },
     {
@@ -3515,12 +3515,50 @@ var pJSON =
       Dates: '2011-1987',
       ProjectName: 'FACA Database',
       Client: 'General Services Administration',
-      ClientWeb: 'http://www.gsa.;v',
-      ProjectWeb: 'http://fido.;v/facadatabase',
+      ClientWeb: 'http://www.gsa.gov',
+      ProjectWeb: 'http://facadatabase.gov',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, SQL7, XML, Internet database',
-      Industry: ';vt Committees',
+      Industry: 'Government',
       Description: 'The 2 year old FACA Database received a face lift and additional reporting capabilities. A new Public area was created that allows anyone to log one and view or download data from the system.'
+    },
+    {
+      Id: 15,
+      MemberNo: 15,
+      Style: 'Secondary',
+      TitleName: 'Mr.',
+      FirstName: 'Bruce',
+      MiddleName: null,
+      LastName: 'Troutman',
+      PostName: null,
+      Company: '80/20 Data Company',
+      Address1: 'PO Box 3261',
+      Address2: null,
+      City: 'Falls Church',
+      State: 'VA',
+      Zip: '22043',
+      Country: 'USA',
+      Phone1: '202-460-8020',
+      Phone2: '202-460-8020',
+      Fax: null,
+      WebSite: 'http://www.8020data.com',
+      Email: 'btroutma@8020data.com',
+      Skills: 'sql server,nt,iis,security,web host',
+      Active: 'Y',
+      Bio: 'Bruce is an expert in managing the development of  web database and client-server applications using HTML, XML, Active Server Pages with SQL Server and Oracle. Since 1986, his successful projects include for the Federal Interagency Database (fido.;v), NATO Summit Management System, Federal Advisory Committee Act System,  Standards.;v and the Exxon Valdez Oil Spill Transportation Management System.<br><br>\n' +
+        'He is president of the Institute of Database Developers, past-president of the Washington Area Visual Interdev User Group,  Mid-Atlantic Access User Group and Potomac Area Foxpro User Group.',
+      Sort: 39,
+      Role: 'Back Office Design and Production',
+      Duration: '3 months',
+      Dates: '2003,2002,2001,2000',
+      ProjectName: 'Automated Menu Ssytem',
+      Client: 'eVantage, LLC  and Dessez, Inc',
+      ClientWeb: 'http://evantageone.com',
+      ProjectWeb: 'http://evantageone.com/ams',
+      Location: 'Gaithersburg, MD',
+      ProjectType: 'NT4, IIS4, SQL7 Internet database',
+      Industry: 'Airline Catering',
+      Description: "This project converts Rick Shinner's fabulous Airline Catering menu system to the Intenet. Now kitchens and corporate from all over the world can get updated airline, food and equipment information in real time."
     },
     {
       Id: 15,
@@ -3553,11 +3591,11 @@ var pJSON =
       Dates: '2003,2002,2001,2000',
       ProjectName: 'Standards Annual Report',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://nist.;v',
-      ProjectWeb: 'http://standards.;v/annualreport',
+      ClientWeb: 'http://nist.gov',
+      ProjectWeb: 'http://standards.gov/annualreport',
       Location: 'Gaithersburg, MD',
       ProjectType: 'NT4, IIS4, SQL7 database, XML, Access',
-      Industry: ';vt',
+      Industry: 'Government',
       Description: 'The process uses the Internet to collect annual report information about the Standards activity of Federal Agencies. Information about the use of world-wide standards is particularly important.'
     },
     {
@@ -3591,11 +3629,11 @@ var pJSON =
       Dates: '2003,2002,2001,2000',
       ProjectName: 'Standards Committee Members',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://nist.;v',
-      ProjectWeb: 'http://standards.;v/MemberSearch',
+      ClientWeb: 'http://nist.gov',
+      ProjectWeb: 'http://standards.gov/MemberSearch',
       Location: 'Alabama, Maryland, Virginia, Pennsylvania',
       ProjectType: 'NT4, IIS4, SQL7 database, XML, Access',
-      Industry: ';vt',
+      Industry: 'Government',
       Description: 'The process involves a new calling web server and existing remote servers at NIST, DOD and NASA. The user browses to the calling server. The calling server uses standard CGI scripting to contact the remote servers. The remote servers retrieve the desired information from their databases, format it and return it to the calling server. The calling server combines and formats the results using state of the art XML and XSL, returning HTML to the user’s browser.'
     },
     {
@@ -3639,44 +3677,6 @@ var pJSON =
     {
       Id: 15,
       MemberNo: 15,
-      Style: 'Secondary',
-      TitleName: 'Mr.',
-      FirstName: 'Bruce',
-      MiddleName: null,
-      LastName: 'Troutman',
-      PostName: null,
-      Company: '80/20 Data Company',
-      Address1: 'PO Box 3261',
-      Address2: null,
-      City: 'Falls Church',
-      State: 'VA',
-      Zip: '22043',
-      Country: 'USA',
-      Phone1: '202-460-8020',
-      Phone2: '202-460-8020',
-      Fax: null,
-      WebSite: 'http://www.8020data.com',
-      Email: 'btroutma@8020data.com',
-      Skills: 'sql server,nt,iis,security,web host',
-      Active: 'Y',
-      Bio: 'Bruce is an expert in managing the development of  web database and client-server applications using HTML, XML, Active Server Pages with SQL Server and Oracle. Since 1986, his successful projects include for the Federal Interagency Database (fido.;v), NATO Summit Management System, Federal Advisory Committee Act System,  Standards.;v and the Exxon Valdez Oil Spill Transportation Management System.<br><br>\n' +
-        'He is president of the Institute of Database Developers, past-president of the Washington Area Visual Interdev User Group,  Mid-Atlantic Access User Group and Potomac Area Foxpro User Group.',
-      Sort: 39,
-      Role: 'Back Office Design and Production',
-      Duration: '3 months',
-      Dates: '2003,2002,2001,2000',
-      ProjectName: 'Automated Menu Ssytem',
-      Client: 'eVantage, LLC  and Dessez, Inc',
-      ClientWeb: 'http://evantageone.com',
-      ProjectWeb: 'http://evantageone.com/ams',
-      Location: 'Gaithersburg, MD',
-      ProjectType: 'NT4, IIS4, SQL7 Internet database',
-      Industry: 'Airline Catering',
-      Description: "This project converts Rick Shinner's fabulous Airline Catering menu system to the Intenet. Now kitchens and corporate from all over the world can get updated airline, food and equipment information in real time."
-    },
-    {
-      Id: 15,
-      MemberNo: 15,
       Style: 'Primary',
       TitleName: 'Mr.',
       FirstName: 'Bruce',
@@ -3703,14 +3703,14 @@ var pJSON =
       Role: 'System Analysis, Design, Production',
       Duration: '6 months',
       Dates: '2003,2002,2001',
-      ProjectName: 'Standards ;v',
+      ProjectName: 'Standards Gov',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://nist.;v',
-      ProjectWeb: 'http://standards.;v/',
+      ClientWeb: 'http://nist.gov',
+      ProjectWeb: 'http://standards.gov/',
       Location: 'Gaithersburg, MD',
       ProjectType: 'XML,NT4, IIS4, SQL7 database, XML, Access',
-      Industry: ';vernment',
-      Description: 'Standards.;v is a one-stop location for finding information related to the use of voluntary consensus standards in ;vernment. Each federal agency web site  (as well as state and local ;vernments sites) has important, standards-related information. Locating that information can be a time-consuming and difficult task. At Standards.;v, you can find links that take you directly to the information you want, thus reducing time and effort spent in needlessly locating and then searching numerous agency web sites.'
+      Industry: 'Government',
+      Description: 'Standards.gov is a one-stop location for finding information related to the use of voluntary consensus standards in government. Each federal agency web site  (as well as state and local governments sites) has important, standards-related information. Locating that information can be a time-consuming and difficult task. At Standards.gov, you can find links that take you directly to the information you want, thus reducing time and effort spent in needlessly locating and then searching numerous agency web sites.'
     },
     {
       Id: 15,
@@ -3743,11 +3743,11 @@ var pJSON =
       Dates: '2002,2001',
       ProjectName: 'Financial Management Systems Inventory',
       Client: 'Office of Management and Budget',
-      ClientWeb: 'http://www.whitehouse.;v/omb/',
-      ProjectWeb: 'Http://fido.;v/fmsi',
+      ClientWeb: 'http://www.whitehouse.gov/omb/',
+      ProjectWeb: 'Http://fido.gov/fmsi',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, ASP, VB, SQL7 database, XML, Access',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'Federal agencies use FMSI to report information about the Financial Managemnet tools that they use. The information is used to assist in budget preparation and monitoring.In 2001 over 280 federal employees reported on 1426 systems. The system included security and a link to the dMail service to allow tracking of email related to this project.'
     },
     {
@@ -3818,12 +3818,12 @@ var pJSON =
       Duration: '12 months',
       Dates: '2002',
       ProjectName: 'Federal Interagency Databases Online',
-      Client: 'Office of ;vernment-wide Policy GSA',
-      ClientWeb: 'http://www.gsa.;v',
-      ProjectWeb: 'Http://fido.;v',
+      Client: 'Office of Government-wide Policy GSA',
+      ClientWeb: 'http://www.gsa.gov',
+      ProjectWeb: 'Http://fido.gov',
       Location: 'Washington, DC',
       ProjectType: 'NT4, IIS4, ASP, VB, SQL7 database, XML, Access',
-      Industry: ';vernment',
+      Industry: 'Government',
       Description: 'FIDO provides access to database that are used by many agencies. A score300 chart is available to compare agencies across numerous data collection processes.'
     },
     {
@@ -4009,11 +4009,11 @@ var pJSON =
       Dates: '2000',
       ProjectName: 'Patient Tracking System',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Multi-User LAN - Access 97',
-      Industry: ';vt Patents',
+      Industry: 'Government',
       Description: 'NIST was provided with enhancements to their existing system that performs work flow management of the Patent Application Process.'
     },
     {
@@ -4047,11 +4047,11 @@ var pJSON =
       Dates: '2000',
       ProjectName: 'Case Management System',
       Client: 'Department of Interior',
-      ClientWeb: 'http://www.doi.;v',
+      ClientWeb: 'http://www.doi.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Multi-user LAN Access 97',
-      Industry: ';vt Case Tracking',
+      Industry: 'Government',
       Description: 'Provided enhancement support for the tracking of legal cases as they flow through the Department of Interior.'
     },
     {
@@ -4085,11 +4085,11 @@ var pJSON =
       Dates: '2000',
       ProjectName: 'Office of Weights and Measures',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Access97, Multi-user NT4.0',
-      Industry: ';vt',
+      Industry: 'Government',
       Description: 'This project allows the OWM office to collect information about NIST members and merge it with the National Committees database. It also tracks the training for members. It produces a directory, labels, class roles and certicates.'
     },
     {
@@ -4123,12 +4123,12 @@ var pJSON =
       Dates: '1999,1998,1997',
       ProjectName: 'Committee Web System',
       Client: 'General Service Administration',
-      ClientWeb: 'http://www.gsa.;v',
+      ClientWeb: 'http://www.gsa.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: '1,000+ Users - Internet - Multi-user LAN - Windows',
-      Industry: ';vt Committees',
-      Description: 'The Committee Management Secretariat is responsible for tracking almost 1,000 committees and 13,000 members from 60 agencies of the Federal ;vernment. The new web based system replaces the formerly manual paper system. Representatives from each agency log in to the system via a Netscape or Internet Explorer browser and updates their appropriate data. The data is used by an Access application to produce a written report that is sent to the President and then forwarded to Congress.'
+      Industry: 'Government',
+      Description: 'The Committee Management Secretariat is responsible for tracking almost 1,000 committees and 13,000 members from 60 agencies of the Federal Government. The new web based system replaces the formerly manual paper system. Representatives from each agency log in to the system via a Netscape or Internet Explorer browser and updates their appropriate data. The data is used by an Access application to produce a written report that is sent to the President and then forwarded to Congress.'
     },
     {
       Id: 15,
@@ -4237,11 +4237,11 @@ var pJSON =
       Dates: '1999',
       ProjectName: 'NATO Summit',
       Client: 'Departments of State and Defense',
-      ClientWeb: 'http://www.state.;v',
+      ClientWeb: 'http://www.state.gov',
       ProjectWeb: null,
       Location: 'Washington, DC',
       ProjectType: 'Internet - Multi-user LAN - Windows NT - Access 97',
-      Industry: ';vt Summit',
+      Industry: 'Government',
       Description: "The project supported the NATO Summit's 50th Anniversary meeting. The system provided credentials for 2,000 foreign dignitaries and 10,000 US citizens. The Summit staff was able to monitor Airport arrivals and departures , Hotel and Event information. The Operations Center was managed using a real-time Incident System from their browser. The technology used was NT 4.0 and Active Server Pages."
     },
     {
@@ -4313,11 +4313,11 @@ var pJSON =
       Dates: '1998',
       ProjectName: 'Web Directory',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Internet - Multi-user LAN - Windows 95/NT - Access',
-      Industry: ';vt Committees',
+      Industry: 'Government',
       Description: 'This project updates the original SAMI database from Access 2.0 to Access 97. Also provided is a searchable web database feature that allows users to analyze the directory on-line. Finally committee members can update changes in their status through a browser from any point on the internet.'
     },
     {
@@ -4541,11 +4541,11 @@ var pJSON =
       Dates: '1997 ',
       ProjectName: 'Publications System',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Multi-user LAN - Windows 95/NT - Access 97 ',
-      Industry: ';vt Publications',
+      Industry: 'Government',
       Description: "The Publications project was designed to replace the client's existing legacy database R:Base for DOS computer system. It manages the process of technical publications throughout NIST at both of the Gaithersburg and Boulder locations. The process includes editorial review, production, accounting, and inventory/distribution control."
     },
     {
@@ -4579,11 +4579,11 @@ var pJSON =
       Dates: '1997 ',
       ProjectName: 'GATT Web System',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Internet - Multi-user LAN - Windows 3.x/95/NT - Ac',
-      Industry: ';vt WTO',
+      Industry: 'Government',
       Description: 'The GATT project involves the collection and management of proposed standards from the World Trade Organization in Switzerland. This data is collected via the Internet and then imported into an Access database. As events take place regarding each item, additional information can be added by NIST personnel. Full featured filtering and reporting was included.'
     },
     {
@@ -4617,11 +4617,11 @@ var pJSON =
       Dates: '1996,1995',
       ProjectName: 'NIST Directory',
       Client: 'National Institute of Standards and Technology',
-      ClientWeb: 'http://www.nist.;v',
+      ClientWeb: 'http://www.nist.gov',
       ProjectWeb: null,
       Location: 'Gaithersburg, MD',
       ProjectType: 'Multi-user Novell LAN - Access 2.0 ',
-      Industry: ';vt Committees',
+      Industry: 'Government',
       Description: `The NIST Directory project was designed to replace the client's existing computer system. The system was designed, tested and implemented in 4 months. The existing system required several difficult processes including "sneaker net" to function properly. The new system provides a single point of data entry and will print out the source documents for printing.`
     },
     {
@@ -4915,18 +4915,18 @@ var pJSON =
       Active: 'Y',
       Bio: 'Bruce is an expert in managing the development of  web database and client-server applications using HTML, XML, Active Server Pages with SQL Server and Oracle. Since 1986, his successful projects include for the Federal Interagency Database (fido.;v), NATO Summit Management System, Federal Advisory Committee Act System,  Standards.;v and the Exxon Valdez Oil Spill Transportation Management System.<br><br>\n' +
         'He is president of the Institute of Database Developers, past-president of the Washington Area Visual Interdev User Group,  Mid-Atlantic Access User Group and Potomac Area Foxpro User Group.',
-      Sort: 8,
+      Sort: 9,
       Role: 'System Analysis, Design and Production',
-      Duration: '4 Months ',
+      Duration: '6 Months',
       Dates: '1990,1989,1988,1997',
-      ProjectName: 'Retail Sales System',
-      Client: 'Jackson Music Store ',
+      ProjectName: 'Job Search System',
+      Client: 'Claremont-Brannan ',
       ClientWeb: null,
       ProjectWeb: null,
-      Location: 'College Park, GA',
-      ProjectType: 'Single user - FoxBase + ',
-      Industry: 'Retail',
-      Description: 'This system was designed to automate a manual bookkeeping system for a retail music store. The transaction volume is in the low thousands per month and includes more than 200 items of information about sales and banking transactions.'
+      Location: 'Atlanta, GA',
+      ProjectType: 'Multi-user Alloy LAN - 4 user - FoxBase + ',
+      Industry: 'Job Search',
+      Description: 'This project provides the opportunity to match job candidates with prospective employers. Information about both the candidates and employers are collected in two data files encompassing more than 200 items of information. The candidate database is scanned for matching criteria and selected candidates are recommended to the employers.'
     },
     {
       Id: 15,
@@ -4953,18 +4953,18 @@ var pJSON =
       Active: 'Y',
       Bio: 'Bruce is an expert in managing the development of  web database and client-server applications using HTML, XML, Active Server Pages with SQL Server and Oracle. Since 1986, his successful projects include for the Federal Interagency Database (fido.;v), NATO Summit Management System, Federal Advisory Committee Act System,  Standards.;v and the Exxon Valdez Oil Spill Transportation Management System.<br><br>\n' +
         'He is president of the Institute of Database Developers, past-president of the Washington Area Visual Interdev User Group,  Mid-Atlantic Access User Group and Potomac Area Foxpro User Group.',
-      Sort: 9,
+      Sort: 8,
       Role: 'System Analysis, Design and Production',
-      Duration: '6 Months',
+      Duration: '4 Months ',
       Dates: '1990,1989,1988,1997',
-      ProjectName: 'Job Search System',
-      Client: 'Claremont-Brannan ',
+      ProjectName: 'Retail Sales System',
+      Client: 'Jackson Music Store ',
       ClientWeb: null,
       ProjectWeb: null,
-      Location: 'Atlanta, GA',
-      ProjectType: 'Multi-user Alloy LAN - 4 user - FoxBase + ',
-      Industry: 'Job Search',
-      Description: 'This project provides the opportunity to match job candidates with prospective employers. Information about both the candidates and employers are collected in two data files encompassing more than 200 items of information. The candidate database is scanned for matching criteria and selected candidates are recommended to the employers.'
+      Location: 'College Park, GA',
+      ProjectType: 'Single user - FoxBase + ',
+      Industry: 'Retail',
+      Description: 'This system was designed to automate a manual bookkeeping system for a retail music store. The transaction volume is in the low thousands per month and includes more than 200 items of information about sales and banking transactions.'
     },
     {
       Id: 15,
@@ -5357,6 +5357,673 @@ var pJSON =
       ProjectType: 'Multi-User Multiple Novell LANs - FoxPro 2.5 ',
       Industry: 'Transportation',
       Description: "The Mariner accounting project is a PC-LAN enhancement to a main frame system. It processes information about the activities of Mobil's world wide fleets and maps the data into the general ledger on the network. The system then formats and transfers the data to the main frame in Dallas. It receives transactions from Dallas and records them in the general ledger. The total system consisted of 1,400 programs and 250 database tables."
+    }
+  ],
+  members_projects2: [
+    {
+      MemberId: 10,
+      FullName: 'Alan McConnell',
+      ProjectId: 19,
+      ProjectName: 'Main Frame to LAN Accounting System ',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 69,
+      FullName: 'Bruce Parker',
+      ProjectId: 92,
+      ProjectName: 'EZ Data Surveys',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 69,
+      FullName: 'Bruce Parker',
+      ProjectId: 89,
+      ProjectName: 'EZ Data on the Web',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 95,
+      ProjectName: 'Standards Gov',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 18,
+      ProjectName: 'Direct Mailing',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 1,
+      ProjectName: 'NATO Summit',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 101,
+      ProjectName: 'Federal Interagency Databases Online',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 51,
+      ProjectName: 'Office of Weights and Measures',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 28,
+      ProjectName: 'Medical Records System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 19,
+      ProjectName: 'Main Frame to LAN Accounting System ',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 7,
+      ProjectName: 'GATT Web System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 32,
+      ProjectName: 'Real Estate Management System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 43,
+      ProjectName: 'GEO Locator System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 21,
+      ProjectName: 'Engineering Resource Managment',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 14,
+      ProjectName: 'Oracle to Paradox Billing System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 99,
+      ProjectName: 'Financial Management Systems Inventory',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 48,
+      ProjectName: 'SecureAddress',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 27,
+      ProjectName: 'Advertising Sales System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 17,
+      ProjectName: 'Telephone Operations and Provisioning',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 5,
+      ProjectName: 'Committee Web System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 11,
+      ProjectName: 'Super Work In Progress System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 89,
+      ProjectName: 'EZ Data on the Web',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 42,
+      ProjectName: 'Education Data Mart',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 20,
+      ProjectName: ';venment Services System - SERVICENET',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 13,
+      ProjectName: 'Automated Transcription System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 50,
+      ProjectName: 'Standards Committee Members',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 26,
+      ProjectName: 'Insurance Claims System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 16,
+      ProjectName: 'NIST Directory',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 4,
+      ProjectName: 'Employee Assitance Program',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 10,
+      ProjectName: 'Telecommunications Order Processing',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 87,
+      ProjectName: 'XML Do It Now!',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 40,
+      ProjectName: 'FACA Database',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 47,
+      ProjectName: 'Server Up',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 12,
+      ProjectName: 'Patient Log for Baseball Games',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 24,
+      ProjectName: 'Job Search System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 29,
+      ProjectName: 'Movie Catalog System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 3,
+      ProjectName: 'Web Directory',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 31,
+      ProjectName: 'Commercial Real Estate System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 46,
+      ProjectName: 'Case Management System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 9,
+      ProjectName: 'Transplant System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 93,
+      ProjectName: '123 Easy Card',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 45,
+      ProjectName: 'Time Cards System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 23,
+      ProjectName: 'Pulp and Paper Manufacturing System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 25,
+      ProjectName: 'Retail Sales System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 2,
+      ProjectName: 'Web Time Cards',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 30,
+      ProjectName: 'Time and Billing System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 41,
+      ProjectName: 'Patient Tracking System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 8,
+      ProjectName: 'Publications System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 81,
+      ProjectName: 'Standards Annual Report',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 44,
+      ProjectName: 'Automated Menu Ssytem',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 15,
+      FullName: 'Bruce Troutman',
+      ProjectId: 22,
+      ProjectName: 'Oil Spill Management System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 91,
+      FullName: 'Chris Grady',
+      ProjectId: 70,
+      ProjectName: 'The Million Mom March',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 91,
+      FullName: 'Chris Grady',
+      ProjectId: 1,
+      ProjectName: 'NATO Summit',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 91,
+      FullName: 'Chris Grady',
+      ProjectId: 1,
+      ProjectName: 'NATO Summit',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 91,
+      FullName: 'Chris Grady',
+      ProjectId: 67,
+      ProjectName: 'SiteAnnounce.com Search Engine Submission Service',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 91,
+      FullName: 'Chris Grady',
+      ProjectId: 66,
+      ProjectName: 'Unmanned Aerial Vehicle Ground Control Station',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 91,
+      FullName: 'Chris Grady',
+      ProjectId: 69,
+      ProjectName: 'Video Streaming and Resume Database',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 3,
+      FullName: 'David Bryant',
+      ProjectId: 61,
+      ProjectName: 'TrainingForce.com',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 18,
+      FullName: 'David Schmucker',
+      ProjectId: 55,
+      ProjectName: 'Tabulate',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 18,
+      FullName: 'David Schmucker',
+      ProjectId: 9,
+      ProjectName: 'Transplant System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 93,
+      FullName: 'Dean Cutting',
+      ProjectId: 6,
+      ProjectName: 'Day Care System',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 93,
+      FullName: 'Dean Cutting',
+      ProjectId: 62,
+      ProjectName: 'Remedy Action Reporting System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 93,
+      FullName: 'Dean Cutting',
+      ProjectId: 1,
+      ProjectName: 'NATO Summit',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 93,
+      FullName: 'Dean Cutting',
+      ProjectId: 63,
+      ProjectName: 'PORTAL PILOT',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 93,
+      FullName: 'Dean Cutting',
+      ProjectId: 64,
+      ProjectName: 'Help Desk Ticket System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 89,
+      FullName: 'Emad Hammoud',
+      ProjectId: 19,
+      ProjectName: 'Main Frame to LAN Accounting System ',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 89,
+      FullName: 'Emad Hammoud',
+      ProjectId: 76,
+      ProjectName: 'Direct Marketing  ',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 2,
+      FullName: 'John Adelsten',
+      ProjectId: 60,
+      ProjectName: 'USPS Automation',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 104,
+      FullName: 'John B. Hagan',
+      ProjectId: 143,
+      ProjectName: 'MS Exchange 2003 Implementation',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 7,
+      FullName: 'Joseph Gotthelf',
+      ProjectId: 99,
+      ProjectName: 'Financial Management Systems Inventory',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 7,
+      FullName: 'Joseph Gotthelf',
+      ProjectId: 37,
+      ProjectName: 'INTERNET ACIS',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 7,
+      FullName: 'Joseph Gotthelf',
+      ProjectId: 35,
+      ProjectName: 'ECURA Information System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 7,
+      FullName: 'Joseph Gotthelf',
+      ProjectId: 34,
+      ProjectName: 'PROVIDER CONNECT',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 7,
+      FullName: 'Joseph Gotthelf',
+      ProjectId: 50,
+      ProjectName: 'Standards Committee Members',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 7,
+      FullName: 'Joseph Gotthelf',
+      ProjectId: 39,
+      ProjectName: 'TAMS & TRAMS',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 7,
+      FullName: 'Joseph Gotthelf',
+      ProjectId: 38,
+      ProjectName: 'Real-Time Data & Billing',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 7,
+      FullName: 'Joseph Gotthelf',
+      ProjectId: 36,
+      ProjectName: 'ON LINE ACCESS TO AGENT INFORMATION',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 7,
+      FullName: 'Joseph Gotthelf',
+      ProjectId: 33,
+      ProjectName: 'PROVIDER CONNECT ELITE',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 7,
+      FullName: 'Joseph Gotthelf',
+      ProjectId: 79,
+      ProjectName: 'Tenant Screening',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 81,
+      FullName: 'Karl Zercoe',
+      ProjectId: 19,
+      ProjectName: 'Main Frame to LAN Accounting System ',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 81,
+      FullName: 'Karl Zercoe',
+      ProjectId: 72,
+      ProjectName: 'SNICERS',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 6,
+      FullName: 'Kennett Fussell',
+      ProjectId: 40,
+      ProjectName: 'FACA Database',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 6,
+      FullName: 'Kennett Fussell',
+      ProjectId: 104,
+      ProjectName: 'Financial Improvement Progress System',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 6,
+      FullName: 'Kennett Fussell',
+      ProjectId: 101,
+      ProjectName: 'Federal Interagency Databases Online',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 6,
+      FullName: 'Kennett Fussell',
+      ProjectId: 99,
+      ProjectName: 'Financial Management Systems Inventory',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 94,
+      FullName: 'Ladislav Goc',
+      ProjectId: 87,
+      ProjectName: 'XML Do It Now!',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 94,
+      FullName: 'Ladislav Goc',
+      ProjectId: 80,
+      ProjectName: 'International Marketing and Product Development',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 90,
+      FullName: 'Richard Schinner',
+      ProjectId: 99,
+      ProjectName: 'Financial Management Systems Inventory',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 90,
+      FullName: 'Richard Schinner',
+      ProjectId: 99,
+      ProjectName: 'Financial Management Systems Inventory',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 90,
+      FullName: 'Richard Schinner',
+      ProjectId: 93,
+      ProjectName: '123 Easy Card',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 90,
+      FullName: 'Richard Schinner',
+      ProjectId: 44,
+      ProjectName: 'Automated Menu Ssytem',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 90,
+      FullName: 'Richard Schinner',
+      ProjectId: 2,
+      ProjectName: 'Web Time Cards',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 90,
+      FullName: 'Richard Schinner',
+      ProjectId: 51,
+      ProjectName: 'Office of Weights and Measures',
+      Style: 'Secondary'
+    },
+    {
+      MemberId: 9,
+      FullName: 'Robin D. Mattern',
+      ProjectId: 19,
+      ProjectName: 'Main Frame to LAN Accounting System ',
+      Style: 'Primary'
+    },
+    {
+      MemberId: 11,
+      FullName: 'Tom Meeks',
+      ProjectId: 19,
+      ProjectName: 'Main Frame to LAN Accounting System ',
+      Style: 'Primary'
     }
   ]
 }
