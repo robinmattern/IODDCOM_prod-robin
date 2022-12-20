@@ -1,0 +1,139 @@
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*-----------------------------------------
+The @media MAX-width query properties
+***** IPHONE
+/*If Device Width is <= to 414px Then...*/
+
+/*=========================================*/
+@media only screen
+and (min-width: 414px)
+and (max-width: 700px) 
+{ 
+/*-----------------------------------------
+The Header/Logo/Navigation properites
+------------------------------------------*/  
+.Logo {
+    padding: 0px 0px 10px 0px; 
+    /*display: none;*/
+  }
+  .device-text::after {
+  content: "\ [mobile] ";
+}
+  .device-text {
+  font-size: 12px;
+  font-weight: 800;
+  color: black; /* rgb(255,201,14); /*gold*/
+  text-shadow: 0.5px 0.5px 0px black;
+  padding-bottom: 0px;
+}
+  .Header {
+    height: 70px;
+  } 
+  .HeaderNavList {
+    font-size: 8px;
+  }
+  .HeaderNavListItem2 a {
+    display: flex;
+  }
+  .MenuWrap {  /*hamburger*/
+    display: none;
+    margin-top: -11px;
+  }
+  .MenuWrap .Menu > div {
+    /*move menu around*/
+      justify-content: left; /*was center*/
+      padding-left: 90px; /*was deleted*/
+      margin-top: -210px; /*was deleted*/
+    /*end of move around*/
+  }
+  .MenuWrap .Menu > div > div > ul > li > a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: inherit;
+    padding: 0px;
+  }
+  .BoxMenu {
+    padding: 0px;
+    background-color: whitesmoke;
+  }
+
+/*-----------------------------------------
+END Header/Logo/Navigation properites
+------------------------------------------*/  
+
+/*-----------------------------------------
+The .Section1 properites
+------------------------------------------*/
+.Section1 {
+  width: 100%;
+  height: 35%;
+  position: relative;
+  color: var(--Section2-font-color);
+  top: 70px; /*<---ADD to adjust the top position*/
+  overflow-y: scroll;
+  border: solid 0px #242526;
+}
+.Section1Title {
+  text-align: center;
+  font-size: 200%;
+}
+/* Section1 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*-----------------------------------------
+The .Section2 properites
+------------------------------------------*/
+.Section2 {
+  width: 100%;
+  height: 49%;
+  position: relative;
+  color: var(--Section2-font-color);
+  top: 70px; /*<---ADD to adjust the top position*/
+  overflow-y: scroll;
+  border: solid 0px #242526;
+}
+.Section2Title {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 0px 0px 0px;
+}
+.Section2Paragraph {
+  padding-top: 0px;
+}
+.Section2Paragraph ul {
+  margin: 20px 0px 5px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+.MainOrderedList {
+  font-size: 100%;
+  margin: 0px 0px 0px 10px;
+  text-decoration: underline;
+}
+.MainOrderedListItem {
+  font-size: 15px;
+  padding: 0px 0px 15px 0px;
+}
+.MainOrderedListItem a {
+  font-size: 100%;
+}
+/* Section2 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*-----------------------------------------
+The .Footer properites
+------------------------------------------*/
+.Footer {
+  height: 70px;
+}
+.FooterNavListItem a {
+  font-size: 15px;
+}
+/* Footer END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+}    
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/

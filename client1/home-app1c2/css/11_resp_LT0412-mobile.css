@@ -25,6 +25,7 @@ The @media MAX-width query properties
     text-shadow: 0.5px 0.5px 0px black;
     padding: 40px 0px 0px 0px;
   } 
+  
   .Header {
     height: 70px;
     position: relative;

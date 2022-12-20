@@ -21,7 +21,7 @@
 .Section2 {
   background-color: whitesmoke;
   border: 0px black solid;
-  height: 44%;
+  height: 54%;
 }
 .device-text::after {
   content: "\  [ laptop ]";

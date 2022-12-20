@@ -8,14 +8,14 @@
         <title>Members</title>
         <link rel="shortcut icon" href="/home/favicon.png">
         <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-        <link rel="stylesheet"    href="../hamburger2.css">
+        <link rel="stylesheet"    href="../css/02_hamburger2.css">
 
         <link rel="stylesheet"    href="../css/01_iodd_logo.css">
         <!--<link rel="stylesheet"    href="css/01_pfep_logo.css">-->
         <link rel="stylesheet"    href="../css/02_hamburger1.css">
         <link rel="stylesheet"    href="../css/03_index.css">
-        <link rel="stylesheet"    href="../css/04_main-menu.css">
-        <link rel="stylesheet"    href="../css/05_navbar.css">
+        <!--<link rel="stylesheet"    href="../css/04_main-menu.css">-->
+        <!--<link rel="stylesheet"    href="../css/05_navbar.css">-->
         <link rel="stylesheet"    href="../css/06_resp_1900-3000-desktop.css">
         <link rel="stylesheet"    href="../css/07_resp_1100-1900-laptop.css">
         <link rel="stylesheet"    href="../css/08_resp_950-1100-tabletLandscape.css">
@@ -25,7 +25,8 @@
         <link rel="stylesheet"    href="members-projects.css">
 
         <script src="../assets/json/db.json.js" type="application/javascript" ></script>
-        <script src="../assets/js/IODD-members-projects.js"  type="application/javascript" ></script>
+        <script src="../assets/js/members-projects-laptop.js"  type="application/javascript" ></script>
+        <script src="../assets/js/members-projects-mobile.js"  type="application/javascript" ></script>
 
 </head>
 <body>
@@ -80,15 +81,26 @@
 <div    class="Section2">
     <div class="Section2Title">Member's Projects</div>
     <div class="members-list">
-        <table class="main-table">
-            <tbody id="Members">
+        <table class="main-table-laptop">
+            <tbody id="Members-laptop">
             </tbody>    
             <script>
-                var pMembers = document.getElementById( "Members" )
-                    pMembers.innerHTML = fmtMembersProjects( pJSON )
+                var pMembers = document.getElementById( "Members-laptop" )
+                    pMembers.innerHTML = fmtMembersProjectsLaptop( pJSON )
             </script>                  
             <tr class="last-row"><td colspan="3"></td></tr>
         </table>
+       
+        <table class="main-table-mobile">
+            <tbody id="Members-mobile">
+            </tbody>    
+            <script>
+                var pMembers = document.getElementById( "Members-mobile" )
+                    pMembers.innerHTML = fmtMembersProjectsMobile( pJSON )
+            </script>                  
+            <tr class="last-row"><td colspan="3"></td></tr>
+        </table>
+
     </div>
 </div>
 <!-- END  Section2 -->
