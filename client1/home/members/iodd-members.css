@@ -1,0 +1,159 @@
+body {
+    min-width: 800px;
+    margin: auto;
+}
+.container {
+    min-width: 800px;
+    margin: auto;
+
+}
+.Section1 {
+    display: none;
+}
+.Section2 {
+    top: 65px;
+    height: 85%;
+    background-color: "#E5E4E2"; /*platinum*/
+}
+.Section2Title {
+    font-size: 150%;
+    padding: 20px 0px 0px 40px;
+}
+.title {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.members-list {
+    margin: -10px 0px 0px 40px;
+}
+.main-table {
+    margin: 20px 0 0 5px;
+    border-collapse: collapse;
+    width: 95%;
+    border: black 0px solid;
+}
+
+.head-row td {
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: left;
+    padding-left: 5px;
+    background-color: #C0C0C0;
+    color: black;
+    height: 25px;
+}
+.last-row {
+    height: 10px;
+}
+.xrow-odd {
+    background-color: #DCDCDC;
+}
+.row-even {
+    background-color: #DCDCDC;
+}
+.head-name {
+    width: 30%;
+}
+.head-email {
+    width: 20%;
+}
+.head-phone1, 
+.head-phone2 {
+    width: 25%;
+}
+.name {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 0 20px 0 0;
+    border-bottom: dotted 1px black;
+    height: 25px;
+}
+.email {
+    font-size: 20px;
+    padding: 0 20px 0 0;
+    border-bottom: dotted 1px black;
+}
+
+.phone1, .phone2 {
+    font-size: 16px;
+    padding: 0 20px 0 0;
+    border-bottom: dotted 1px black;
+}
+.cellphone {
+    font-size: 20px;
+    padding: 0 20px 0 0;
+}
+
+/*
+The @media MAX-width query properties
+***** IPHONE
+/*If Device Width is <= to 414px Then...*/
+
+/*=========================================*/
+  @media only screen
+  and (max-width: 414px)
+{
+    .HeaderNavListItem1 a {
+        font-size: 13px;
+        display: none;
+    }
+    .Section2 {
+        background-color: #E5E4E2; /*platinum*/
+        width: 100%;
+        height: 300%;
+        top: 0px; /*<---ADD to adjust the top position*/
+        overflow-y: auto;
+      }
+    .Section2Title {
+        font-size: 110%;
+        text-align: left;
+    }  
+    .members-list {
+        margin: -10px 0px 0 5px;
+    }
+    .main-table {
+        margin: 20px 0 0 5px;
+        border-collapse: collapse;
+        width: 95%;
+        border: black 0px solid;
+    }
+    .head-name {
+    /*    padding: 0px 10px 0px 20px;*/
+        width: 25%;
+    }
+    .head-email {
+    /*    padding: 0px 10px 0px 20px;*/
+        width: 10%;
+    }
+    .head-phone1 {
+    /*    padding: 0px 10px 0px 20px;*/
+        width: 65%;
+    }
+    .name {
+        width: 50%;
+        padding: 0 20px 0 0;
+        height: 40px;
+        font-size: 110%;
+        font-weight: 800;
+    }
+    .email {
+        width: 5%;
+        height: 40px;
+    }
+    .email-image  {
+        width: 140%;
+    }        
+    .phone1 {
+        width: 40%;
+        height: 40px;
+        font-size: 110%;
+    }    
+    .phone2 {
+        display: none;
+    }
+    .head-phone2 {
+        display: none;
+    }    
+}
