@@ -4,6 +4,9 @@
    import   shell           from 'shelljs'
    import   util            from 'util'
    import   fs              from 'fs'
+   import   readline        from 'readline';
+
+//          await prompt3( "Press return to continue" ); shell.exit()
 
 //--------  ----------  =  -------------------------------------------------------------
 
@@ -28,6 +31,8 @@
        var  pJSON       = { }
 
             await savEm( mDBSQLs )
+
+            await prompt( "\n  Press CTRL-C to continue" )
 
 //--------  ----------  =  -------------------------------------------------------------
 
@@ -75,12 +80,18 @@ async function savEm( mDBSQLs ) {
 
  async function  getJSON( aSQL ) {
 
-//     var  aCmd        = `mysqlsh -u   nimdas   -pFormR\!1234 --host 127.0.0.1  --json=pretty --database=iodd       --sql --execute "${aSQL}"`
-       var  aCmd        = `mysqlsh -u ${aDBUser} -p${aDBPass}  --host ${aDBHost} --json=pretty --database=${aDBName} --sql --execute "${aSQL}"`
-            console.log(  `\n$ ${ aCmd.replace( /!/, "\\!" ) }` )
+       var  aTable      =  aSQL.replace( /^.+ INTO /,    "" ).replace( /;/, "" )                            // .(21220.02.1 RAM Get aTable from SQL ""... INTO table")
+            aSQL        =  aSQL.replace(    / INTO .+$/, "" )                                               // .(21220.02.2)
 
+       if ( aTable == aSQL) {                                                                               // .(21220.02.3)
        var  aTable      =  aSQL.match( /FROM (\w+)( WHERE)*/i ); aTable = aTable != null ? aTable[1] : ''
             aTable      =  aTable.replace( /_view/i, "" )
+            }                                                                                               // .(21220.02.4)
+
+//     var  aCmd        = `mysqlsh -u   nimdas   -pFormR\!1234 --host 127.0.0.1  --json=pretty --database=iodd       --sql --execute "${aSQL}"`
+       var  aCmd        = `mysqlsh -u ${aDBUser} -p${aDBPass}  --host ${aDBHost} --json=pretty --database=${aDBName} --sql --execute "${aSQL}"`
+       var  aCmd2       = `mysqlsh -u ${aDBUser} -p --host ${aDBHost} --database=${aDBName} --json=pretty --sql --execute "${aSQL}"`
+            console.log(  `\n$ ${ aCmd2.replace( /!/, "\\!" ) }` )
 
 //          ----------  =  --------------------------------
        try {
@@ -196,6 +207,50 @@ async function savEm( mDBSQLs ) {
             console.log( `  Renamed: ${aFile}\n       to: ${aFile1}`)
             }
        }  // eof backup
+//     ---  ----------  =  ------------------------------------------
+/*
+  function  prompt1( aMsg ) {
+            fs.writeSync( 1, String( aMsg ) );
+        var s = '', buf = Buffer.alloc( 1 );
+     while (buf[0] - 10 && buf[0] - 13)
+            s += buf, fs.readSync(0, buf, 0, 1, 0);
+     return s.slice(1);
+            };
+*//*
+  function  prompt2( aMsg ) {
+       var  rl = readline.createInterface( { input: process.stdin, output: process.stdout } );
+   return { new Promise( ( resolve ) => { rl.question( aMsg, resolve ) } ) };
+            }
+*/
+  function  prompt( aMsg ) { return new Promise( resolve => {
+       var  pProcess = getProcess()
+        if (pProcess.DOS == false) { return }
+       var  rl = readline.createInterface( { input: process.stdin, output: process.stdout } );
+            rl.question( aMsg, resolve )
+            } ) }
+//     ---  ----------  =  ------------------------------------------
+
+  function  getProcess( ) {
+       var  aEnv = Object.keys( process.env ).join( "\n" )
+
+        var bDos = /ComSpec/.test( aEnv );  // console.log( `bDos: ${bDos}` )
+        var bEmu = /ConEmu/.test(  aEnv );  // console.log( `bEmu: ${bEmu}` )
+//      var bGit = /MINGW64/.test( aEnv );  // console.log( `bGit: ${bGit}` )  ??
+        var bGit = /MSYSTEM/.test( aEnv );  // console.log( `bGit: ${bGit}` )
+        var bVsc = /VSCODE/.test(  aEnv );   // console.log( `bVsc: ${bVsc}` )
+        var bBug = /VSCODE_INSPECTOR/.test( aEnv ) // console.log( `bBug: ${bBug}` )
+//      var bBug = .process.NODE_OPTIONS ? 1 : 0
+
+        if (bDos) {
+        var bTxt = /TextPad/.test( process.title ); // console.log( `bTxt: ${bTxt}` )
+            bDos = (bBug || bTxt) ? 0 : 1
+            }
+            bGit = bVsc ? 0 : 1
+            bVsc = bBug ? 0 : bVsc
+
+       var  pProcess = { DOS: bDos, EMU: bEmu, Bash: bGit, TextPad: bTxt, VSCdebug: bBug, VSCode: bVsc }
+    return  pProcess
+            }
 //     ---  ----------  =  ------------------------------------------
 //--------  ----------  =  ------------------------------------------------------------------------------
 
